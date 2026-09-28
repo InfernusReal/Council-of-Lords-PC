@@ -1,0 +1,15 @@
+{
+  "all_terminal": true,
+  "counts": {
+    "EXCLUDED_BY_FROZEN_POLICY": 0,
+    "INCOMPATIBLE_WITH_DOCUMENTED_REASON": 0,
+    "INGESTED": 1,
+    "UNAVAILABLE_WITH_ARCHIVED_FAILURE": 16
+  },
+  "gate": "COL-GATE-22",
+  "ledger_sha256": "ba740e67a6ac43361cb0bd59142d6d458a157951efffa0358dec71b574061b77",
+  "policy_sha256": "a8303ea06991e9684be7c8ba74acc4e20551eeba7acbab173c182b71bc67c36f",
+  "problems": [],
+  "registry_sha256": "c07922d4ec878703797b7f2e0ad9b25b48a8cec7f04ad5cad8470e46303757f5",
+  "verdict": "CLOSED"
+}

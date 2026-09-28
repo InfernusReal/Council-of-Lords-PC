@@ -228,7 +228,99 @@ Exit: GATE-00 FOUNDATION_FROZEN + GATE-01 LEGACY_ARCHAEOLOGY_COMPLETE.
   `git ls-remote origin main` = `0cb872a…` == local HEAD; working tree clean.
   (Recorded post-push; scripts untouched so log inventory above still matches committed bytes.)
 
-## WP-1 — Trusted data core — NOT_REACHED
+## WP-1 — Trusted data core — CONTRACT (locked before implementation; N=1, PREVIOUS_PHASE=WP-0)
+
+WP-0 revalidation (fresh, current tree): `pytest tests/legacy_regression` 15/15 PASS;
+`pin_foundation.py --check` FOUNDATION_CHECK = PASS; `audit_foundation.py` INDEPENDENT_AUDIT = PASS;
+coverage checker PASS (561/556/5); remote == local; tree clean. Verdict: PREVIOUS_PHASE = VERIFIED_COMPLETE.
+
+```
+WP-1 ENTRY AUDIT
+previous_phase_verified: VERIFIED_COMPLETE (fresh re-run, not cited output)
+required_upstream_statuses: GATE-00/01 PASSED (auditor STEP 26, Path WP-0 closeout)
+required_frozen_artifacts: FOUNDATION_MANIFEST.json hash matches recomputation (WP0-T02 green)
+required_hashes: spec 9d4761e3 (unchanged), manifests bb11c846/77391c5d/7fe0c169 (all match)
+required_source_state: main clean, no holdout/model/teacher artifacts
+required_kernel_state: n/a (no PC kernel in WP-1)
+required_schema_state: draft schemas to be produced herein; no prior data schemas exist
+required_external_evidence: none (no network acquisition in WP-1 scope per frozen policy)
+entry_gate_result: PASS
+```
+
+| REQ-ID | Requirement (WorkPlan WP-1 A–K) | Artifact |
+|---|---|---|
+| WP-1-REQ-001 | GATE-00/01 hold + foundation hash matches | revalidation above |
+| WP-1-REQ-002 | No teacher holdout on tree | tree scan |
+| WP-1-REQ-003 | Branch main clean at start | git status |
+| WP-1-REQ-004 | data/{lightcurve,provenance,quality,catalogs}.py | `src/council/data/` |
+| WP-1-REQ-005 | preprocessing/{normalization,detrending,windows}.py | `src/council/preprocessing/` |
+| WP-1-REQ-006 | forge/datasets/{factory,splits,manifests,source_registry}.py | `forge/datasets/` |
+| WP-1-REQ-007 | CLI ingest/build/audit skeleton, deterministic JSON | `src/council/cli/` |
+| WP-1-REQ-008 | LightCurveSchema v1 + DatasetManifest draft + SourceRegistryEntrySchema v1 (14 fields) | `configs/schemas/` |
+| WP-1-REQ-009 | SOURCE_REGISTRY_v1.json (17 fams) + STATUS_LEDGER (exactly-once-terminal) + WP1_SOURCE_CLOSURE.json | `data/manifests/`, `audits/` |
+| WP-1-REQ-010 | 5 named test files | `tests/unit/`, `tests/property/`, `tests/forge/` |
+| WP-1-REQ-011 | Leakage report (empty-population + worked example) | `audits/leakage/WP1_LEAKAGE_REPORT.md` |
+| WP-1-REQ-012 | LightCurve: fields+raw_hash+dtypes+stable sort+units error, O(n log n) | lightcurve.py |
+| WP-1-REQ-013 | Quality pure fns, versioned masks, declared-seed RNG only | quality.py |
+| WP-1-REQ-014 | Named pure ops + full provenance, no label fitting | normalization/detrending.py |
+| WP-1-REQ-015 | Object grouping exact (empty-intersection), strata, leakage_report | splits.py |
+| WP-1-REQ-016 | Registry: 17 fams, no fabricated URLs/counts, 14-field entries, reconciliation, exactly-once closure | source_registry.py |
+| WP-1-REQ-017 | CLI deterministic JSON + manifest output | cli/ |
+| WP-1-REQ-018 | Grouping exactness + hash chaining by construction + test | splits/manifests + tests |
+| WP-1-REQ-019 | NO ML TRAINED; dev fixtures only; seeds recorded; no holdout | tree + report + this entry |
+| WP-1-REQ-020 | pytest tests/unit tests/forge green | test run |
+| WP-1-REQ-021 | CLI audit runs deterministically (repeat identical bytes) | CLI check |
+| WP-1-REQ-022 | Coverage checker still PASS | checker run |
+| WP-1-REQ-023 | Scratch-admission mutant rejected | mutation test |
+| WP-1-REQ-024 | Source-closure check (all terminal; non-terminal fails GATE-22) | closure test |
+| WP-1-REQ-025 | T01/T02/T03/T10/T17/T19/T20 controls implemented + tested | code + tests |
+| WP-1-REQ-026 | STOP-04 respected (versioned schemas; H untouched, WP-2 owns H) | schemas + note |
+| WP-1-REQ-027 | GATE-02 + GATE-22 emitted with evidence | closeout |
+| WP-1-REQ-028 | Path record + log inventory + closeout, history preserved | Path.md |
+| WP-1-REQ-029 | Commit `COL-PC-v1.0 WP-1 data-core (PHASE-02/03/04, GATE-02/22)`; push; ls-remote==HEAD; clean | git |
+
+Named-test semantic lock: test_lightcurve→preservation/dtypes/ordering/failures | test_transform_determinism→deterministic hash-chained transforms | test_object_grouping→exact disjoint grouping + strata | test_no_silent_defaults→unknown-units/fallback rejection | test_source_registry→schema + exactly-once-terminal + no-silent-omission.
+INDEPENDENT_AGREEMENT (WP-1) = [leakage disjointness via splits.py vs independent set-logic recheck in test, manifest hash via manifests.py vs hashlib recheck in test, closure verdict via source_registry.py vs independent ledger scan in test]. No tuple shortening.
+Exit: GATE-02 DATA_CORE_CERTIFIED + GATE-22 DATASET_SOURCE_COVERAGE_CLOSED.
+
+## WP-1 EXECUTION RECORD (CURRENT_PHASE=WP-1)
+
+- Entry gate: PASS (predicate in contract above; WP-0 revalidated fresh, foundation hashes match, main clean, no holdout).
+- Implementation matrix: REQ-004..017 implemented per file below; REQ-018/019 by construction+test; REQ-020..026 verified below. Statuses at closeout: all VERIFIED, none BLOCKED/NOT_APPLICABLE.
+- Files created: `src/council/{__init__,data/{__init__,lightcurve,provenance,quality,catalogs},preprocessing/{__init__,normalization,detrending,windows},cli/{__init__,__main__}}.py`, `forge/{__init__,datasets/{__init__,factory,splits,manifests,source_registry}}.py`, `configs/schemas/{LightCurveSchema_v1,DatasetManifestSchema_v1,SourceRegistryEntrySchema_v1}.json`, `configs/datasets/wp1_acquisition_policy_v1.json`, `data/manifests/SOURCE_REGISTRY_v1.json` (+.sha256), `data/manifests/SOURCE_STATUS_LEDGER.json` (+.sha256), `audits/WP1_SOURCE_CLOSURE.json` (+.sha256), `audits/leakage/WP1_LEAKAGE_REPORT.md`, `tests/{conftest,unit/test_lightcurve,unit/test_no_silent_defaults,property/test_transform_determinism,forge/test_object_grouping,forge/test_source_registry,forge/test_factory_skeleton}.py`.
+- Files modified: `Path.md` only (contract + this record). No spec/WorkPlan/coverage changes.
+- Code: frozen dataclass types; hash-bucket grouping (no RNG); P-spline penalty (honest, tested effective); allowlist admission in factory; exactly-once closure with type hardening; CLI with machine JSON on stdout, all logs on stderr.
+- Algorithms: stable O(n log n) ingest sort; MAD outlier flags; gap/duty-cycle accounting; median-divide normalization; median-filter + penalized B-spline detrends; window selection without resampling; canonical-JSON hashing with sidecars.
+- Schemas: 3 JSON schema files (LightCurve normative v1, DatasetManifest draft, RegistryEntry normative v1, 14 fields).
+- Artifacts: registry (17 entries: 1 INGESTED w/ measured zip SHA + 127-fixture index count, 16 UNAVAILABLE with archived reasons), ledger (probe found 0 — honest negative), closure verdict CLOSED with registry/ledger/policy SHA binding.
+- Tests: 25 passed (`tests/unit tests/forge tests/property`), exit 0. WP-0 suite still 15/15 (no regression).
+- Benchmarks: NO ML MODEL TRAINED (explicit; tree contains no checkpoints).
+- Stress: missing sources (exit 2/3 BLOCKED), empty/malformed/corrupted inputs rejected, unlabeled/binary/fresh fixtures rejected, removed ledger breaks closure binding (exit 3), post-stress integrity green.
+- Anti-overfitting: dev fixtures only; seeds recorded (fixed-seed sweeps; hash determinism elsewhere); no holdout; legacy never observational.
+- Threats: T01/T02 (hash grouping + empty-overlap proof, worked example 106/21 overlap 0), T03 (catalog stubs return no data), T10 (factory allowlist rejects scratch keys), T17 (registry source_family tags), T19 (units/fallback rejection + DECLARED_DEFAULT absent-by-design in WP-1 scope), T20 (sidecar-bound manifests + raw_hashes).
+- Stops: STOP-04 respected (versioned draft schemas; H untouched — no H code exists in WP-1).
+- Invariants: grouping exactness, hash chaining, determinism (regen identical), stdout JSON purity.
+- Gates: GATE-02 + GATE-22 OPEN (evidence below).
+- Hashes: registry `c07922d4…`, ledger `ba740e67…`, closure `a9c4e6ec…` (truncated display; full in sidecars).
+- Commands (all exit 0 unless noted): `pytest tests/unit tests/forge tests/property` (25 passed); `forge.datasets.source_registry` (GATE-22 CLOSED); CLI ingest×2 byte-identical + build + manifest audit valid + registry audit CLOSED (cliverify PASS); `check_workplan_coverage.py` PASS (561/556/5); WP-0 suite 15/15.
+- Failures + repairs (preserved): stdout pollution by library logs → all routed stderr; no-op spline smoothing → honest P-spline penalty (+test proves effect); dummy-array window hashes → real flux/quality threading; tautological assert → removed; confused subprocess sub-test → genuine end-to-end gate test; stray WP-0 log line → removed at once.
+- Counterexamples: none (no theorems). Deviations: none (P-spline realizes WorkPlan's "explicit knots/penalty" literally).
+- External blockers: none.
+- Log inventory (final, committed bytes; STEP-09 unused gap; STEP-17/18 static artifacts, verified by tests not logs):
+  lightcurve.py c14/l15, op-log c90/l90-91; provenance.py c14/l15; quality.py c13/l14; catalogs.py c13/l14, intents l43/l57; normalization.py c15/l16, op l54; detrending.py c16/l17, medfilt l60, spline l109; windows.py c13/l14, extract l36, select l67; manifests.py c14/l15, write l37; splits.py c12/l13, split l46-47, audit l63; factory.py c12/l13, release l60-61; source_registry.py tables c20/l21, probe c80/l81 + result l91, closure-audit log l212, build l218, verdict l230; cli __main__.py c15/l16, ingest l51, build l72, reg-audit l117, manifest-audit l127. (c=comment line, l=log line; multiline logs span +1.)
+
+## WP-1 FINAL CLOSEOUT
+
+- Previous-phase revalidation: VERIFIED_COMPLETE (fresh WP-0 rerun at phase start + green again at closeout).
+- Entry gate: PASS.
+- Scope completed: REQ-001..029 all VERIFIED.
+- Contract reconstruction audit: phase-start contract vs WorkPlan re-read at closeout — CONTRACT_START_CLOSEOUT_DIFF = 0.
+- Exit-criteria matrix: EXIT-01 raw/unit preservation PASS | EXIT-02 grouping exact PASS | EXIT-03 deterministic hash-chained transforms PASS | EXIT-04 no silent defaults PASS | EXIT-05 registry 17/14/4 + exactly-once PASS | EXIT-06 GATE-22 CLOSED (bound closure) PASS | EXIT-07 CLI deterministic + audits PASS | EXIT-08 25/25 tests + stress/mutation PASS | EXIT-09 coverage PASS, WP-0 suite green PASS | EXIT-10 hygiene (no binaries/secrets/.env) PASS.
+- Compliance-audit result: WorkPlan-vs-repo-vs-Path-vs-tests: compliance_gaps = 0. False-closure attacks (removed ledger/registry/doc, corrupted/malformed pins, bad labels, unbound verdict, format change): all rejected. Verifier soundness holds.
+- Remaining: phase defects 0. Future work: WP-2..WP-8 NOT_STARTED. Blockers: none. N/A: HOLD/qualification/registry-write/runtime (later phases).
+- Claim-evidence pointers: "25/25" → pytest exit 0 | "GATE-02/22" → auditor outputs + closure JSON | "mutations caught" → nonzero/FAIL cases above | "gaps 0" → reconstruction + red-team above.
+- Final verdict: WP-1 = COMPLETE.
+- Commit/push/HEAD: recorded below after verification.
 
 - WorkPlan prescription: WorkPlan.md §WP-1 (PHASE-02/03/04; GATE-02; LightCurve/provenance/quality/preprocessing/splits).
 - Entry-gate status: BLOCKED until WP-0 GATE-00/01 PASSED.

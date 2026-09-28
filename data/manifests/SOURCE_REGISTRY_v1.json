@@ -1,0 +1,340 @@
+{
+  "entries": [
+    {
+      "acquisition_failure_reason": "no network acquisition in WP-1 scope; bulk materialization deferred under frozen registry to WP-4+",
+      "acquisition_status": "UNAVAILABLE_WITH_ARCHIVED_FAILURE",
+      "allowed_tasks": [],
+      "attempted_sources": [
+        "Kepler light curves",
+        "TESS light curves"
+      ],
+      "known_biases": "uncharacterized (source not acquired)",
+      "label_semantics": "undefined (source not acquired)",
+      "license_or_usage_status": "UNVERIFIED (no retrieval; verify at acquisition)",
+      "object_identity_mapping": "unassigned (assigned at dataset build under split policy)",
+      "raw_hashes": [],
+      "retrieval_date": "2026-09-28",
+      "retrieval_method": "local-corpus-probe v1 (filesystem scan; no network)",
+      "source_family": "OBSERVATIONAL_LIGHTCURVE",
+      "source_id": "COL-SRC-OBSERVATIONAL_LIGHTCURVE-001",
+      "source_version_or_release": "UNESTABLISHED (WP-1 scope: no retrieval)",
+      "split_restrictions": "n/a (unavailable)"
+    },
+    {
+      "acquisition_failure_reason": "no network acquisition in WP-1 scope; bulk materialization deferred under frozen registry to WP-4+",
+      "acquisition_status": "UNAVAILABLE_WITH_ARCHIVED_FAILURE",
+      "allowed_tasks": [],
+      "attempted_sources": [
+        "Kepler KOIs",
+        "TESS TOIs",
+        "K2 candidate/false-positive populations"
+      ],
+      "known_biases": "uncharacterized (source not acquired)",
+      "label_semantics": "undefined (source not acquired)",
+      "license_or_usage_status": "UNVERIFIED (no retrieval; verify at acquisition)",
+      "object_identity_mapping": "unassigned (assigned at dataset build under split policy)",
+      "raw_hashes": [],
+      "retrieval_date": "2026-09-28",
+      "retrieval_method": "local-corpus-probe v1 (filesystem scan; no network)",
+      "source_family": "PLANET_CANDIDATE_CATALOG",
+      "source_id": "COL-SRC-PLANET_CANDIDATE_CATALOG-001",
+      "source_version_or_release": "UNESTABLISHED (WP-1 scope: no retrieval)",
+      "split_restrictions": "n/a (unavailable)"
+    },
+    {
+      "acquisition_failure_reason": "no network acquisition in WP-1 scope; bulk materialization deferred under frozen registry to WP-4+",
+      "acquisition_status": "UNAVAILABLE_WITH_ARCHIVED_FAILURE",
+      "allowed_tasks": [],
+      "attempted_sources": [
+        "NASA Exoplanet Archive products"
+      ],
+      "known_biases": "uncharacterized (source not acquired)",
+      "label_semantics": "undefined (source not acquired)",
+      "license_or_usage_status": "UNVERIFIED (no retrieval; verify at acquisition)",
+      "object_identity_mapping": "unassigned (assigned at dataset build under split policy)",
+      "raw_hashes": [],
+      "retrieval_date": "2026-09-28",
+      "retrieval_method": "local-corpus-probe v1 (filesystem scan; no network)",
+      "source_family": "CONFIRMED_PLANET_CATALOG",
+      "source_id": "COL-SRC-CONFIRMED_PLANET_CATALOG-001",
+      "source_version_or_release": "UNESTABLISHED (WP-1 scope: no retrieval)",
+      "split_restrictions": "n/a (unavailable)"
+    },
+    {
+      "acquisition_failure_reason": "no network acquisition in WP-1 scope; bulk materialization deferred under frozen registry to WP-4+",
+      "acquisition_status": "UNAVAILABLE_WITH_ARCHIVED_FAILURE",
+      "allowed_tasks": [],
+      "attempted_sources": [
+        "Kepler Certified False Positives"
+      ],
+      "known_biases": "uncharacterized (source not acquired)",
+      "label_semantics": "undefined (source not acquired)",
+      "license_or_usage_status": "UNVERIFIED (no retrieval; verify at acquisition)",
+      "object_identity_mapping": "unassigned (assigned at dataset build under split policy)",
+      "raw_hashes": [],
+      "retrieval_date": "2026-09-28",
+      "retrieval_method": "local-corpus-probe v1 (filesystem scan; no network)",
+      "source_family": "CERTIFIED_FALSE_POSITIVE",
+      "source_id": "COL-SRC-CERTIFIED_FALSE_POSITIVE-001",
+      "source_version_or_release": "UNESTABLISHED (WP-1 scope: no retrieval)",
+      "split_restrictions": "n/a (unavailable)"
+    },
+    {
+      "acquisition_failure_reason": "no network acquisition in WP-1 scope; bulk materialization deferred under frozen registry to WP-4+",
+      "acquisition_status": "UNAVAILABLE_WITH_ARCHIVED_FAILURE",
+      "allowed_tasks": [],
+      "attempted_sources": [
+        "Kepler eclipsing-binary catalogs",
+        "TESS eclipsing-binary sources"
+      ],
+      "known_biases": "uncharacterized (source not acquired)",
+      "label_semantics": "undefined (source not acquired)",
+      "license_or_usage_status": "UNVERIFIED (no retrieval; verify at acquisition)",
+      "object_identity_mapping": "unassigned (assigned at dataset build under split policy)",
+      "raw_hashes": [],
+      "retrieval_date": "2026-09-28",
+      "retrieval_method": "local-corpus-probe v1 (filesystem scan; no network)",
+      "source_family": "ECLIPSING_BINARY_CATALOG",
+      "source_id": "COL-SRC-ECLIPSING_BINARY_CATALOG-001",
+      "source_version_or_release": "UNESTABLISHED (WP-1 scope: no retrieval)",
+      "split_restrictions": "n/a (unavailable)"
+    },
+    {
+      "acquisition_failure_reason": "no network acquisition in WP-1 scope; bulk materialization deferred under frozen registry to WP-4+",
+      "acquisition_status": "UNAVAILABLE_WITH_ARCHIVED_FAILURE",
+      "allowed_tasks": [],
+      "attempted_sources": [
+        "Kepler DR25",
+        "Kepler TCEs",
+        "TESS TCE/DV products where eligible/available"
+      ],
+      "known_biases": "uncharacterized (source not acquired)",
+      "label_semantics": "undefined (source not acquired)",
+      "license_or_usage_status": "UNVERIFIED (no retrieval; verify at acquisition)",
+      "object_identity_mapping": "unassigned (assigned at dataset build under split policy)",
+      "raw_hashes": [],
+      "retrieval_date": "2026-09-28",
+      "retrieval_method": "local-corpus-probe v1 (filesystem scan; no network)",
+      "source_family": "TCE_CATALOG",
+      "source_id": "COL-SRC-TCE_CATALOG-001",
+      "source_version_or_release": "UNESTABLISHED (WP-1 scope: no retrieval)",
+      "split_restrictions": "n/a (unavailable)"
+    },
+    {
+      "acquisition_failure_reason": "no network acquisition in WP-1 scope; bulk materialization deferred under frozen registry to WP-4+",
+      "acquisition_status": "UNAVAILABLE_WITH_ARCHIVED_FAILURE",
+      "allowed_tasks": [],
+      "attempted_sources": [
+        "Kepler Robovetter metrics"
+      ],
+      "known_biases": "uncharacterized (source not acquired)",
+      "label_semantics": "undefined (source not acquired)",
+      "license_or_usage_status": "UNVERIFIED (no retrieval; verify at acquisition)",
+      "object_identity_mapping": "unassigned (assigned at dataset build under split policy)",
+      "raw_hashes": [],
+      "retrieval_date": "2026-09-28",
+      "retrieval_method": "local-corpus-probe v1 (filesystem scan; no network)",
+      "source_family": "ROBOVETTER_METRICS",
+      "source_id": "COL-SRC-ROBOVETTER_METRICS-001",
+      "source_version_or_release": "UNESTABLISHED (WP-1 scope: no retrieval)",
+      "split_restrictions": "n/a (unavailable)"
+    },
+    {
+      "acquisition_failure_reason": "no network acquisition in WP-1 scope; bulk materialization deferred under frozen registry to WP-4+",
+      "acquisition_status": "UNAVAILABLE_WITH_ARCHIVED_FAILURE",
+      "allowed_tasks": [],
+      "attempted_sources": [
+        "TESS TCE/DV products where eligible/available"
+      ],
+      "known_biases": "uncharacterized (source not acquired)",
+      "label_semantics": "undefined (source not acquired)",
+      "license_or_usage_status": "UNVERIFIED (no retrieval; verify at acquisition)",
+      "object_identity_mapping": "unassigned (assigned at dataset build under split policy)",
+      "raw_hashes": [],
+      "retrieval_date": "2026-09-28",
+      "retrieval_method": "local-corpus-probe v1 (filesystem scan; no network)",
+      "source_family": "CENTROID_DIAGNOSTICS",
+      "source_id": "COL-SRC-CENTROID_DIAGNOSTICS-001",
+      "source_version_or_release": "UNESTABLISHED (WP-1 scope: no retrieval)",
+      "split_restrictions": "n/a (unavailable)"
+    },
+    {
+      "acquisition_failure_reason": "no network acquisition in WP-1 scope; bulk materialization deferred under frozen registry to WP-4+",
+      "acquisition_status": "UNAVAILABLE_WITH_ARCHIVED_FAILURE",
+      "allowed_tasks": [],
+      "attempted_sources": [
+        "Gaia stellar/neighbour/context products",
+        "NASA Exoplanet Archive products"
+      ],
+      "known_biases": "uncharacterized (source not acquired)",
+      "label_semantics": "undefined (source not acquired)",
+      "license_or_usage_status": "UNVERIFIED (no retrieval; verify at acquisition)",
+      "object_identity_mapping": "unassigned (assigned at dataset build under split policy)",
+      "raw_hashes": [],
+      "retrieval_date": "2026-09-28",
+      "retrieval_method": "local-corpus-probe v1 (filesystem scan; no network)",
+      "source_family": "STELLAR_CATALOG",
+      "source_id": "COL-SRC-STELLAR_CATALOG-001",
+      "source_version_or_release": "UNESTABLISHED (WP-1 scope: no retrieval)",
+      "split_restrictions": "n/a (unavailable)"
+    },
+    {
+      "acquisition_failure_reason": "no network acquisition in WP-1 scope; bulk materialization deferred under frozen registry to WP-4+",
+      "acquisition_status": "UNAVAILABLE_WITH_ARCHIVED_FAILURE",
+      "allowed_tasks": [],
+      "attempted_sources": [
+        "Gaia stellar/neighbour/context products"
+      ],
+      "known_biases": "uncharacterized (source not acquired)",
+      "label_semantics": "undefined (source not acquired)",
+      "license_or_usage_status": "UNVERIFIED (no retrieval; verify at acquisition)",
+      "object_identity_mapping": "unassigned (assigned at dataset build under split policy)",
+      "raw_hashes": [],
+      "retrieval_date": "2026-09-28",
+      "retrieval_method": "local-corpus-probe v1 (filesystem scan; no network)",
+      "source_family": "NEIGHBOR_CONTAMINATION_CATALOG",
+      "source_id": "COL-SRC-NEIGHBOR_CONTAMINATION_CATALOG-001",
+      "source_version_or_release": "UNESTABLISHED (WP-1 scope: no retrieval)",
+      "split_restrictions": "n/a (unavailable)"
+    },
+    {
+      "acquisition_failure_reason": "no network acquisition in WP-1 scope; bulk materialization deferred under frozen registry to WP-4+",
+      "acquisition_status": "UNAVAILABLE_WITH_ARCHIVED_FAILURE",
+      "allowed_tasks": [],
+      "attempted_sources": [
+        "Kepler injection/recovery products"
+      ],
+      "known_biases": "uncharacterized (source not acquired)",
+      "label_semantics": "undefined (source not acquired)",
+      "license_or_usage_status": "UNVERIFIED (no retrieval; verify at acquisition)",
+      "object_identity_mapping": "unassigned (assigned at dataset build under split policy)",
+      "raw_hashes": [],
+      "retrieval_date": "2026-09-28",
+      "retrieval_method": "local-corpus-probe v1 (filesystem scan; no network)",
+      "source_family": "INJECTION_RECOVERY",
+      "source_id": "COL-SRC-INJECTION_RECOVERY-001",
+      "source_version_or_release": "UNESTABLISHED (WP-1 scope: no retrieval)",
+      "split_restrictions": "n/a (unavailable)"
+    },
+    {
+      "acquisition_failure_reason": "no network acquisition in WP-1 scope; bulk materialization deferred under frozen registry to WP-4+",
+      "acquisition_status": "UNAVAILABLE_WITH_ARCHIVED_FAILURE",
+      "allowed_tasks": [],
+      "attempted_sources": [
+        "Kepler inverted/scrambled false-alarm products"
+      ],
+      "known_biases": "uncharacterized (source not acquired)",
+      "label_semantics": "undefined (source not acquired)",
+      "license_or_usage_status": "UNVERIFIED (no retrieval; verify at acquisition)",
+      "object_identity_mapping": "unassigned (assigned at dataset build under split policy)",
+      "raw_hashes": [],
+      "retrieval_date": "2026-09-28",
+      "retrieval_method": "local-corpus-probe v1 (filesystem scan; no network)",
+      "source_family": "SCRAMBLED_FALSE_ALARM",
+      "source_id": "COL-SRC-SCRAMBLED_FALSE_ALARM-001",
+      "source_version_or_release": "UNESTABLISHED (WP-1 scope: no retrieval)",
+      "split_restrictions": "n/a (unavailable)"
+    },
+    {
+      "acquisition_failure_reason": "no network acquisition in WP-1 scope; bulk materialization deferred under frozen registry to WP-4+",
+      "acquisition_status": "UNAVAILABLE_WITH_ARCHIVED_FAILURE",
+      "allowed_tasks": [],
+      "attempted_sources": [
+        "Kepler inverted/scrambled false-alarm products"
+      ],
+      "known_biases": "uncharacterized (source not acquired)",
+      "label_semantics": "undefined (source not acquired)",
+      "license_or_usage_status": "UNVERIFIED (no retrieval; verify at acquisition)",
+      "object_identity_mapping": "unassigned (assigned at dataset build under split policy)",
+      "raw_hashes": [],
+      "retrieval_date": "2026-09-28",
+      "retrieval_method": "local-corpus-probe v1 (filesystem scan; no network)",
+      "source_family": "INVERTED_FALSE_ALARM",
+      "source_id": "COL-SRC-INVERTED_FALSE_ALARM-001",
+      "source_version_or_release": "UNESTABLISHED (WP-1 scope: no retrieval)",
+      "split_restrictions": "n/a (unavailable)"
+    },
+    {
+      "acquisition_failure_reason": "no network acquisition in WP-1 scope; bulk materialization deferred under frozen registry to WP-4+",
+      "acquisition_status": "UNAVAILABLE_WITH_ARCHIVED_FAILURE",
+      "allowed_tasks": [],
+      "attempted_sources": [
+        "MAST mission products",
+        "mission-quality/systematics metadata"
+      ],
+      "known_biases": "uncharacterized (source not acquired)",
+      "label_semantics": "undefined (source not acquired)",
+      "license_or_usage_status": "UNVERIFIED (no retrieval; verify at acquisition)",
+      "object_identity_mapping": "unassigned (assigned at dataset build under split policy)",
+      "raw_hashes": [],
+      "retrieval_date": "2026-09-28",
+      "retrieval_method": "local-corpus-probe v1 (filesystem scan; no network)",
+      "source_family": "PIPELINE_SYSTEMATIC",
+      "source_id": "COL-SRC-PIPELINE_SYSTEMATIC-001",
+      "source_version_or_release": "UNESTABLISHED (WP-1 scope: no retrieval)",
+      "split_restrictions": "n/a (unavailable)"
+    },
+    {
+      "acquisition_failure_reason": "no physics generator exists before WP-4; local probe found no simulation corpus",
+      "acquisition_status": "UNAVAILABLE_WITH_ARCHIVED_FAILURE",
+      "allowed_tasks": [],
+      "attempted_sources": [
+        "physically generated adversarial cases"
+      ],
+      "known_biases": "uncharacterized (source not acquired)",
+      "label_semantics": "undefined (source not acquired)",
+      "license_or_usage_status": "UNVERIFIED (no retrieval; verify at acquisition)",
+      "object_identity_mapping": "unassigned (assigned at dataset build under split policy)",
+      "raw_hashes": [],
+      "retrieval_date": "2026-09-28",
+      "retrieval_method": "local-corpus-probe v1 (filesystem scan; no network)",
+      "source_family": "SIMULATED_PHYSICS",
+      "source_id": "COL-SRC-SIMULATED_PHYSICS-001",
+      "source_version_or_release": "UNESTABLISHED (WP-1 scope: no retrieval)",
+      "split_restrictions": "n/a (unavailable)"
+    },
+    {
+      "acquisition_failure_reason": "teacher pipeline arrives in WP-5; no materialized scenarios exist yet",
+      "acquisition_status": "UNAVAILABLE_WITH_ARCHIVED_FAILURE",
+      "allowed_tasks": [],
+      "attempted_sources": [
+        "Muse-proposed scenario specifications materialized deterministically"
+      ],
+      "known_biases": "uncharacterized (source not acquired)",
+      "label_semantics": "undefined (source not acquired)",
+      "license_or_usage_status": "UNVERIFIED (no retrieval; verify at acquisition)",
+      "object_identity_mapping": "unassigned (assigned at dataset build under split policy)",
+      "raw_hashes": [],
+      "retrieval_date": "2026-09-28",
+      "retrieval_method": "local-corpus-probe v1 (filesystem scan; no network)",
+      "source_family": "TEACHER_PROPOSED_ADVERSARIAL",
+      "source_id": "COL-SRC-TEACHER_PROPOSED_ADVERSARIAL-001",
+      "source_version_or_release": "UNESTABLISHED (WP-1 scope: no retrieval)",
+      "split_restrictions": "n/a (unavailable)"
+    },
+    {
+      "acquisition_failure_reason": "n/a (ingested)",
+      "acquisition_status": "INGESTED",
+      "allowed_tasks": [],
+      "attempted_sources": [
+        "legacy snapshot (local)"
+      ],
+      "known_biases": "historical synthetic draws; parallel-classifier era; see ANTI_PATTERN_LEDGER.md",
+      "label_semantics": "LEGACY_HISTORICAL for all indexed fixtures (n=127)",
+      "license_or_usage_status": "UNVERIFIED (verify at use)",
+      "object_identity_mapping": "zip-relative paths; protected split identities assigned at dataset build",
+      "raw_hashes": [
+        "cf524060012b72aa84a6543038372133eb00ecb3817d91c34e43601138c49695"
+      ],
+      "retrieval_date": "2026-09-28",
+      "retrieval_method": "local snapshot hash + namelist index (no extraction)",
+      "source_family": "LEGACY_HISTORICAL",
+      "source_id": "COL-SRC-LEGACY-001",
+      "source_version_or_release": "Council-Of-Lords-main.zip@cf524060",
+      "split_restrictions": "object-level grouping required at use"
+    }
+  ],
+  "policy": "configs/datasets/wp1_acquisition_policy_v1.json",
+  "policy_sha256": "a8303ea06991e9684be7c8ba74acc4e20551eeba7acbab173c182b71bc67c36f",
+  "registry_version": "1.0.0"
+}
