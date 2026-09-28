@@ -37,6 +37,9 @@ RESULT = WORKPLAN_COVERAGE_PASS
 - Identifier sets compared: SEC 69, PHASE 31, GATE 22, THREAT 30, STOP 25, TEST 14, SCHEMA 17, TERM 10, ART 19, LABEL 9, DCLASS 9, LCONF 7, MUT 21, ADV 20, PCQ 8, DIAG 15, ACT 25, LORD 6, CLI 18, AUDQ 15, LPC 16, CPC 10, PC_OBLIG 20, WIT 12, Q 7, HOLD 8, TEACH 8, CLAIM 12 + MST_NA 5 + SPEC-CONFLICT-01. Counts derived from spec parse, not memory.
 - Spec conflicts: SPEC-CONFLICT-01 recorded (SPLAY header vs Council operative spec); MST LIQ0/MST0/candidate/bank/axis marked not_applicable with resolution, not silently dropped. No other conflicts; no underspecified-interface blocks at planning level (PC contract interfaces frozen in WP-2; if underspec emerges, record PREREG_INTERFACE_UNDERSPECIFIED and block consumer per Rule 14).
 - Scientific execution authorization: planning PASS; WP-0 entry gates satisfied (spec bytes present, remotes reachable). Execution authorized strictly in WP order after planning commit/push.
+- Planning commit: `1a08a03d7d892272a15b63489a69fc0fa1362e55` (14 files, 19560 insertions).
+- Push result: `3880b80..1a08a03 main -> main` to `https://github.com/InfernusReal/Council-of-Lords-PC.git` — PUSH OK.
+- Remote HEAD verified: `git ls-remote origin main` = `1a08a03d7d892272a15b63489a69fc0fa1362e55 refs/heads/main` — matches local HEAD.
 
 ---
 
@@ -56,10 +59,10 @@ RESULT = WORKPLAN_COVERAGE_PASS
 - Anti-overfitting evidence: legacy labeled historical from birth; no training.
 - Gate outputs: GATE-00/01 PENDING (planning commit is not the foundation pin; pin executes post-planning).
 - Coverage audit: PASS (planning scope).
-- Commit SHA: (to record on planning commit below).
-- Push result: (to record).
-- Remote-head verification: (to record via `git ls-remote origin main`).
-- WorkPlan-adherence verdict: (pending execution; planning files FOLLOWS WorkPlan.md by construction).
+- Commit SHA: `1a08a03d7d892272a15b63489a69fc0fa1362e55` (planning bundle).
+- Push result: PUSH OK (`3880b80..1a08a03 main -> main`).
+- Remote-head verification: VERIFIED (`git ls-remote origin main` == local HEAD).
+- WorkPlan-adherence verdict: FOLLOWS WorkPlan.md (planning files only; WP-0 execution pending next).
 
 ## WP-1 — Trusted data core — NOT_REACHED
 
