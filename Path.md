@@ -102,7 +102,9 @@ RESULT = WORKPLAN_COVERAGE_PASS
   role/ceiling, hardware constraints, vote prohibition, LLM-free runtime all preserved.
 - Explicit statement: WP-0 scientific execution has NOT started. No foundation pin, no training, no registry
   promotion, no runtime integration performed in this operation.
-- Repair commit SHA: (recorded below after push). Push result: (recorded below). Remote HEAD: (verified below).
+- Repair commit SHA: `c72d03fdfa1047aca6e98040b93bc63b75cd3b94` ("COL-PC-v1.0 close planning audit and dataset-source coverage", 9 files).
+  Push result: `1c012d5..c72d03f main -> main` to `https://github.com/InfernusReal/Council-of-Lords-PC.git` — PUSH OK.
+  Remote HEAD verified: `git ls-remote origin main` = `c72d03fdfa1047aca6e98040b93bc63b75cd3b94` — matches local HEAD.
 - Path verdict for this operation: FOLLOWS WorkPlan.md — PLANNING REPAIR CLOSED (pending commit/push verification).
 
 ---
