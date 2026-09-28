@@ -320,7 +320,11 @@ Exit: GATE-02 DATA_CORE_CERTIFIED + GATE-22 DATASET_SOURCE_COVERAGE_CLOSED.
 - Remaining: phase defects 0. Future work: WP-2..WP-8 NOT_STARTED. Blockers: none. N/A: HOLD/qualification/registry-write/runtime (later phases).
 - Claim-evidence pointers: "25/25" → pytest exit 0 | "GATE-02/22" → auditor outputs + closure JSON | "mutations caught" → nonzero/FAIL cases above | "gaps 0" → reconstruction + red-team above.
 - Final verdict: WP-1 = COMPLETE.
-- Commit/push/HEAD: recorded below after verification.
+- commit_sha: `0e34ebcb4f22b3df0371e7fc72f5e6e79bc421cd` (`COL-PC-v1.0 WP-1 data-core (PHASE-02/03/04, GATE-02/22)`, 37 files, +2048).
+  remote: `https://github.com/InfernusReal/Council-of-Lords-PC.git`;
+  push_result: `96ab2ba..0e34ebc main -> main` PUSH OK;
+  post_push_tree_state: `git ls-remote origin main` = `0e34ebc…` == local HEAD; tree clean.
+  (Recorded post-push; implementation files untouched so log inventory above still matches committed bytes.)
 
 - WorkPlan prescription: WorkPlan.md §WP-1 (PHASE-02/03/04; GATE-02; LightCurve/provenance/quality/preprocessing/splits).
 - Entry-gate status: BLOCKED until WP-0 GATE-00/01 PASSED.
