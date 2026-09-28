@@ -1,14 +1,14 @@
 # Path — COUNCIL-PC-v1.0 live execution ledger
 
 **Experiment:** `COUNCIL-PC-v1.0` (`COL-PC-v1.0`) | **Repo:** `InfernusReal/Council-of-Lords-PC`
-**Operative spec:** `IMPLEMENTATION_SPEC.md` SHA256 `766ecfaac5540be2f932bedc08a99981949aede7e32649ab33f7fa5a98908da6` (2864 lines)
+**Operative spec:** `IMPLEMENTATION_SPEC.md` SHA256 `9d4761e3cb656b0b4295a5ae4efcf08bc13058f00082577d5b92d406de1482e6` (2983 lines; pre-repair SHA `766ecfaa…8908da6`, 2864 lines — see planning-repair entry below)
 **Original spec:** `audits/COUNCIL-PC-v1.0_IMPLEMENTATION_SPEC_ORIGINAL.md` SHA256 `a9453d20079ace95d8227d0fed095398b4aa6de1d1265f61ba6fe1b4c5dbf0fb`
 **Migration audit:** `audits/PROVIDER_MIGRATION_AUDIT.md` PASS (OpenRouter->OpenCode, 3 lines)
 **SPLAY template (non-operative, preserved):** `audits/SPLAY-AM-MST-LIQ-v0.4_SPEC.txt` SHA256 `0E2C166E1B721DFC8A7E5327ED33AF29A1B4AC539CB71849F3C7231B32A8055B` — see SPEC-CONFLICT-01 in WorkPlan.md
 **Conceptual parent:** Perceptive Closure (local `Perception Closure/` + Downloads drafts; exact version pinned WP-0)
 **Legacy parent:** `InfernusReal/Council-Of-Lords` + `Downloads/Council-Of-Lords-main.zip` (5771 entries, archaeological only)
 **Teacher:** Muse Spark 1.3 Contributor through OpenCode, USD 25 ceiling
-**Plan:** `WorkPlan.md` (9 WPs) | **Inventory:** `planning/NORMATIVE_INVENTORY.yaml` (519 items) | **Coverage:** `planning/WORKPLAN_COVERAGE.yaml` | **Checker:** `scripts/check_workplan_coverage.py`
+**Plan:** `WorkPlan.md` (9 WPs) | **Inventory:** `planning/NORMATIVE_INVENTORY.yaml` (561 items canonical: 556 normative + 5 not_applicable) | **Coverage:** `planning/WORKPLAN_COVERAGE.yaml` | **Checker:** `scripts/check_workplan_coverage.py`
 
 Rule: update contemporaneously; never reconstruct from memory; superseded entries stay marked superseded.
 Each WP ends with an explicit verdict: `FOLLOWS WorkPlan.md` / `DEVIATION — VERSIONED AND JUSTIFIED` / `NONCOMPLIANT — BLOCKED`.
@@ -40,6 +40,70 @@ RESULT = WORKPLAN_COVERAGE_PASS
 - Planning commit: `1a08a03d7d892272a15b63489a69fc0fa1362e55` (14 files, 19560 insertions).
 - Push result: `3880b80..1a08a03 main -> main` to `https://github.com/InfernusReal/Council-of-Lords-PC.git` — PUSH OK.
 - Remote HEAD verified: `git ls-remote origin main` = `1a08a03d7d892272a15b63489a69fc0fa1362e55 refs/heads/main` — matches local HEAD.
+- Note: counts above (519/514) are SUPERSEDED by the planning-repair entry below; preserved here as history.
+
+## Planning repair — surgical planning-layer closure (no WP-0 execution)
+
+- Reason for repair: (1) canonical count terminology (inventory vs normative vs not_applicable);
+  (2) section-bounded source-line fidelity with fail-closed anchors + bounds invariant;
+  (3) newly authorized exhaustive/brutal dataset acquisition doctrine (Sec-15.6, 17 families,
+  14-field registry, 4 terminal states, COL-GATE-22, PHASE-04 expansion, WP-1 ownership);
+  (4) qualification-vs-authority wording correction (registry eligibility; authority licenses use).
+- Exact files changed: `IMPLEMENTATION_SPEC.md` (Sec-15.6 insertion, PHASE-04 line, COL-GATE-22 line,
+  doctrine wording line); `scripts/gen_normative_inventory.py` (section-bounded rewrite + 42 new IDs);
+  `scripts/gen_workplan_coverage.py` (GATE-22→WP-1, 6 new categories, PHASE-04 anchoring, WP-1 files);
+  `scripts/check_workplan_coverage.py` (bounds invariant, canonical counts, doctrine presence);
+  `planning/NORMATIVE_INVENTORY.yaml` + `planning/WORKPLAN_COVERAGE.yaml` (regenerated);
+  `WorkPlan.md` (canonical counts, WP-1 expansion, GATE-22, doctrine wording, appendix);
+  `audits/WORKPLAN_SEMANTIC_CLOSURE_AUDIT.md` (new); `Path.md` (this entry).
+- Old operative spec SHA: `766ecfaac5540be2f932bedc08a99981949aede7e32649ab33f7fa5a98908da6` (2864 lines).
+- New operative spec SHA: `9d4761e3cb656b0b4295a5ae4efcf08bc13058f00082577d5b92d406de1482e6` (2983 lines).
+- Inventory count before/after: 519 → 561. Normative before/after: 514 → 556.
+  Not_applicable before/after: 5 → 5 (unchanged members).
+- Source-pointer repair summary: generator lookups now bounded to declared Sec-N line ranges with
+  exact/full-phrase anchors and fail-closed behavior (no line-0/unrelated-line fallback); 3 fidelity
+  corrections documented (HOLD-07→Sec-42, HOLD-08→Sec-40, TEACH-08→Sec-52); all other items retain
+  sections; checker asserts every numbered-section pointer lies within its section bounds.
+- New dataset acquisition doctrine summary: `Acquire broadly, provenance everything, train selectively,
+  test brutally.` Frozen registry (17 families minimum, 14-field entries, attempt-without-asserting-availability
+  over Kepler/K2/TESS/MAST/Archive/Gaia/quality/adversarial/teacher families); exactly-one-terminal-state
+  per entry (INGESTED / INCOMPATIBLE_WITH_DOCUMENTED_REASON / UNAVAILABLE_WITH_ARCHIVED_FAILURE /
+  EXCLUDED_BY_FROZEN_POLICY); DATASET_SOURCE_COVERAGE_CLOSED = coverage closure of the frozen registry
+  (not "all downloaded"); WP-1 ships framework + registry + closure mechanism, bulky bytes stay out of git.
+- New/changed normative IDs: COL-GATE-22; COL-SRC-DOCTRINE/ATTEMPT/NOSILENT/REGISTRY; COL-SRC-FAM-01..17;
+  COL-SRC-FIELD-01..14; COL-SRC-STATUS-01..04; CLAIM split 12→14 (auth vs calib lines).
+- Checker outputs:
+```text
+INVENTORY_ITEMS_TOTAL = 561
+NORMATIVE_ITEMS_TOTAL = 556
+NOT_APPLICABLE_ITEMS_TOTAL = 5
+MAPPED_ITEMS_TOTAL = 556
+UNMAPPED = 0
+UNKNOWN_MAPPINGS = 0
+SOURCE_POINTER_ERRORS = 0
+PHASE_OWNERSHIP_ERRORS = 0
+THEOREM_OWNERSHIP_ERRORS = 0
+GATE_ERRORS = 0
+THREAT_CONTROL_ERRORS = 0
+STOP_CONTROL_ERRORS = 0
+FIRST_CONSUMER_ERRORS = 0
+HOLDOUT_ORDER_ERRORS = 0
+CLAIM_POLICY_ERRORS = 0
+DATASET_SOURCE_DOCTRINE_PRESENT = TRUE
+DATASET_SOURCE_COVERAGE_GATE_PRESENT = TRUE
+RESULT = WORKPLAN_COVERAGE_PASS
+```
+- Independent audit outputs: section/gate/threat/stop/phase counts cross-checked by direct spec grep vs
+  inventory vs coverage (see verification commands below); source-line bounds spot-verified; holdout
+  ordering (freeze GATE-12 before reveal GATE-13; registry seal GATE-15 before runtime WP-7) confirmed.
+- Closure-audit result: `audits/WORKPLAN_SEMANTIC_CLOSURE_AUDIT.md` — 26/26 rows PASS, `WORKPLAN_SEMANTIC_CLOSURE = PASS`.
+- Deviations: HOLD-07/HOLD-08/TEACH-08 source-section corrections (justified above; all else retained).
+  No scientific/runtime architecture altered; 9-WP structure, PC semantics, holdout firewall, teacher
+  role/ceiling, hardware constraints, vote prohibition, LLM-free runtime all preserved.
+- Explicit statement: WP-0 scientific execution has NOT started. No foundation pin, no training, no registry
+  promotion, no runtime integration performed in this operation.
+- Repair commit SHA: (recorded below after push). Push result: (recorded below). Remote HEAD: (verified below).
+- Path verdict for this operation: FOLLOWS WorkPlan.md — PLANNING REPAIR CLOSED (pending commit/push verification).
 
 ---
 

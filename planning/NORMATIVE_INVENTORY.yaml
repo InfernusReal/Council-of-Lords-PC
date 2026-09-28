@@ -1,10 +1,10 @@
 # NORMATIVE_INVENTORY for COUNCIL-PC-v1.0
 # operative_spec: IMPLEMENTATION_SPEC.md
-# operative_sha256: 766ecfaac5540be2f932bedc08a99981949aede7e32649ab33f7fa5a98908da6
-# original_sha256: a9453d20079ace95d8227d0fed095398b4aa6de1d1265f61ba6fe1b4c5dbf0fb
-# provider_migration: OpenRouter->OpenCode (3 literal lines, audit PASS)
-# total_lines: 2864
-# generated_by: scripts/gen_normative_inventory.py (deterministic)
+# operative_sha256: 9d4761e3cb656b0b4295a5ae4efcf08bc13058f00082577d5b92d406de1482e6
+# provider_migration: OpenRouter->OpenCode (3 literal lines, audit PASS; see audits/PROVIDER_MIGRATION_AUDIT.md)
+# planning_mutation: Sec-15.6 exhaustive source-acquisition doctrine + COL-GATE-22 + registry-eligibility wording
+# total_lines: 2983
+# generated_by: scripts/gen_normative_inventory.py (deterministic, section-bounded anchors)
 metadata:
   experiment: COUNCIL-PC-v1.0
   short_name: COL-PC-v1.0
@@ -12,15 +12,18 @@ metadata:
   conceptual_parent: PERCEPTIVE CLOSURE: IDENTIFYING AUTHORIZATION-RESOURCE COUNTERFACTUALS
   legacy_parent: InfernusReal/Council-Of-Lords (archaeological reference only)
   teacher: Muse Spark 1.3 Contributor through OpenCode
-  operative_spec_sha256: 766ecfaac5540be2f932bedc08a99981949aede7e32649ab33f7fa5a98908da6
-  spec_lines: 2864
-  total_items: 519
+  operative_spec_sha256: 9d4761e3cb656b0b4295a5ae4efcf08bc13058f00082577d5b92d406de1482e6
+  spec_lines: 2983
+  inventory_items_total: 561
+  normative_items_total: 556
+  not_applicable_items_total: 5
 items:
   - id: SEC-00
     category: spec_section
     source_section: Sec-0
     source_file: IMPLEMENTATION_SPEC.md
     source_line: 33
+    source_anchor: "# 0."
     description: "Spec section 0: Standing scientific rule"
     status: normative
   - id: SEC-01
@@ -28,6 +31,7 @@ items:
     source_section: Sec-1
     source_file: IMPLEMENTATION_SPEC.md
     source_line: 84
+    source_anchor: "# 1."
     description: "Spec section 1: Purpose"
     status: normative
   - id: SEC-02
@@ -35,6 +39,7 @@ items:
     source_section: Sec-2
     source_file: IMPLEMENTATION_SPEC.md
     source_line: 142
+    source_anchor: "# 2."
     description: "Spec section 2: Non-goals"
     status: normative
   - id: SEC-03
@@ -42,6 +47,7 @@ items:
     source_section: Sec-3
     source_file: IMPLEMENTATION_SPEC.md
     source_line: 173
+    source_anchor: "# 3."
     description: "Spec section 3: Architectural parents and frozen source roles"
     status: normative
   - id: SEC-04
@@ -49,6 +55,7 @@ items:
     source_section: Sec-4
     source_file: IMPLEMENTATION_SPEC.md
     source_line: 249
+    source_anchor: "# 4."
     description: "Spec section 4: Core PC object for Council"
     status: normative
   - id: SEC-05
@@ -56,6 +63,7 @@ items:
     source_section: Sec-5
     source_file: IMPLEMENTATION_SPEC.md
     source_line: 291
+    source_anchor: "# 5."
     description: "Spec section 5: Target-relative closure"
     status: normative
   - id: SEC-06
@@ -63,6 +71,7 @@ items:
     source_section: Sec-6
     source_file: IMPLEMENTATION_SPEC.md
     source_line: 325
+    source_anchor: "# 6."
     description: "Spec section 6: Evidence admission H: the custom catalogue becomes an evolving object"
     status: normative
   - id: SEC-07
@@ -70,6 +79,7 @@ items:
     source_section: Sec-7
     source_file: IMPLEMENTATION_SPEC.md
     source_line: 447
+    source_anchor: "# 7."
     description: "Spec section 7: Representation P_R: the red-flag layer becomes certificate refinement"
     status: normative
   - id: SEC-08
@@ -77,6 +87,7 @@ items:
     source_section: Sec-8
     source_file: IMPLEMENTATION_SPEC.md
     source_line: 486
+    source_anchor: "# 8."
     description: "Spec section 8: Epistemic authority Lambda"
     status: normative
   - id: SEC-09
@@ -84,6 +95,7 @@ items:
     source_section: Sec-9
     source_file: IMPLEMENTATION_SPEC.md
     source_line: 512
+    source_anchor: "# 9."
     description: "Spec section 9: Source-atomic actions and touch derivation"
     status: normative
   - id: SEC-10
@@ -91,6 +103,7 @@ items:
     source_section: Sec-10
     source_file: IMPLEMENTATION_SPEC.md
     source_line: 543
+    source_anchor: "# 10."
     description: "Spec section 10: Initial action vocabulary"
     status: normative
   - id: SEC-11
@@ -98,6 +111,7 @@ items:
     source_section: Sec-11
     source_file: IMPLEMENTATION_SPEC.md
     source_line: 583
+    source_anchor: "# 11."
     description: "Spec section 11: Specialist principle"
     status: normative
   - id: SEC-12
@@ -105,6 +119,7 @@ items:
     source_section: Sec-12
     source_file: IMPLEMENTATION_SPEC.md
     source_line: 621
+    source_anchor: "# 12."
     description: "Spec section 12: Initial Lord roster"
     status: normative
   - id: SEC-13
@@ -112,6 +127,7 @@ items:
     source_section: Sec-13
     source_file: IMPLEMENTATION_SPEC.md
     source_line: 642
+    source_anchor: "# 13."
     description: "Spec section 13: Hardware and model-size contract"
     status: normative
   - id: SEC-14
@@ -119,6 +135,7 @@ items:
     source_section: Sec-14
     source_file: IMPLEMENTATION_SPEC.md
     source_line: 686
+    source_anchor: "# 14."
     description: "Spec section 14: COL Forge"
     status: normative
   - id: SEC-15
@@ -126,1679 +143,1927 @@ items:
     source_section: Sec-15
     source_file: IMPLEMENTATION_SPEC.md
     source_line: 716
+    source_anchor: "# 15."
     description: "Spec section 15: Dataset Factory"
     status: normative
   - id: SEC-16
     category: spec_section
     source_section: Sec-16
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 802
+    source_line: 920
+    source_anchor: "# 16."
     description: "Spec section 16: Raw light-curve preservation"
     status: normative
   - id: SEC-17
     category: spec_section
     source_section: Sec-17
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 825
+    source_line: 943
+    source_anchor: "# 17."
     description: "Spec section 17: Task Factory"
     status: normative
   - id: SEC-18
     category: spec_section
     source_section: Sec-18
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 878
+    source_line: 996
+    source_anchor: "# 18."
     description: "Spec section 18: SpecialistSpec"
     status: normative
   - id: SEC-19
     category: spec_section
     source_section: Sec-19
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 913
+    source_line: 1031
+    source_anchor: "# 19."
     description: "Spec section 19: Training engine"
     status: normative
   - id: SEC-20
     category: spec_section
     source_section: Sec-20
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 974
+    source_line: 1092
+    source_anchor: "# 20."
     description: "Spec section 20: Hyperparameter search"
     status: normative
   - id: SEC-21
     category: spec_section
     source_section: Sec-21
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 999
+    source_line: 1117
+    source_anchor: "# 21."
     description: "Spec section 21: Calibration"
     status: normative
   - id: SEC-22
     category: spec_section
     source_section: Sec-22
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1030
+    source_line: 1148
+    source_anchor: "# 22."
     description: "Spec section 22: Abstention"
     status: normative
   - id: SEC-23
     category: spec_section
     source_section: Sec-23
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1060
+    source_line: 1178
+    source_anchor: "# 23."
     description: "Spec section 23: Qualification"
     status: normative
   - id: SEC-24
     category: spec_section
     source_section: Sec-24
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1130
+    source_line: 1248
+    source_anchor: "# 24."
     description: "Spec section 24: Capability map"
     status: normative
   - id: SEC-25
     category: spec_section
     source_section: Sec-25
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1161
+    source_line: 1279
+    source_anchor: "# 25."
     description: "Spec section 25: Runtime reliability function"
     status: normative
   - id: SEC-26
     category: spec_section
     source_section: Sec-26
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1194
+    source_line: 1312
+    source_anchor: "# 26."
     description: "Spec section 26: COL Registry"
     status: normative
   - id: SEC-27
     category: spec_section
     source_section: Sec-27
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1223
+    source_line: 1341
+    source_anchor: "# 27."
     description: "Spec section 27: Specialist runtime interface"
     status: normative
   - id: SEC-28
     category: spec_section
     source_section: Sec-28
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1261
+    source_line: 1379
+    source_anchor: "# 28."
     description: "Spec section 28: PC resource views in training"
     status: normative
   - id: SEC-29
     category: spec_section
     source_section: Sec-29
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1300
+    source_line: 1418
+    source_anchor: "# 29."
     description: "Spec section 29: Muse Spark teacher subsystem"
     status: normative
   - id: SEC-30
     category: spec_section
     source_section: Sec-30
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1379
+    source_line: 1497
+    source_anchor: "# 30."
     description: "Spec section 30: Teacher-generated adversarial scenarios"
     status: normative
   - id: SEC-31
     category: spec_section
     source_section: Sec-31
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1418
+    source_line: 1536
+    source_anchor: "# 31."
     description: "Spec section 31: Teacher-assisted failure discovery"
     status: normative
   - id: SEC-32
     category: spec_section
     source_section: Sec-32
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1448
+    source_line: 1566
+    source_anchor: "# 32."
     description: "Spec section 32: Runtime Council Engine"
     status: normative
   - id: SEC-33
     category: spec_section
     source_section: Sec-33
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1512
+    source_line: 1630
+    source_anchor: "# 33."
     description: "Spec section 33: Controller semantics"
     status: normative
   - id: SEC-34
     category: spec_section
     source_section: Sec-34
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1546
+    source_line: 1664
+    source_anchor: "# 34."
     description: "Spec section 34: Action cost"
     status: normative
   - id: SEC-35
     category: spec_section
     source_section: Sec-35
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1569
+    source_line: 1687
+    source_anchor: "# 35."
     description: "Spec section 35: Closure cost and freeze geometry"
     status: normative
   - id: SEC-36
     category: spec_section
     source_section: Sec-36
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1617
+    source_line: 1735
+    source_anchor: "# 36."
     description: "Spec section 36: Mandatory PC evaluation questions"
     status: normative
   - id: SEC-37
     category: spec_section
     source_section: Sec-37
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1634
+    source_line: 1752
+    source_anchor: "# 37."
     description: "Spec section 37: Identification gate"
     status: normative
   - id: SEC-38
     category: spec_section
     source_section: Sec-38
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1662
+    source_line: 1780
+    source_anchor: "# 38."
     description: "Spec section 38: Independent touch reconstruction"
     status: normative
   - id: SEC-39
     category: spec_section
     source_section: Sec-39
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1677
+    source_line: 1795
+    source_anchor: "# 39."
     description: "Spec section 39: Red-flag diagnostic library"
     status: normative
   - id: SEC-40
     category: spec_section
     source_section: Sec-40
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1718
+    source_line: 1836
+    source_anchor: "# 40."
     description: "Spec section 40: Adversarial corpus"
     status: normative
   - id: SEC-41
     category: spec_section
     source_section: Sec-41
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1755
+    source_line: 1873
+    source_anchor: "# 41."
     description: "Spec section 41: Fresh holdout policy"
     status: normative
   - id: SEC-42
     category: spec_section
     source_section: Sec-42
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1779
+    source_line: 1897
+    source_anchor: "# 42."
     description: "Spec section 42: Historical-vs-fresh labels"
     status: normative
   - id: SEC-43
     category: spec_section
     source_section: Sec-43
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1799
+    source_line: 1917
+    source_anchor: "# 43."
     description: "Spec section 43: Mutation controls"
     status: normative
   - id: SEC-44
     category: spec_section
     source_section: Sec-44
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1831
+    source_line: 1949
+    source_anchor: "# 44."
     description: "Spec section 44: Threat matrix"
     status: normative
   - id: SEC-45
     category: spec_section
     source_section: Sec-45
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1870
+    source_line: 1988
+    source_anchor: "# 45."
     description: "Spec section 45: Stop conditions"
     status: normative
   - id: SEC-46
     category: spec_section
     source_section: Sec-46
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1902
+    source_line: 2020
+    source_anchor: "# 46."
     description: "Spec section 46: Work packages"
     status: normative
   - id: SEC-47
     category: spec_section
     source_section: Sec-47
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2164
+    source_line: 2282
+    source_anchor: "# 47."
     description: "Spec section 47: Normative phase map"
     status: normative
   - id: SEC-48
     category: spec_section
     source_section: Sec-48
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2204
+    source_line: 2322
+    source_anchor: "# 48."
     description: "Spec section 48: Gate ladder"
     status: normative
   - id: SEC-49
     category: spec_section
     source_section: Sec-49
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2235
+    source_line: 2354
+    source_anchor: "# 49."
     description: "Spec section 49: Legacy migration policy"
     status: normative
   - id: SEC-50
     category: spec_section
     source_section: Sec-50
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2284
+    source_line: 2403
+    source_anchor: "# 50."
     description: "Spec section 50: Legacy anti-pattern findings"
     status: normative
   - id: SEC-51
     category: spec_section
     source_section: Sec-51
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2302
+    source_line: 2421
+    source_anchor: "# 51."
     description: "Spec section 51: Reproducibility and sealing"
     status: normative
   - id: SEC-52
     category: spec_section
     source_section: Sec-52
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2336
+    source_line: 2455
+    source_anchor: "# 52."
     description: "Spec section 52: Secrets and external services"
     status: normative
   - id: SEC-53
     category: spec_section
     source_section: Sec-53
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2357
+    source_line: 2476
+    source_anchor: "# 53."
     description: "Spec section 53: Recommended dependency policy"
     status: normative
   - id: SEC-54
     category: spec_section
     source_section: Sec-54
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2390
+    source_line: 2509
+    source_anchor: "# 54."
     description: "Spec section 54: Test classes"
     status: normative
   - id: SEC-55
     category: spec_section
     source_section: Sec-55
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2415
+    source_line: 2534
+    source_anchor: "# 55."
     description: "Spec section 55: CLI surface"
     status: normative
   - id: SEC-56
     category: spec_section
     source_section: Sec-56
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2446
+    source_line: 2565
+    source_anchor: "# 56."
     description: "Spec section 56: Runtime report"
     status: normative
   - id: SEC-57
     category: spec_section
     source_section: Sec-57
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2474
+    source_line: 2593
+    source_anchor: "# 57."
     description: "Spec section 57: Optional API"
     status: normative
   - id: SEC-58
     category: spec_section
     source_section: Sec-58
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2495
+    source_line: 2614
+    source_anchor: "# 58."
     description: "Spec section 58: Optional frontend"
     status: normative
   - id: SEC-59
     category: spec_section
     source_section: Sec-59
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2521
+    source_line: 2640
+    source_anchor: "# 59."
     description: "Spec section 59: Initial implementation priorities"
     status: normative
   - id: SEC-60
     category: spec_section
     source_section: Sec-60
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2551
+    source_line: 2670
+    source_anchor: "# 60."
     description: "Spec section 60: Initial baselines"
     status: normative
   - id: SEC-61
     category: spec_section
     source_section: Sec-61
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2567
+    source_line: 2686
+    source_anchor: "# 61."
     description: "Spec section 61: Promotion criteria for a Lord"
     status: normative
   - id: SEC-62
     category: spec_section
     source_section: Sec-62
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2594
+    source_line: 2713
+    source_anchor: "# 62."
     description: "Spec section 62: Council candidate promotion criteria"
     status: normative
   - id: SEC-63
     category: spec_section
     source_section: Sec-63
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2613
+    source_line: 2732
+    source_anchor: "# 63."
     description: "Spec section 63: Terminal states"
     status: normative
   - id: SEC-64
     category: spec_section
     source_section: Sec-64
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2638
+    source_line: 2757
+    source_anchor: "# 64."
     description: "Spec section 64: Architecture-successor rule"
     status: normative
   - id: SEC-65
     category: spec_section
     source_section: Sec-65
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2662
+    source_line: 2781
+    source_anchor: "# 65."
     description: "Spec section 65: Formal repository layout"
     status: normative
   - id: SEC-66
     category: spec_section
     source_section: Sec-66
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2761
+    source_line: 2880
+    source_anchor: "# 66."
     description: "Spec section 66: Initial schemas to freeze"
     status: normative
   - id: SEC-67
     category: spec_section
     source_section: Sec-67
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2789
+    source_line: 2908
+    source_anchor: "# 67."
     description: "Spec section 67: Final audit questions"
     status: normative
   - id: SEC-68
     category: spec_section
     source_section: Sec-68
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2815
+    source_line: 2934
+    source_anchor: "# 68."
     description: "Spec section 68: Final implementation doctrine"
     status: normative
   - id: PHASE-00
     category: phase
     source_section: Sec-47
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2167
+    source_line: 2285
+    source_anchor: "PHASE 00"
     description: "Normative phase 00 per phase map"
     status: normative
   - id: PHASE-01
     category: phase
     source_section: Sec-47
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2168
+    source_line: 2286
+    source_anchor: "PHASE 01"
     description: "Normative phase 01 per phase map"
     status: normative
   - id: PHASE-02
     category: phase
     source_section: Sec-47
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2169
+    source_line: 2287
+    source_anchor: "PHASE 02"
     description: "Normative phase 02 per phase map"
     status: normative
   - id: PHASE-03
     category: phase
     source_section: Sec-47
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2170
+    source_line: 2288
+    source_anchor: "PHASE 03"
     description: "Normative phase 03 per phase map"
     status: normative
   - id: PHASE-04
     category: phase
     source_section: Sec-47
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2171
+    source_line: 2289
+    source_anchor: "PHASE 04"
     description: "Normative phase 04 per phase map"
     status: normative
   - id: PHASE-05
     category: phase
     source_section: Sec-47
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2172
+    source_line: 2290
+    source_anchor: "PHASE 05"
     description: "Normative phase 05 per phase map"
     status: normative
   - id: PHASE-06
     category: phase
     source_section: Sec-47
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2173
+    source_line: 2291
+    source_anchor: "PHASE 06"
     description: "Normative phase 06 per phase map"
     status: normative
   - id: PHASE-07
     category: phase
     source_section: Sec-47
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2174
+    source_line: 2292
+    source_anchor: "PHASE 07"
     description: "Normative phase 07 per phase map"
     status: normative
   - id: PHASE-08
     category: phase
     source_section: Sec-47
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2175
+    source_line: 2293
+    source_anchor: "PHASE 08"
     description: "Normative phase 08 per phase map"
     status: normative
   - id: PHASE-09
     category: phase
     source_section: Sec-47
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2176
+    source_line: 2294
+    source_anchor: "PHASE 09"
     description: "Normative phase 09 per phase map"
     status: normative
   - id: PHASE-10
     category: phase
     source_section: Sec-47
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2177
+    source_line: 2295
+    source_anchor: "PHASE 10"
     description: "Normative phase 10 per phase map"
     status: normative
   - id: PHASE-11
     category: phase
     source_section: Sec-47
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2178
+    source_line: 2296
+    source_anchor: "PHASE 11"
     description: "Normative phase 11 per phase map"
     status: normative
   - id: PHASE-12
     category: phase
     source_section: Sec-47
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2179
+    source_line: 2297
+    source_anchor: "PHASE 12"
     description: "Normative phase 12 per phase map"
     status: normative
   - id: PHASE-13
     category: phase
     source_section: Sec-47
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2180
+    source_line: 2298
+    source_anchor: "PHASE 13"
     description: "Normative phase 13 per phase map"
     status: normative
   - id: PHASE-14
     category: phase
     source_section: Sec-47
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2181
+    source_line: 2299
+    source_anchor: "PHASE 14"
     description: "Normative phase 14 per phase map"
     status: normative
   - id: PHASE-15
     category: phase
     source_section: Sec-47
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2182
+    source_line: 2300
+    source_anchor: "PHASE 15"
     description: "Normative phase 15 per phase map"
     status: normative
   - id: PHASE-16
     category: phase
     source_section: Sec-47
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2183
+    source_line: 2301
+    source_anchor: "PHASE 16"
     description: "Normative phase 16 per phase map"
     status: normative
   - id: PHASE-17
     category: phase
     source_section: Sec-47
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2184
+    source_line: 2302
+    source_anchor: "PHASE 17"
     description: "Normative phase 17 per phase map"
     status: normative
   - id: PHASE-18
     category: phase
     source_section: Sec-47
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2185
+    source_line: 2303
+    source_anchor: "PHASE 18"
     description: "Normative phase 18 per phase map"
     status: normative
   - id: PHASE-19
     category: phase
     source_section: Sec-47
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2186
+    source_line: 2304
+    source_anchor: "PHASE 19"
     description: "Normative phase 19 per phase map"
     status: normative
   - id: PHASE-20
     category: phase
     source_section: Sec-47
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2187
+    source_line: 2305
+    source_anchor: "PHASE 20"
     description: "Normative phase 20 per phase map"
     status: normative
   - id: PHASE-21
     category: phase
     source_section: Sec-47
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2188
+    source_line: 2306
+    source_anchor: "PHASE 21"
     description: "Normative phase 21 per phase map"
     status: normative
   - id: PHASE-22
     category: phase
     source_section: Sec-47
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2189
+    source_line: 2307
+    source_anchor: "PHASE 22"
     description: "Normative phase 22 per phase map"
     status: normative
   - id: PHASE-23
     category: phase
     source_section: Sec-47
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2190
+    source_line: 2308
+    source_anchor: "PHASE 23"
     description: "Normative phase 23 per phase map"
     status: normative
   - id: PHASE-24
     category: phase
     source_section: Sec-47
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2191
+    source_line: 2309
+    source_anchor: "PHASE 24"
     description: "Normative phase 24 per phase map"
     status: normative
   - id: PHASE-25
     category: phase
     source_section: Sec-47
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2192
+    source_line: 2310
+    source_anchor: "PHASE 25"
     description: "Normative phase 25 per phase map"
     status: normative
   - id: PHASE-26
     category: phase
     source_section: Sec-47
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2193
+    source_line: 2311
+    source_anchor: "PHASE 26"
     description: "Normative phase 26 per phase map"
     status: normative
   - id: PHASE-27
     category: phase
     source_section: Sec-47
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2194
+    source_line: 2312
+    source_anchor: "PHASE 27"
     description: "Normative phase 27 per phase map"
     status: normative
   - id: PHASE-28
     category: phase
     source_section: Sec-47
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2195
+    source_line: 2313
+    source_anchor: "PHASE 28"
     description: "Normative phase 28 per phase map"
     status: normative
   - id: PHASE-29
     category: phase
     source_section: Sec-47
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2196
+    source_line: 2314
+    source_anchor: "PHASE 29"
     description: "Normative phase 29 per phase map"
     status: normative
   - id: PHASE-30
     category: phase
     source_section: Sec-47
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2197
+    source_line: 2315
+    source_anchor: "PHASE 30"
     description: "Normative phase 30 per phase map"
     status: normative
   - id: WP-0
     category: work_package
     source_section: Sec-46
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1906
+    source_line: 2024
+    source_anchor: "## WP-0"
     description: "Work package WP-0 per Sec-46"
     status: normative
   - id: WP-1
     category: work_package
     source_section: Sec-46
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1939
+    source_line: 2057
+    source_anchor: "## WP-1"
     description: "Work package WP-1 per Sec-46"
     status: normative
   - id: WP-2
     category: work_package
     source_section: Sec-46
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1971
+    source_line: 2089
+    source_anchor: "## WP-2"
     description: "Work package WP-2 per Sec-46"
     status: normative
   - id: WP-3
     category: work_package
     source_section: Sec-46
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2013
+    source_line: 2131
+    source_anchor: "## WP-3"
     description: "Work package WP-3 per Sec-46"
     status: normative
   - id: WP-4
     category: work_package
     source_section: Sec-46
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2040
+    source_line: 2158
+    source_anchor: "## WP-4"
     description: "Work package WP-4 per Sec-46"
     status: normative
   - id: WP-5
     category: work_package
     source_section: Sec-46
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2066
+    source_line: 2184
+    source_anchor: "## WP-5"
     description: "Work package WP-5 per Sec-46"
     status: normative
   - id: WP-6
     category: work_package
     source_section: Sec-46
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2091
+    source_line: 2209
+    source_anchor: "## WP-6"
     description: "Work package WP-6 per Sec-46"
     status: normative
   - id: WP-7
     category: work_package
     source_section: Sec-46
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2118
+    source_line: 2236
+    source_anchor: "## WP-7"
     description: "Work package WP-7 per Sec-46"
     status: normative
   - id: WP-8
     category: work_package
     source_section: Sec-46
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2140
+    source_line: 2258
+    source_anchor: "## WP-8"
     description: "Work package WP-8 per Sec-46"
     status: normative
   - id: COL-GATE-00
     category: gate
     source_section: Sec-48
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2207
+    source_line: 2325
+    source_anchor: "COL-GATE-00"
     description: "Gate FOUNDATION_FROZEN"
     status: normative
   - id: COL-GATE-01
     category: gate
     source_section: Sec-48
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2208
+    source_line: 2326
+    source_anchor: "COL-GATE-01"
     description: "Gate LEGACY_ARCHAEOLOGY_COMPLETE"
     status: normative
   - id: COL-GATE-02
     category: gate
     source_section: Sec-48
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2209
+    source_line: 2327
+    source_anchor: "COL-GATE-02"
     description: "Gate DATA_CORE_CERTIFIED"
     status: normative
   - id: COL-GATE-03
     category: gate
     source_section: Sec-48
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2210
+    source_line: 2328
+    source_anchor: "COL-GATE-03"
     description: "Gate DATASET_FACTORY_CERTIFIED"
     status: normative
   - id: COL-GATE-04
     category: gate
     source_section: Sec-48
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2211
+    source_line: 2329
+    source_anchor: "COL-GATE-04"
     description: "Gate PC_CORE_CERTIFIED"
     status: normative
   - id: COL-GATE-05
     category: gate
     source_section: Sec-48
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2212
+    source_line: 2330
+    source_anchor: "COL-GATE-05"
     description: "Gate TOUCH_DERIVATION_INDEPENDENT_AGREEMENT"
     status: normative
   - id: COL-GATE-06
     category: gate
     source_section: Sec-48
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2213
+    source_line: 2331
+    source_anchor: "COL-GATE-06"
     description: "Gate CATALOGUE_ENGINE_CERTIFIED"
     status: normative
   - id: COL-GATE-07
     category: gate
     source_section: Sec-48
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2214
+    source_line: 2332
+    source_anchor: "COL-GATE-07"
     description: "Gate REPRESENTATION_ENGINE_CERTIFIED"
     status: normative
   - id: COL-GATE-08
     category: gate
     source_section: Sec-48
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2215
+    source_line: 2333
+    source_anchor: "COL-GATE-08"
     description: "Gate FORGE_OPERATIONAL"
     status: normative
   - id: COL-GATE-09
     category: gate
     source_section: Sec-48
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2216
+    source_line: 2334
+    source_anchor: "COL-GATE-09"
     description: "Gate CALIBRATION_PIPELINE_CERTIFIED"
     status: normative
   - id: COL-GATE-10
     category: gate
     source_section: Sec-48
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2217
+    source_line: 2335
+    source_anchor: "COL-GATE-10"
     description: "Gate QUALIFICATION_HARNESS_CERTIFIED"
     status: normative
   - id: COL-GATE-11
     category: gate
     source_section: Sec-48
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2218
+    source_line: 2336
+    source_anchor: "COL-GATE-11"
     description: "Gate TEACHER_PIPELINE_CERTIFIED"
     status: normative
   - id: COL-GATE-12
     category: gate
     source_section: Sec-48
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2219
+    source_line: 2337
+    source_anchor: "COL-GATE-12"
     description: "Gate SPECIALIST_CANDIDATE_SET_FROZEN"
     status: normative
   - id: COL-GATE-13
     category: gate
     source_section: Sec-48
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2220
+    source_line: 2338
+    source_anchor: "COL-GATE-13"
     description: "Gate FRESH_HOLDOUT_REVEALED_ONCE"
     status: normative
   - id: COL-GATE-14
     category: gate
     source_section: Sec-48
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2221
+    source_line: 2339
+    source_anchor: "COL-GATE-14"
     description: "Gate INITIAL_LORDS_QUALIFIED"
     status: normative
   - id: COL-GATE-15
     category: gate
     source_section: Sec-48
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2222
+    source_line: 2340
+    source_anchor: "COL-GATE-15"
     description: "Gate REGISTRY_SEALED"
     status: normative
   - id: COL-GATE-16
     category: gate
     source_section: Sec-48
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2223
+    source_line: 2341
+    source_anchor: "COL-GATE-16"
     description: "Gate COUNCIL_RUNTIME_CERTIFIED"
     status: normative
   - id: COL-GATE-17
     category: gate
     source_section: Sec-48
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2224
+    source_line: 2342
+    source_anchor: "COL-GATE-17"
     description: "Gate RESOURCE_VIEW_AUDIT_PASSED"
     status: normative
   - id: COL-GATE-18
     category: gate
     source_section: Sec-48
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2225
+    source_line: 2343
+    source_anchor: "COL-GATE-18"
     description: "Gate PC_FREEZE_GEOMETRY_RECOMPUTED"
     status: normative
   - id: COL-GATE-19
     category: gate
     source_section: Sec-48
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2226
+    source_line: 2344
+    source_anchor: "COL-GATE-19"
     description: "Gate MUTATION_SUITE_PASSED"
     status: normative
   - id: COL-GATE-20
     category: gate
     source_section: Sec-48
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2227
+    source_line: 2345
+    source_anchor: "COL-GATE-20"
     description: "Gate CLEANROOM_REPRODUCTION_PASSED"
     status: normative
   - id: COL-GATE-21
     category: gate
     source_section: Sec-48
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2228
+    source_line: 2346
+    source_anchor: "COL-GATE-21"
     description: "Gate PC_NATIVE_COUNCIL_QUALIFIED"
+    status: normative
+  - id: COL-GATE-22
+    category: gate
+    source_section: Sec-48
+    source_file: IMPLEMENTATION_SPEC.md
+    source_line: 2347
+    source_anchor: "COL-GATE-22"
+    description: "Gate DATASET_SOURCE_COVERAGE_CLOSED"
     status: normative
   - id: COL-T01
     category: threat
     source_section: Sec-44
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1836
+    source_line: 1954
+    source_anchor: "COL-T01"
     description: "Threat COL-T01 per threat matrix"
     status: normative
   - id: COL-T02
     category: threat
     source_section: Sec-44
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1837
+    source_line: 1955
+    source_anchor: "COL-T02"
     description: "Threat COL-T02 per threat matrix"
     status: normative
   - id: COL-T03
     category: threat
     source_section: Sec-44
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1838
+    source_line: 1956
+    source_anchor: "COL-T03"
     description: "Threat COL-T03 per threat matrix"
     status: normative
   - id: COL-T04
     category: threat
     source_section: Sec-44
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1839
+    source_line: 1957
+    source_anchor: "COL-T04"
     description: "Threat COL-T04 per threat matrix"
     status: normative
   - id: COL-T05
     category: threat
     source_section: Sec-44
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1840
+    source_line: 1958
+    source_anchor: "COL-T05"
     description: "Threat COL-T05 per threat matrix"
     status: normative
   - id: COL-T06
     category: threat
     source_section: Sec-44
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1841
+    source_line: 1959
+    source_anchor: "COL-T06"
     description: "Threat COL-T06 per threat matrix"
     status: normative
   - id: COL-T07
     category: threat
     source_section: Sec-44
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1842
+    source_line: 1960
+    source_anchor: "COL-T07"
     description: "Threat COL-T07 per threat matrix"
     status: normative
   - id: COL-T08
     category: threat
     source_section: Sec-44
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1843
+    source_line: 1961
+    source_anchor: "COL-T08"
     description: "Threat COL-T08 per threat matrix"
     status: normative
   - id: COL-T09
     category: threat
     source_section: Sec-44
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1844
+    source_line: 1962
+    source_anchor: "COL-T09"
     description: "Threat COL-T09 per threat matrix"
     status: normative
   - id: COL-T10
     category: threat
     source_section: Sec-44
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1845
+    source_line: 1963
+    source_anchor: "COL-T10"
     description: "Threat COL-T10 per threat matrix"
     status: normative
   - id: COL-T11
     category: threat
     source_section: Sec-44
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1846
+    source_line: 1964
+    source_anchor: "COL-T11"
     description: "Threat COL-T11 per threat matrix"
     status: normative
   - id: COL-T12
     category: threat
     source_section: Sec-44
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1847
+    source_line: 1965
+    source_anchor: "COL-T12"
     description: "Threat COL-T12 per threat matrix"
     status: normative
   - id: COL-T13
     category: threat
     source_section: Sec-44
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1848
+    source_line: 1966
+    source_anchor: "COL-T13"
     description: "Threat COL-T13 per threat matrix"
     status: normative
   - id: COL-T14
     category: threat
     source_section: Sec-44
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1849
+    source_line: 1967
+    source_anchor: "COL-T14"
     description: "Threat COL-T14 per threat matrix"
     status: normative
   - id: COL-T15
     category: threat
     source_section: Sec-44
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1850
+    source_line: 1968
+    source_anchor: "COL-T15"
     description: "Threat COL-T15 per threat matrix"
     status: normative
   - id: COL-T16
     category: threat
     source_section: Sec-44
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1851
+    source_line: 1969
+    source_anchor: "COL-T16"
     description: "Threat COL-T16 per threat matrix"
     status: normative
   - id: COL-T17
     category: threat
     source_section: Sec-44
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1852
+    source_line: 1970
+    source_anchor: "COL-T17"
     description: "Threat COL-T17 per threat matrix"
     status: normative
   - id: COL-T18
     category: threat
     source_section: Sec-44
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1853
+    source_line: 1971
+    source_anchor: "COL-T18"
     description: "Threat COL-T18 per threat matrix"
     status: normative
   - id: COL-T19
     category: threat
     source_section: Sec-44
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1854
+    source_line: 1972
+    source_anchor: "COL-T19"
     description: "Threat COL-T19 per threat matrix"
     status: normative
   - id: COL-T20
     category: threat
     source_section: Sec-44
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1855
+    source_line: 1973
+    source_anchor: "COL-T20"
     description: "Threat COL-T20 per threat matrix"
     status: normative
   - id: COL-T21
     category: threat
     source_section: Sec-44
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1856
+    source_line: 1974
+    source_anchor: "COL-T21"
     description: "Threat COL-T21 per threat matrix"
     status: normative
   - id: COL-T22
     category: threat
     source_section: Sec-44
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1857
+    source_line: 1975
+    source_anchor: "COL-T22"
     description: "Threat COL-T22 per threat matrix"
     status: normative
   - id: COL-T23
     category: threat
     source_section: Sec-44
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1858
+    source_line: 1976
+    source_anchor: "COL-T23"
     description: "Threat COL-T23 per threat matrix"
     status: normative
   - id: COL-T24
     category: threat
     source_section: Sec-44
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1859
+    source_line: 1977
+    source_anchor: "COL-T24"
     description: "Threat COL-T24 per threat matrix"
     status: normative
   - id: COL-T25
     category: threat
     source_section: Sec-44
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1860
+    source_line: 1978
+    source_anchor: "COL-T25"
     description: "Threat COL-T25 per threat matrix"
     status: normative
   - id: COL-T26
     category: threat
     source_section: Sec-44
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1861
+    source_line: 1979
+    source_anchor: "COL-T26"
     description: "Threat COL-T26 per threat matrix"
     status: normative
   - id: COL-T27
     category: threat
     source_section: Sec-44
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1862
+    source_line: 1980
+    source_anchor: "COL-T27"
     description: "Threat COL-T27 per threat matrix"
     status: normative
   - id: COL-T28
     category: threat
     source_section: Sec-44
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1863
+    source_line: 1981
+    source_anchor: "COL-T28"
     description: "Threat COL-T28 per threat matrix"
     status: normative
   - id: COL-T29
     category: threat
     source_section: Sec-44
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1864
+    source_line: 1982
+    source_anchor: "COL-T29"
     description: "Threat COL-T29 per threat matrix"
     status: normative
   - id: COL-T30
     category: threat
     source_section: Sec-44
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1865
+    source_line: 1983
+    source_anchor: "COL-T30"
     description: "Threat COL-T30 per threat matrix"
     status: normative
   - id: COL-STOP-01
     category: stop
     source_section: Sec-45
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1873
+    source_line: 1991
+    source_anchor: "COL-STOP-01"
     description: "Stop COL-STOP-01"
     status: normative
   - id: COL-STOP-02
     category: stop
     source_section: Sec-45
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1874
+    source_line: 1992
+    source_anchor: "COL-STOP-02"
     description: "Stop COL-STOP-02"
     status: normative
   - id: COL-STOP-03
     category: stop
     source_section: Sec-45
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1875
+    source_line: 1993
+    source_anchor: "COL-STOP-03"
     description: "Stop COL-STOP-03"
     status: normative
   - id: COL-STOP-04
     category: stop
     source_section: Sec-45
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1876
+    source_line: 1994
+    source_anchor: "COL-STOP-04"
     description: "Stop COL-STOP-04"
     status: normative
   - id: COL-STOP-05
     category: stop
     source_section: Sec-45
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1877
+    source_line: 1995
+    source_anchor: "COL-STOP-05"
     description: "Stop COL-STOP-05"
     status: normative
   - id: COL-STOP-06
     category: stop
     source_section: Sec-45
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1878
+    source_line: 1996
+    source_anchor: "COL-STOP-06"
     description: "Stop COL-STOP-06"
     status: normative
   - id: COL-STOP-07
     category: stop
     source_section: Sec-45
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1879
+    source_line: 1997
+    source_anchor: "COL-STOP-07"
     description: "Stop COL-STOP-07"
     status: normative
   - id: COL-STOP-08
     category: stop
     source_section: Sec-45
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1880
+    source_line: 1998
+    source_anchor: "COL-STOP-08"
     description: "Stop COL-STOP-08"
     status: normative
   - id: COL-STOP-09
     category: stop
     source_section: Sec-45
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1881
+    source_line: 1999
+    source_anchor: "COL-STOP-09"
     description: "Stop COL-STOP-09"
     status: normative
   - id: COL-STOP-10
     category: stop
     source_section: Sec-45
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1882
+    source_line: 2000
+    source_anchor: "COL-STOP-10"
     description: "Stop COL-STOP-10"
     status: normative
   - id: COL-STOP-11
     category: stop
     source_section: Sec-45
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1883
+    source_line: 2001
+    source_anchor: "COL-STOP-11"
     description: "Stop COL-STOP-11"
     status: normative
   - id: COL-STOP-12
     category: stop
     source_section: Sec-45
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1884
+    source_line: 2002
+    source_anchor: "COL-STOP-12"
     description: "Stop COL-STOP-12"
     status: normative
   - id: COL-STOP-13
     category: stop
     source_section: Sec-45
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1885
+    source_line: 2003
+    source_anchor: "COL-STOP-13"
     description: "Stop COL-STOP-13"
     status: normative
   - id: COL-STOP-14
     category: stop
     source_section: Sec-45
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1886
+    source_line: 2004
+    source_anchor: "COL-STOP-14"
     description: "Stop COL-STOP-14"
     status: normative
   - id: COL-STOP-15
     category: stop
     source_section: Sec-45
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1887
+    source_line: 2005
+    source_anchor: "COL-STOP-15"
     description: "Stop COL-STOP-15"
     status: normative
   - id: COL-STOP-16
     category: stop
     source_section: Sec-45
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1888
+    source_line: 2006
+    source_anchor: "COL-STOP-16"
     description: "Stop COL-STOP-16"
     status: normative
   - id: COL-STOP-17
     category: stop
     source_section: Sec-45
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1889
+    source_line: 2007
+    source_anchor: "COL-STOP-17"
     description: "Stop COL-STOP-17"
     status: normative
   - id: COL-STOP-18
     category: stop
     source_section: Sec-45
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1890
+    source_line: 2008
+    source_anchor: "COL-STOP-18"
     description: "Stop COL-STOP-18"
     status: normative
   - id: COL-STOP-19
     category: stop
     source_section: Sec-45
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1891
+    source_line: 2009
+    source_anchor: "COL-STOP-19"
     description: "Stop COL-STOP-19"
     status: normative
   - id: COL-STOP-20
     category: stop
     source_section: Sec-45
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1892
+    source_line: 2010
+    source_anchor: "COL-STOP-20"
     description: "Stop COL-STOP-20"
     status: normative
   - id: COL-STOP-21
     category: stop
     source_section: Sec-45
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1893
+    source_line: 2011
+    source_anchor: "COL-STOP-21"
     description: "Stop COL-STOP-21"
     status: normative
   - id: COL-STOP-22
     category: stop
     source_section: Sec-45
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1894
+    source_line: 2012
+    source_anchor: "COL-STOP-22"
     description: "Stop COL-STOP-22"
     status: normative
   - id: COL-STOP-23
     category: stop
     source_section: Sec-45
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1895
+    source_line: 2013
+    source_anchor: "COL-STOP-23"
     description: "Stop COL-STOP-23"
     status: normative
   - id: COL-STOP-24
     category: stop
     source_section: Sec-45
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1896
+    source_line: 2014
+    source_anchor: "COL-STOP-24"
     description: "Stop COL-STOP-24"
     status: normative
   - id: COL-STOP-25
     category: stop
     source_section: Sec-45
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1897
+    source_line: 2015
+    source_anchor: "COL-STOP-25"
     description: "Stop COL-STOP-25"
     status: normative
   - id: TEST-01
     category: test_class
     source_section: Sec-54
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 818
-    description: "Test class: unit tests"
+    source_line: 2512
+    source_anchor: "unit tests;"
+    description: "Test class: unit tests;"
     status: normative
   - id: TEST-02
     category: test_class
     source_section: Sec-54
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2394
-    description: "Test class: property tests"
+    source_line: 2513
+    source_anchor: "property tests;"
+    description: "Test class: property tests;"
     status: normative
   - id: TEST-03
     category: test_class
     source_section: Sec-54
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 19
-    description: "Test class: schema tests"
+    source_line: 2514
+    source_anchor: "schema tests;"
+    description: "Test class: schema tests;"
     status: normative
   - id: TEST-04
     category: test_class
     source_section: Sec-54
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 9
-    description: "Test class: provenance tests"
+    source_line: 2515
+    source_anchor: "provenance tests;"
+    description: "Test class: provenance tests;"
     status: normative
   - id: TEST-05
     category: test_class
     source_section: Sec-54
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 229
-    description: "Test class: leakage tests"
+    source_line: 2516
+    source_anchor: "leakage tests;"
+    description: "Test class: leakage tests;"
     status: normative
   - id: TEST-06
     category: test_class
     source_section: Sec-54
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2398
-    description: "Test class: model-interface tests"
+    source_line: 2517
+    source_anchor: "model-interface tests;"
+    description: "Test class: model-interface tests;"
     status: normative
   - id: TEST-07
     category: test_class
     source_section: Sec-54
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 602
-    description: "Test class: calibration tests"
+    source_line: 2518
+    source_anchor: "calibration tests;"
+    description: "Test class: calibration tests;"
     status: normative
   - id: TEST-08
     category: test_class
     source_section: Sec-54
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 27
-    description: "Test class: registry integrity tests"
+    source_line: 2519
+    source_anchor: "registry integrity tests;"
+    description: "Test class: registry integrity tests;"
     status: normative
   - id: TEST-09
     category: test_class
     source_section: Sec-54
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1
-    description: "Test class: PC semantic tests"
+    source_line: 2520
+    source_anchor: "PC semantic tests;"
+    description: "Test class: PC semantic tests;"
     status: normative
   - id: TEST-10
     category: test_class
     source_section: Sec-54
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 72
-    description: "Test class: touch derivation tests"
+    source_line: 2521
+    source_anchor: "touch derivation tests;"
+    description: "Test class: touch derivation tests;"
     status: normative
   - id: TEST-11
     category: test_class
     source_section: Sec-54
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 136
-    description: "Test class: freeze tests"
+    source_line: 2522
+    source_anchor: "freeze tests;"
+    description: "Test class: freeze tests;"
     status: normative
   - id: TEST-12
     category: test_class
     source_section: Sec-54
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1335
-    description: "Test class: mutation tests"
+    source_line: 2523
+    source_anchor: "mutation tests;"
+    description: "Test class: mutation tests;"
     status: normative
   - id: TEST-13
     category: test_class
     source_section: Sec-54
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 37
-    description: "Test class: legacy regression tests"
+    source_line: 2524
+    source_anchor: "legacy regression tests;"
+    description: "Test class: legacy regression tests;"
     status: normative
   - id: TEST-14
     category: test_class
     source_section: Sec-54
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2140
-    description: "Test class: clean-room reproduction tests"
+    source_line: 2525
+    source_anchor: "clean-room reproduction tests."
+    description: "Test class: clean-room reproduction tests."
     status: normative
   - id: SCHEMA-01
     category: schema
     source_section: Sec-66
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2766
+    source_line: 2885
+    source_anchor: "LightCurveSchema"
     description: "Schema v1 to freeze: LightCurveSchema"
     status: normative
   - id: SCHEMA-02
     category: schema
     source_section: Sec-66
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2767
+    source_line: 2886
+    source_anchor: "EvidenceStateSchema"
     description: "Schema v1 to freeze: EvidenceStateSchema"
     status: normative
   - id: SCHEMA-03
     category: schema
     source_section: Sec-66
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2768
+    source_line: 2887
+    source_anchor: "RepresentationSchema"
     description: "Schema v1 to freeze: RepresentationSchema"
     status: normative
   - id: SCHEMA-04
     category: schema
     source_section: Sec-66
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2769
+    source_line: 2888
+    source_anchor: "AuthoritySchema"
     description: "Schema v1 to freeze: AuthoritySchema"
     status: normative
   - id: SCHEMA-05
     category: schema
     source_section: Sec-66
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2770
+    source_line: 2889
+    source_anchor: "ActionSchema"
     description: "Schema v1 to freeze: ActionSchema"
     status: normative
   - id: SCHEMA-06
     category: schema
     source_section: Sec-66
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2771
+    source_line: 2890
+    source_anchor: "CheckpointSchema"
     description: "Schema v1 to freeze: CheckpointSchema"
     status: normative
   - id: SCHEMA-07
     category: schema
     source_section: Sec-66
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2772
+    source_line: 2891
+    source_anchor: "SpecialistResultSchema"
     description: "Schema v1 to freeze: SpecialistResultSchema"
     status: normative
   - id: SCHEMA-08
     category: schema
     source_section: Sec-66
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2773
+    source_line: 2892
+    source_anchor: "TaskSpecSchema"
     description: "Schema v1 to freeze: TaskSpecSchema"
     status: normative
   - id: SCHEMA-09
     category: schema
     source_section: Sec-66
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2774
+    source_line: 2893
+    source_anchor: "SpecialistSpecSchema"
     description: "Schema v1 to freeze: SpecialistSpecSchema"
     status: normative
   - id: SCHEMA-10
     category: schema
     source_section: Sec-66
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2775
+    source_line: 2894
+    source_anchor: "DatasetManifestSchema"
     description: "Schema v1 to freeze: DatasetManifestSchema"
     status: normative
   - id: SCHEMA-11
     category: schema
     source_section: Sec-66
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2776
+    source_line: 2895
+    source_anchor: "RunManifestSchema"
     description: "Schema v1 to freeze: RunManifestSchema"
     status: normative
   - id: SCHEMA-12
     category: schema
     source_section: Sec-66
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2777
+    source_line: 2896
+    source_anchor: "QualificationReportSchema"
     description: "Schema v1 to freeze: QualificationReportSchema"
     status: normative
   - id: SCHEMA-13
     category: schema
     source_section: Sec-66
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2778
+    source_line: 2897
+    source_anchor: "CapabilityMapSchema"
     description: "Schema v1 to freeze: CapabilityMapSchema"
     status: normative
   - id: SCHEMA-14
     category: schema
     source_section: Sec-66
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2779
+    source_line: 2898
+    source_anchor: "RegistryEntrySchema"
     description: "Schema v1 to freeze: RegistryEntrySchema"
     status: normative
   - id: SCHEMA-15
     category: schema
     source_section: Sec-66
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2780
+    source_line: 2899
+    source_anchor: "TeacherTransactionSchema"
     description: "Schema v1 to freeze: TeacherTransactionSchema"
     status: normative
   - id: SCHEMA-16
     category: schema
     source_section: Sec-66
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2781
+    source_line: 2900
+    source_anchor: "CouncilTraceSchema"
     description: "Schema v1 to freeze: CouncilTraceSchema"
     status: normative
   - id: SCHEMA-17
     category: schema
     source_section: Sec-66
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2782
+    source_line: 2901
+    source_anchor: "FreezeResultSchema"
     description: "Schema v1 to freeze: FreezeResultSchema"
     status: normative
   - id: TERM-01
     category: terminal_outcome
     source_section: Sec-63
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2159
+    source_line: 2737
+    source_anchor: "PC_NATIVE_COUNCIL_QUALIFIED"
     description: "Terminal state: PC_NATIVE_COUNCIL_QUALIFIED"
     status: normative
   - id: TERM-02
     category: terminal_outcome
     source_section: Sec-63
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2619
+    source_line: 2738
+    source_anchor: "QUALIFIED_WITH_DECLARED_LIMITATIONS"
     description: "Terminal state: QUALIFIED_WITH_DECLARED_LIMITATIONS"
     status: normative
   - id: TERM-03
     category: terminal_outcome
     source_section: Sec-63
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2620
+    source_line: 2739
+    source_anchor: "FORGE_QUALIFIED_RUNTIME_BLOCKED"
     description: "Terminal state: FORGE_QUALIFIED_RUNTIME_BLOCKED"
     status: normative
   - id: TERM-04
     category: terminal_outcome
     source_section: Sec-63
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2621
+    source_line: 2740
+    source_anchor: "PC_SEMANTICS_UNDERIDENTIFIED"
     description: "Terminal state: PC_SEMANTICS_UNDERIDENTIFIED"
     status: normative
   - id: TERM-05
     category: terminal_outcome
     source_section: Sec-63
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2622
+    source_line: 2741
+    source_anchor: "SPECIALIST_QUALIFICATION_FAILED"
     description: "Terminal state: SPECIALIST_QUALIFICATION_FAILED"
     status: normative
   - id: TERM-06
     category: terminal_outcome
     source_section: Sec-63
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2623
+    source_line: 2742
+    source_anchor: "DATASET_INTEGRITY_FAILED"
     description: "Terminal state: DATASET_INTEGRITY_FAILED"
     status: normative
   - id: TERM-07
     category: terminal_outcome
     source_section: Sec-63
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2624
+    source_line: 2743
+    source_anchor: "HOLDOUT_CONTAMINATED"
     description: "Terminal state: HOLDOUT_CONTAMINATED"
     status: normative
   - id: TERM-08
     category: terminal_outcome
     source_section: Sec-63
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2625
+    source_line: 2744
+    source_anchor: "TEACHER_BUDGET_EXHAUSTED"
     description: "Terminal state: TEACHER_BUDGET_EXHAUSTED"
     status: normative
   - id: TERM-09
     category: terminal_outcome
     source_section: Sec-63
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2626
+    source_line: 2745
+    source_anchor: "RESOURCE_LIMIT_REACHED"
     description: "Terminal state: RESOURCE_LIMIT_REACHED"
     status: normative
   - id: TERM-10
     category: terminal_outcome
     source_section: Sec-63
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2627
+    source_line: 2746
+    source_anchor: "ARCHITECTURE_SUCCESSOR_REQUIRED"
     description: "Terminal state: ARCHITECTURE_SUCCESSOR_REQUIRED"
     status: normative
   - id: ART-01
     category: release_artifact
     source_section: Sec-51
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2309
+    source_line: 2428
+    source_anchor: "RELEASE_MANIFEST.json"
     description: "Release package artifact: RELEASE_MANIFEST.json"
     status: normative
   - id: ART-02
     category: release_artifact
     source_section: Sec-51
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2310
+    source_line: 2429
+    source_anchor: "SOURCE_COMMIT.txt"
     description: "Release package artifact: SOURCE_COMMIT.txt"
     status: normative
   - id: ART-03
     category: release_artifact
     source_section: Sec-51
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2311
+    source_line: 2430
+    source_anchor: "ENVIRONMENT_LOCK"
     description: "Release package artifact: ENVIRONMENT_LOCK"
     status: normative
   - id: ART-04
     category: release_artifact
     source_section: Sec-51
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2312
+    source_line: 2431
+    source_anchor: "DATASET_MANIFESTS"
     description: "Release package artifact: DATASET_MANIFESTS"
     status: normative
   - id: ART-05
     category: release_artifact
     source_section: Sec-51
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2313
+    source_line: 2432
+    source_anchor: "TASK_SPECS"
     description: "Release package artifact: TASK_SPECS"
     status: normative
   - id: ART-06
     category: release_artifact
     source_section: Sec-51
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2314
+    source_line: 2433
+    source_anchor: "SPECIALIST_SPECS"
     description: "Release package artifact: SPECIALIST_SPECS"
     status: normative
   - id: ART-07
     category: release_artifact
     source_section: Sec-51
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2315
+    source_line: 2434
+    source_anchor: "REGISTRY_MANIFEST.json"
     description: "Release package artifact: REGISTRY_MANIFEST.json"
     status: normative
   - id: ART-08
     category: release_artifact
     source_section: Sec-51
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2316
+    source_line: 2435
+    source_anchor: "QUALIFICATION_REPORTS"
     description: "Release package artifact: QUALIFICATION_REPORTS"
     status: normative
   - id: ART-09
     category: release_artifact
     source_section: Sec-51
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2317
+    source_line: 2436
+    source_anchor: "PC_CONTRACT.json"
     description: "Release package artifact: PC_CONTRACT.json"
     status: normative
   - id: ART-10
     category: release_artifact
     source_section: Sec-51
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2318
+    source_line: 2437
+    source_anchor: "ACTION_SCHEMA.json"
     description: "Release package artifact: ACTION_SCHEMA.json"
     status: normative
   - id: ART-11
     category: release_artifact
     source_section: Sec-51
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2319
+    source_line: 2438
+    source_anchor: "ATOMICITY_SCHEMA.json"
     description: "Release package artifact: ATOMICITY_SCHEMA.json"
     status: normative
   - id: ART-12
     category: release_artifact
     source_section: Sec-51
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2320
+    source_line: 2439
+    source_anchor: "TOUCH_RECOMPUTATION.json"
     description: "Release package artifact: TOUCH_RECOMPUTATION.json"
     status: normative
   - id: ART-13
     category: release_artifact
     source_section: Sec-51
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2321
+    source_line: 2440
+    source_anchor: "FREEZE_RESULTS.json"
     description: "Release package artifact: FREEZE_RESULTS.json"
     status: normative
   - id: ART-14
     category: release_artifact
     source_section: Sec-51
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2322
+    source_line: 2441
+    source_anchor: "MUTATION_RESULTS.json"
     description: "Release package artifact: MUTATION_RESULTS.json"
     status: normative
   - id: ART-15
     category: release_artifact
     source_section: Sec-51
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2323
+    source_line: 2442
+    source_anchor: "TEACHER_BUDGET_LEDGER.json"
     description: "Release package artifact: TEACHER_BUDGET_LEDGER.json"
     status: normative
   - id: ART-16
     category: release_artifact
     source_section: Sec-51
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2324
+    source_line: 2443
+    source_anchor: "TEACHER_PROVENANCE_MANIFEST.json"
     description: "Release package artifact: TEACHER_PROVENANCE_MANIFEST.json"
     status: normative
   - id: ART-17
     category: release_artifact
     source_section: Sec-51
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1927
+    source_line: 2444
+    source_anchor: "LEGACY_ARCHAEOLOGY.md"
     description: "Release package artifact: LEGACY_ARCHAEOLOGY.md"
     status: normative
   - id: ART-18
     category: release_artifact
     source_section: Sec-51
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2326
+    source_line: 2445
+    source_anchor: "FINAL_AUDIT.md"
     description: "Release package artifact: FINAL_AUDIT.md"
     status: normative
   - id: ART-19
     category: release_artifact
     source_section: Sec-51
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2327
+    source_line: 2446
+    source_anchor: "FINAL_RESULT.json"
     description: "Release package artifact: FINAL_RESULT.json"
     status: normative
   - id: LABEL-01
     category: eval_label
     source_section: Sec-42
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 744
+    source_line: 1902
+    source_anchor: "LEGACY_HISTORICAL"
     description: "Evaluation row label: LEGACY_HISTORICAL"
     status: normative
   - id: LABEL-02
     category: eval_label
     source_section: Sec-42
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 745
+    source_line: 1903
+    source_anchor: "DEVELOPMENT"
     description: "Evaluation row label: DEVELOPMENT"
     status: normative
   - id: LABEL-03
     category: eval_label
     source_section: Sec-42
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1786
+    source_line: 1904
+    source_anchor: "INTERNAL_VALIDATION"
     description: "Evaluation row label: INTERNAL_VALIDATION"
     status: normative
   - id: LABEL-04
     category: eval_label
     source_section: Sec-42
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1787
+    source_line: 1905
+    source_anchor: "TEACHER_GENERATED_DEVELOPMENT"
     description: "Evaluation row label: TEACHER_GENERATED_DEVELOPMENT"
     status: normative
   - id: LABEL-05
     category: eval_label
     source_section: Sec-42
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1788
+    source_line: 1906
+    source_anchor: "CONTAMINATED_CANARY"
     description: "Evaluation row label: CONTAMINATED_CANARY"
     status: normative
   - id: LABEL-06
     category: eval_label
     source_section: Sec-42
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1789
+    source_line: 1907
+    source_anchor: "FRESH_QUALIFICATION_HOLDOUT"
     description: "Evaluation row label: FRESH_QUALIFICATION_HOLDOUT"
     status: normative
   - id: LABEL-07
     category: eval_label
     source_section: Sec-42
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1790
+    source_line: 1908
+    source_anchor: "CLEANROOM_POST_FREEZE"
     description: "Evaluation row label: CLEANROOM_POST_FREEZE"
     status: normative
   - id: LABEL-08
     category: eval_label
     source_section: Sec-42
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1791
+    source_line: 1909
+    source_anchor: "FORMAL_PC_CONSTRUCTED"
     description: "Evaluation row label: FORMAL_PC_CONSTRUCTED"
     status: normative
   - id: LABEL-09
     category: eval_label
     source_section: Sec-42
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1792
+    source_line: 1910
+    source_anchor: "OBSERVATIONAL_EXTERNAL_TEST"
     description: "Evaluation row label: OBSERVATIONAL_EXTERNAL_TEST"
     status: normative
   - id: DCLASS-01
@@ -1806,6 +2071,7 @@ items:
     source_section: Sec-15
     source_file: IMPLEMENTATION_SPEC.md
     source_line: 738
+    source_anchor: "OBSERVATIONAL_RAW"
     description: "Dataset source class: OBSERVATIONAL_RAW"
     status: normative
   - id: DCLASS-02
@@ -1813,6 +2079,7 @@ items:
     source_section: Sec-15
     source_file: IMPLEMENTATION_SPEC.md
     source_line: 739
+    source_anchor: "OBSERVATIONAL_DERIVED"
     description: "Dataset source class: OBSERVATIONAL_DERIVED"
     status: normative
   - id: DCLASS-03
@@ -1820,6 +2087,7 @@ items:
     source_section: Sec-15
     source_file: IMPLEMENTATION_SPEC.md
     source_line: 740
+    source_anchor: "CATALOG_LABELLED"
     description: "Dataset source class: CATALOG_LABELLED"
     status: normative
   - id: DCLASS-04
@@ -1827,6 +2095,7 @@ items:
     source_section: Sec-15
     source_file: IMPLEMENTATION_SPEC.md
     source_line: 741
+    source_anchor: "SIMULATED_PHYSICS"
     description: "Dataset source class: SIMULATED_PHYSICS"
     status: normative
   - id: DCLASS-05
@@ -1834,6 +2103,7 @@ items:
     source_section: Sec-15
     source_file: IMPLEMENTATION_SPEC.md
     source_line: 742
+    source_anchor: "SYNTHETIC_STRESS"
     description: "Dataset source class: SYNTHETIC_STRESS"
     status: normative
   - id: DCLASS-06
@@ -1841,6 +2111,7 @@ items:
     source_section: Sec-15
     source_file: IMPLEMENTATION_SPEC.md
     source_line: 743
+    source_anchor: "LLM_PROPOSED_SCENARIO"
     description: "Dataset source class: LLM_PROPOSED_SCENARIO"
     status: normative
   - id: DCLASS-07
@@ -1848,6 +2119,7 @@ items:
     source_section: Sec-15
     source_file: IMPLEMENTATION_SPEC.md
     source_line: 744
+    source_anchor: "LEGACY_HISTORICAL"
     description: "Dataset source class: LEGACY_HISTORICAL"
     status: normative
   - id: DCLASS-08
@@ -1855,6 +2127,7 @@ items:
     source_section: Sec-15
     source_file: IMPLEMENTATION_SPEC.md
     source_line: 745
+    source_anchor: "CONTAMINATED_DEVELOPMENT"
     description: "Dataset source class: CONTAMINATED_DEVELOPMENT"
     status: normative
   - id: DCLASS-09
@@ -1862,6 +2135,7 @@ items:
     source_section: Sec-15
     source_file: IMPLEMENTATION_SPEC.md
     source_line: 746
+    source_anchor: "HIDDEN_HOLDOUT"
     description: "Dataset source class: HIDDEN_HOLDOUT"
     status: normative
   - id: LCONF-01
@@ -1869,6 +2143,7 @@ items:
     source_section: Sec-15
     source_file: IMPLEMENTATION_SPEC.md
     source_line: 766
+    source_anchor: "CONFIRMED"
     description: "Label confidence: CONFIRMED"
     status: normative
   - id: LCONF-02
@@ -1876,6 +2151,7 @@ items:
     source_section: Sec-15
     source_file: IMPLEMENTATION_SPEC.md
     source_line: 767
+    source_anchor: "HIGH_CONFIDENCE"
     description: "Label confidence: HIGH_CONFIDENCE"
     status: normative
   - id: LCONF-03
@@ -1883,6 +2159,7 @@ items:
     source_section: Sec-15
     source_file: IMPLEMENTATION_SPEC.md
     source_line: 768
+    source_anchor: "CATALOG_CANDIDATE"
     description: "Label confidence: CATALOG_CANDIDATE"
     status: normative
   - id: LCONF-04
@@ -1890,6 +2167,7 @@ items:
     source_section: Sec-15
     source_file: IMPLEMENTATION_SPEC.md
     source_line: 769
+    source_anchor: "KNOWN_FALSE_POSITIVE"
     description: "Label confidence: KNOWN_FALSE_POSITIVE"
     status: normative
   - id: LCONF-05
@@ -1897,6 +2175,7 @@ items:
     source_section: Sec-15
     source_file: IMPLEMENTATION_SPEC.md
     source_line: 770
+    source_anchor: "SIMULATED_KNOWN"
     description: "Label confidence: SIMULATED_KNOWN"
     status: normative
   - id: LCONF-06
@@ -1904,468 +2183,535 @@ items:
     source_section: Sec-15
     source_file: IMPLEMENTATION_SPEC.md
     source_line: 771
+    source_anchor: "AMBIGUOUS"
     description: "Label confidence: AMBIGUOUS"
     status: normative
   - id: LCONF-07
     category: label_confidence
     source_section: Sec-15
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 264
+    source_line: 772
+    source_anchor: "UNRESOLVED"
     description: "Label confidence: UNRESOLVED"
     status: normative
   - id: MUT-01
     category: mutation_control
     source_section: Sec-43
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1804
-    description: "Semantic mutant: raw scratch field silently admitted into H"
+    source_line: 1922
+    source_anchor: "raw scratch field silently admitted into H;"
+    description: "Semantic mutant: raw scratch field silently admitted into H;"
     status: normative
   - id: MUT-02
     category: mutation_control
     source_section: Sec-43
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1805
-    description: "Semantic mutant: representation flag changes without P_R change"
+    source_line: 1923
+    source_anchor: "representation flag changes without P_R change;"
+    description: "Semantic mutant: representation flag changes without P_R change;"
     status: normative
   - id: MUT-03
     category: mutation_control
     source_section: Sec-43
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1806
-    description: "Semantic mutant: P_R changes but touch omits R"
+    source_line: 1924
+    source_anchor: "P_R changes but touch omits R;"
+    description: "Semantic mutant: P_R changes but touch omits R;"
     status: normative
   - id: MUT-04
     category: mutation_control
     source_section: Sec-43
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1807
-    description: "Semantic mutant: authority changes action availability without Lambda change"
+    source_line: 1925
+    source_anchor: "authority changes action availability without Lambda change;"
+    description: "Semantic mutant: authority changes action availability without Lambda change;"
     status: normative
   - id: MUT-05
     category: mutation_control
     source_section: Sec-43
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1808
-    description: "Semantic mutant: manual touch label overrides derived touch"
+    source_line: 1926
+    source_anchor: "manual touch label overrides derived touch;"
+    description: "Semantic mutant: manual touch label overrides derived touch;"
     status: normative
   - id: MUT-06
     category: mutation_control
     source_section: Sec-43
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1809
-    description: "Semantic mutant: freeze removes only part of a mixed source-atomic action"
+    source_line: 1927
+    source_anchor: "freeze removes only part of a mixed source-atomic action;"
+    description: "Semantic mutant: freeze removes only part of a mixed source-atomic action;"
     status: normative
   - id: MUT-07
     category: mutation_control
     source_section: Sec-43
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1810
-    description: "Semantic mutant: hidden label leaked into controller observation"
+    source_line: 1928
+    source_anchor: "hidden label leaked into controller observation;"
+    description: "Semantic mutant: hidden label leaked into controller observation;"
     status: normative
   - id: MUT-08
     category: mutation_control
     source_section: Sec-43
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1811
-    description: "Semantic mutant: holdout row appears in training identity group"
+    source_line: 1929
+    source_anchor: "holdout row appears in training identity group;"
+    description: "Semantic mutant: holdout row appears in training identity group;"
     status: normative
   - id: MUT-09
     category: mutation_control
     source_section: Sec-43
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1812
-    description: "Semantic mutant: model trained with forbidden evidence"
+    source_line: 1930
+    source_anchor: "model trained with forbidden evidence;"
+    description: "Semantic mutant: model trained with forbidden evidence;"
     status: normative
   - id: MUT-10
     category: mutation_control
     source_section: Sec-43
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1813
-    description: "Semantic mutant: registry model bytes changed under same version"
+    source_line: 1931
+    source_anchor: "registry model bytes changed under same version;"
+    description: "Semantic mutant: registry model bytes changed under same version;"
     status: normative
   - id: MUT-11
     category: mutation_control
     source_section: Sec-43
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1814
-    description: "Semantic mutant: calibration file from another model version"
+    source_line: 1932
+    source_anchor: "calibration file from another model version;"
+    description: "Semantic mutant: calibration file from another model version;"
     status: normative
   - id: MUT-12
     category: mutation_control
     source_section: Sec-43
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1815
-    description: "Semantic mutant: capability map attached to wrong artifact"
+    source_line: 1933
+    source_anchor: "capability map attached to wrong artifact;"
+    description: "Semantic mutant: capability map attached to wrong artifact;"
     status: normative
   - id: MUT-13
     category: mutation_control
     source_section: Sec-43
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1816
-    description: "Semantic mutant: unqualified model loaded as qualified"
+    source_line: 1934
+    source_anchor: "unqualified model loaded as qualified;"
+    description: "Semantic mutant: unqualified model loaded as qualified;"
     status: normative
   - id: MUT-14
     category: mutation_control
     source_section: Sec-43
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1817
-    description: "Semantic mutant: teacher output accepted as observational ground truth"
+    source_line: 1935
+    source_anchor: "teacher output accepted as observational ground truth;"
+    description: "Semantic mutant: teacher output accepted as observational ground truth;"
     status: normative
   - id: MUT-15
     category: mutation_control
     source_section: Sec-43
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1818
-    description: "Semantic mutant: teacher prompt contains hidden holdout outcome"
+    source_line: 1936
+    source_anchor: "teacher prompt contains hidden holdout outcome;"
+    description: "Semantic mutant: teacher prompt contains hidden holdout outcome;"
     status: normative
   - id: MUT-16
     category: mutation_control
     source_section: Sec-43
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1819
-    description: "Semantic mutant: synthetic provenance dropped"
+    source_line: 1937
+    source_anchor: "synthetic provenance dropped;"
+    description: "Semantic mutant: synthetic provenance dropped;"
     status: normative
   - id: MUT-17
     category: mutation_control
     source_section: Sec-43
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1820
-    description: "Semantic mutant: solar-default fallback presented as measured stellar data"
+    source_line: 1938
+    source_anchor: "solar-default fallback presented as measured stellar data;"
+    description: "Semantic mutant: solar-default fallback presented as measured stellar data;"
     status: normative
   - id: MUT-18
     category: mutation_control
     source_section: Sec-43
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1821
-    description: "Semantic mutant: legacy fixed specialist weights reintroduced"
+    source_line: 1939
+    source_anchor: "legacy fixed specialist weights reintroduced;"
+    description: "Semantic mutant: legacy fixed specialist weights reintroduced;"
     status: normative
   - id: MUT-19
     category: mutation_control
     source_section: Sec-43
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1822
-    description: "Semantic mutant: majority vote bypasses closure"
+    source_line: 1940
+    source_anchor: "majority vote bypasses closure;"
+    description: "Semantic mutant: majority vote bypasses closure;"
     status: normative
   - id: MUT-20
     category: mutation_control
     source_section: Sec-43
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1823
-    description: "Semantic mutant: red flag directly subtracts arbitrary verdict score"
+    source_line: 1941
+    source_anchor: "red flag directly subtracts arbitrary verdict score;"
+    description: "Semantic mutant: red flag directly subtracts arbitrary verdict score;"
     status: normative
   - id: MUT-21
     category: mutation_control
     source_section: Sec-43
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1824
-    description: "Semantic mutant: API/frontend mutates scientific state outside engine"
+    source_line: 1942
+    source_anchor: "API/frontend mutates scientific state outside engine;"
+    description: "Semantic mutant: API/frontend mutates scientific state outside engine;"
     status: normative
   - id: ADV-01
     category: adversarial_family
     source_section: Sec-40
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 466
-    description: "Adversarial corpus family: clean planetary transits"
+    source_line: 1841
+    source_anchor: "clean planetary transits;"
+    description: "Adversarial corpus family: clean planetary transits;"
     status: normative
   - id: ADV-02
     category: adversarial_family
     source_section: Sec-40
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 462
-    description: "Adversarial corpus family: grazing eclipsing binaries"
+    source_line: 1842
+    source_anchor: "grazing eclipsing binaries;"
+    description: "Adversarial corpus family: grazing eclipsing binaries;"
     status: normative
   - id: ADV-03
     category: adversarial_family
     source_section: Sec-40
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1725
-    description: "Adversarial corpus family: detached eclipsing binaries"
+    source_line: 1843
+    source_anchor: "detached eclipsing binaries;"
+    description: "Adversarial corpus family: detached eclipsing binaries;"
     status: normative
   - id: ADV-04
     category: adversarial_family
     source_section: Sec-40
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1726
-    description: "Adversarial corpus family: contact binaries"
+    source_line: 1844
+    source_anchor: "contact binaries;"
+    description: "Adversarial corpus family: contact binaries;"
     status: normative
   - id: ADV-05
     category: adversarial_family
     source_section: Sec-40
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1727
-    description: "Adversarial corpus family: diluted/blended binaries"
+    source_line: 1845
+    source_anchor: "diluted/blended binaries;"
+    description: "Adversarial corpus family: diluted/blended binaries;"
     status: normative
   - id: ADV-06
     category: adversarial_family
     source_section: Sec-40
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 383
-    description: "Adversarial corpus family: stellar activity"
+    source_line: 1846
+    source_anchor: "stellar activity;"
+    description: "Adversarial corpus family: stellar activity;"
     status: normative
   - id: ADV-07
     category: adversarial_family
     source_section: Sec-40
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1729
-    description: "Adversarial corpus family: rotational variability"
+    source_line: 1847
+    source_anchor: "rotational variability;"
+    description: "Adversarial corpus family: rotational variability;"
     status: normative
   - id: ADV-08
     category: adversarial_family
     source_section: Sec-40
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 500
-    description: "Adversarial corpus family: instrument artifacts"
+    source_line: 1848
+    source_anchor: "instrument artifacts;"
+    description: "Adversarial corpus family: instrument artifacts;"
     status: normative
   - id: ADV-09
     category: adversarial_family
     source_section: Sec-40
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 367
-    description: "Adversarial corpus family: period aliases"
+    source_line: 1849
+    source_anchor: "period aliases;"
+    description: "Adversarial corpus family: period aliases;"
     status: normative
   - id: ADV-10
     category: adversarial_family
     source_section: Sec-40
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 381
-    description: "Adversarial corpus family: secondary eclipses"
+    source_line: 1850
+    source_anchor: "secondary eclipses;"
+    description: "Adversarial corpus family: secondary eclipses;"
     status: normative
   - id: ADV-11
     category: adversarial_family
     source_section: Sec-40
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 159
-    description: "Adversarial corpus family: very low SNR candidates"
+    source_line: 1851
+    source_anchor: "very low SNR candidates;"
+    description: "Adversarial corpus family: very low SNR candidates;"
     status: normative
   - id: ADV-12
     category: adversarial_family
     source_section: Sec-40
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1148
-    description: "Adversarial corpus family: two-transit sparse events"
+    source_line: 1852
+    source_anchor: "two-transit sparse events;"
+    description: "Adversarial corpus family: two-transit sparse events;"
     status: normative
   - id: ADV-13
     category: adversarial_family
     source_section: Sec-40
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1735
-    description: "Adversarial corpus family: long-period candidates"
+    source_line: 1853
+    source_anchor: "long-period candidates;"
+    description: "Adversarial corpus family: long-period candidates;"
     status: normative
   - id: ADV-14
     category: adversarial_family
     source_section: Sec-40
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 86
-    description: "Adversarial corpus family: strong data gaps"
+    source_line: 1854
+    source_anchor: "strong data gaps;"
+    description: "Adversarial corpus family: strong data gaps;"
     status: normative
   - id: ADV-15
     category: adversarial_family
     source_section: Sec-40
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 391
-    description: "Adversarial corpus family: centroid contamination"
+    source_line: 1855
+    source_anchor: "centroid contamination;"
+    description: "Adversarial corpus family: centroid contamination;"
     status: normative
   - id: ADV-16
     category: adversarial_family
     source_section: Sec-40
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1409
-    description: "Adversarial corpus family: contradictory stellar metadata"
+    source_line: 1856
+    source_anchor: "contradictory stellar metadata;"
+    description: "Adversarial corpus family: contradictory stellar metadata;"
     status: normative
   - id: ADV-17
     category: adversarial_family
     source_section: Sec-40
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1049
-    description: "Adversarial corpus family: OOD catalogue values"
+    source_line: 1857
+    source_anchor: "OOD catalogue values;"
+    description: "Adversarial corpus family: OOD catalogue values;"
     status: normative
   - id: ADV-18
     category: adversarial_family
     source_section: Sec-40
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1049
-    description: "Adversarial corpus family: OOD light-curve morphology"
+    source_line: 1858
+    source_anchor: "OOD light-curve morphology;"
+    description: "Adversarial corpus family: OOD light-curve morphology;"
     status: normative
   - id: ADV-19
     category: adversarial_family
     source_section: Sec-40
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1741
-    description: "Adversarial corpus family: calibration-edge cases"
+    source_line: 1859
+    source_anchor: "calibration-edge cases;"
+    description: "Adversarial corpus family: calibration-edge cases;"
     status: normative
   - id: ADV-20
     category: adversarial_family
     source_section: Sec-40
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 9
-    description: "Adversarial corpus family: specialist disagreement cases"
+    source_line: 1860
+    source_anchor: "specialist disagreement cases."
+    description: "Adversarial corpus family: specialist disagreement cases."
     status: normative
   - id: PCQ-01
     category: pc_eval_question
     source_section: Sec-36
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1622
-    description: "PC evaluation question: closure without new evidence admission"
+    source_line: 1740
+    source_anchor: "Can closure occur without new evidence admission?"
+    description: "PC evaluation question: Can closure occur without new evidence admission?"
     status: normative
   - id: PCQ-02
     category: pc_eval_question
     source_section: Sec-36
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1622
-    description: "PC evaluation question: closure without representation refinement"
+    source_line: 1741
+    source_anchor: "Can closure occur without representation refinement?"
+    description: "PC evaluation question: Can closure occur without representation refinement?"
     status: normative
   - id: PCQ-03
     category: pc_eval_question
     source_section: Sec-36
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1622
-    description: "PC evaluation question: closure without authority-changing actions"
+    source_line: 1742
+    source_anchor: "Can closure occur without authority-changing actions?"
+    description: "PC evaluation question: Can closure occur without authority-changing actions?"
     status: normative
   - id: PCQ-04
     category: pc_eval_question
     source_section: Sec-36
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1625
-    description: "PC evaluation question: removing external stellar evidence fallback vs structural failure"
+    source_line: 1743
+    source_anchor: "Does removing external stellar evidence create finite fallback or structural failure?"
+    description: "PC evaluation question: Does removing external stellar evidence create finite fallback or structural failure?"
     status: normative
   - id: PCQ-05
     category: pc_eval_question
     source_section: Sec-36
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1626
-    description: "PC evaluation question: morphology diagnostics substitute for additional evidence"
+    source_line: 1744
+    source_anchor: "Can morphology diagnostics substitute for additional evidence?"
+    description: "PC evaluation question: Can morphology diagnostics substitute for additional evidence?"
     status: normative
   - id: PCQ-06
     category: pc_eval_question
     source_section: Sec-36
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1627
-    description: "PC evaluation question: learned specialist reduces cost without becoming necessary"
+    source_line: 1745
+    source_anchor: "Does a learned specialist reduce closure cost without becoming structurally necessary?"
+    description: "PC evaluation question: Does a learned specialist reduce closure cost without becoming structurally necessary?"
     status: normative
   - id: PCQ-07
     category: pc_eval_question
     source_section: Sec-36
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1628
-    description: "PC evaluation question: two behaviorally similar pipelines different resource dependence"
+    source_line: 1746
+    source_anchor: "Can two behaviorally similar pipelines have different resource dependence under different anchors?"
+    description: "PC evaluation question: Can two behaviorally similar pipelines have different resource dependence under different anchors?"
     status: normative
   - id: PCQ-08
     category: pc_eval_question
     source_section: Sec-36
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 0
-    description: "PC evaluation question: refuse unique attribution when underidentified"
+    source_line: 1747
+    source_anchor: "Does the runtime refuse unique resource attribution when H/P_R/Lambda/Atom are underidentified?"
+    description: "PC evaluation question: Does the runtime refuse unique resource attribution when H/P_R/Lambda/Atom are underidentified?"
     status: normative
   - id: DIAG-01
     category: diagnostic
     source_section: Sec-39
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1682
-    description: "Red-flag diagnostic: V/U morphology"
+    source_line: 1800
+    source_anchor: "V/U morphology;"
+    description: "Red-flag diagnostic: V/U morphology;"
     status: normative
   - id: DIAG-02
     category: diagnostic
     source_section: Sec-39
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 464
-    description: "Red-flag diagnostic: odd/even depth asymmetry"
+    source_line: 1801
+    source_anchor: "odd/even depth asymmetry;"
+    description: "Red-flag diagnostic: odd/even depth asymmetry;"
     status: normative
   - id: DIAG-03
     category: diagnostic
     source_section: Sec-39
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 381
-    description: "Red-flag diagnostic: secondary eclipse"
+    source_line: 1802
+    source_anchor: "secondary eclipse;"
+    description: "Red-flag diagnostic: secondary eclipse;"
     status: normative
   - id: DIAG-04
     category: diagnostic
     source_section: Sec-39
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 367
-    description: "Red-flag diagnostic: period harmonics and aliases"
+    source_line: 1803
+    source_anchor: "period harmonics and aliases;"
+    description: "Red-flag diagnostic: period harmonics and aliases;"
     status: normative
   - id: DIAG-05
     category: diagnostic
     source_section: Sec-39
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1686
-    description: "Red-flag diagnostic: transit-duration consistency"
+    source_line: 1804
+    source_anchor: "transit-duration consistency;"
+    description: "Red-flag diagnostic: transit-duration consistency;"
     status: normative
   - id: DIAG-06
     category: diagnostic
     source_section: Sec-39
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1687
-    description: "Red-flag diagnostic: stellar-radius/depth consistency"
+    source_line: 1805
+    source_anchor: "stellar-radius/depth consistency;"
+    description: "Red-flag diagnostic: stellar-radius/depth consistency;"
     status: normative
   - id: DIAG-07
     category: diagnostic
     source_section: Sec-39
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 391
-    description: "Red-flag diagnostic: centroid shift"
+    source_line: 1806
+    source_anchor: "centroid shift;"
+    description: "Red-flag diagnostic: centroid shift;"
     status: normative
   - id: DIAG-08
     category: diagnostic
     source_section: Sec-39
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1689
-    description: "Red-flag diagnostic: neighbor contamination"
+    source_line: 1807
+    source_anchor: "neighbor contamination;"
+    description: "Red-flag diagnostic: neighbor contamination;"
     status: normative
   - id: DIAG-09
     category: diagnostic
     source_section: Sec-39
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 325
-    description: "Red-flag diagnostic: mission systematic-period coincidence"
+    source_line: 1808
+    source_anchor: "mission systematic-period coincidence;"
+    description: "Red-flag diagnostic: mission systematic-period coincidence;"
     status: normative
   - id: DIAG-10
     category: diagnostic
     source_section: Sec-39
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 86
-    description: "Red-flag diagnostic: strong stellar variability"
+    source_line: 1809
+    source_anchor: "strong stellar variability;"
+    description: "Red-flag diagnostic: strong stellar variability;"
     status: normative
   - id: DIAG-11
     category: diagnostic
     source_section: Sec-39
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 37
-    description: "Red-flag diagnostic: low effective SNR"
+    source_line: 1810
+    source_anchor: "low effective SNR;"
+    description: "Red-flag diagnostic: low effective SNR;"
     status: normative
   - id: DIAG-12
     category: diagnostic
     source_section: Sec-39
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 617
-    description: "Red-flag diagnostic: insufficient transit count"
+    source_line: 1811
+    source_anchor: "insufficient transit count;"
+    description: "Red-flag diagnostic: insufficient transit count;"
     status: normative
   - id: DIAG-13
     category: diagnostic
     source_section: Sec-39
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1150
-    description: "Red-flag diagnostic: severe cadence gaps"
+    source_line: 1812
+    source_anchor: "severe cadence gaps;"
+    description: "Red-flag diagnostic: severe cadence gaps;"
     status: normative
   - id: DIAG-14
     category: diagnostic
     source_section: Sec-39
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 15
-    description: "Red-flag diagnostic: model OOD"
+    source_line: 1813
+    source_anchor: "model OOD;"
+    description: "Red-flag diagnostic: model OOD;"
     status: normative
   - id: DIAG-15
     category: diagnostic
     source_section: Sec-39
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1696
-    description: "Red-flag diagnostic: cross-specialist semantic disagreement"
+    source_line: 1814
+    source_anchor: "cross-specialist semantic disagreement."
+    description: "Red-flag diagnostic: cross-specialist semantic disagreement."
     status: normative
   - id: ACT-01
     category: action_vocab
     source_section: Sec-10
     source_file: IMPLEMENTATION_SPEC.md
     source_line: 550
+    source_anchor: "LOAD_LIGHTCURVE"
     description: "Action vocabulary entry: LOAD_LIGHTCURVE"
     status: normative
   - id: ACT-02
@@ -2373,6 +2719,7 @@ items:
     source_section: Sec-10
     source_file: IMPLEMENTATION_SPEC.md
     source_line: 551
+    source_anchor: "APPLY_QUALITY_MASK"
     description: "Action vocabulary entry: APPLY_QUALITY_MASK"
     status: normative
   - id: ACT-03
@@ -2380,6 +2727,7 @@ items:
     source_section: Sec-10
     source_file: IMPLEMENTATION_SPEC.md
     source_line: 552
+    source_anchor: "NORMALIZE_FLUX"
     description: "Action vocabulary entry: NORMALIZE_FLUX"
     status: normative
   - id: ACT-04
@@ -2387,6 +2735,7 @@ items:
     source_section: Sec-10
     source_file: IMPLEMENTATION_SPEC.md
     source_line: 553
+    source_anchor: "DETREND_VARIANT"
     description: "Action vocabulary entry: DETREND_VARIANT"
     status: normative
   - id: ACT-05
@@ -2394,6 +2743,7 @@ items:
     source_section: Sec-10
     source_file: IMPLEMENTATION_SPEC.md
     source_line: 554
+    source_anchor: "SEARCH_PERIOD_BLS"
     description: "Action vocabulary entry: SEARCH_PERIOD_BLS"
     status: normative
   - id: ACT-06
@@ -2401,6 +2751,7 @@ items:
     source_section: Sec-10
     source_file: IMPLEMENTATION_SPEC.md
     source_line: 555
+    source_anchor: "SEARCH_PERIOD_ALTERNATE"
     description: "Action vocabulary entry: SEARCH_PERIOD_ALTERNATE"
     status: normative
   - id: ACT-07
@@ -2408,6 +2759,7 @@ items:
     source_section: Sec-10
     source_file: IMPLEMENTATION_SPEC.md
     source_line: 556
+    source_anchor: "FOLD_PERIOD"
     description: "Action vocabulary entry: FOLD_PERIOD"
     status: normative
   - id: ACT-08
@@ -2415,6 +2767,7 @@ items:
     source_section: Sec-10
     source_file: IMPLEMENTATION_SPEC.md
     source_line: 557
+    source_anchor: "FIT_TRANSIT_SHAPE"
     description: "Action vocabulary entry: FIT_TRANSIT_SHAPE"
     status: normative
   - id: ACT-09
@@ -2422,6 +2775,7 @@ items:
     source_section: Sec-10
     source_file: IMPLEMENTATION_SPEC.md
     source_line: 558
+    source_anchor: "COMPUTE_ODD_EVEN"
     description: "Action vocabulary entry: COMPUTE_ODD_EVEN"
     status: normative
   - id: ACT-10
@@ -2429,6 +2783,7 @@ items:
     source_section: Sec-10
     source_file: IMPLEMENTATION_SPEC.md
     source_line: 559
+    source_anchor: "SEARCH_SECONDARY_ECLIPSE"
     description: "Action vocabulary entry: SEARCH_SECONDARY_ECLIPSE"
     status: normative
   - id: ACT-11
@@ -2436,6 +2791,7 @@ items:
     source_section: Sec-10
     source_file: IMPLEMENTATION_SPEC.md
     source_line: 560
+    source_anchor: "COMPUTE_VARIABILITY"
     description: "Action vocabulary entry: COMPUTE_VARIABILITY"
     status: normative
   - id: ACT-12
@@ -2443,6 +2799,7 @@ items:
     source_section: Sec-10
     source_file: IMPLEMENTATION_SPEC.md
     source_line: 561
+    source_anchor: "COMPUTE_CENTROID_DIAGNOSTICS"
     description: "Action vocabulary entry: COMPUTE_CENTROID_DIAGNOSTICS"
     status: normative
   - id: ACT-13
@@ -2450,6 +2807,7 @@ items:
     source_section: Sec-10
     source_file: IMPLEMENTATION_SPEC.md
     source_line: 562
+    source_anchor: "QUERY_STELLAR_CATALOG"
     description: "Action vocabulary entry: QUERY_STELLAR_CATALOG"
     status: normative
   - id: ACT-14
@@ -2457,6 +2815,7 @@ items:
     source_section: Sec-10
     source_file: IMPLEMENTATION_SPEC.md
     source_line: 563
+    source_anchor: "QUERY_NEIGHBOR_CATALOG"
     description: "Action vocabulary entry: QUERY_NEIGHBOR_CATALOG"
     status: normative
   - id: ACT-15
@@ -2464,6 +2823,7 @@ items:
     source_section: Sec-10
     source_file: IMPLEMENTATION_SPEC.md
     source_line: 564
+    source_anchor: "ESTIMATE_DILUTION"
     description: "Action vocabulary entry: ESTIMATE_DILUTION"
     status: normative
   - id: ACT-16
@@ -2471,6 +2831,7 @@ items:
     source_section: Sec-10
     source_file: IMPLEMENTATION_SPEC.md
     source_line: 565
+    source_anchor: "RUN_MORPHOLOGY_LORD"
     description: "Action vocabulary entry: RUN_MORPHOLOGY_LORD"
     status: normative
   - id: ACT-17
@@ -2478,6 +2839,7 @@ items:
     source_section: Sec-10
     source_file: IMPLEMENTATION_SPEC.md
     source_line: 566
+    source_anchor: "RUN_PERIODICITY_LORD"
     description: "Action vocabulary entry: RUN_PERIODICITY_LORD"
     status: normative
   - id: ACT-18
@@ -2485,6 +2847,7 @@ items:
     source_section: Sec-10
     source_file: IMPLEMENTATION_SPEC.md
     source_line: 567
+    source_anchor: "RUN_FALSE_POSITIVE_LORD"
     description: "Action vocabulary entry: RUN_FALSE_POSITIVE_LORD"
     status: normative
   - id: ACT-19
@@ -2492,6 +2855,7 @@ items:
     source_section: Sec-10
     source_file: IMPLEMENTATION_SPEC.md
     source_line: 568
+    source_anchor: "RUN_STELLAR_LORD"
     description: "Action vocabulary entry: RUN_STELLAR_LORD"
     status: normative
   - id: ACT-20
@@ -2499,6 +2863,7 @@ items:
     source_section: Sec-10
     source_file: IMPLEMENTATION_SPEC.md
     source_line: 569
+    source_anchor: "RUN_INSTRUMENT_LORD"
     description: "Action vocabulary entry: RUN_INSTRUMENT_LORD"
     status: normative
   - id: ACT-21
@@ -2506,6 +2871,7 @@ items:
     source_section: Sec-10
     source_file: IMPLEMENTATION_SPEC.md
     source_line: 570
+    source_anchor: "RUN_GENERAL_VETTER"
     description: "Action vocabulary entry: RUN_GENERAL_VETTER"
     status: normative
   - id: ACT-22
@@ -2513,6 +2879,7 @@ items:
     source_section: Sec-10
     source_file: IMPLEMENTATION_SPEC.md
     source_line: 571
+    source_anchor: "REFINE_REPRESENTATION"
     description: "Action vocabulary entry: REFINE_REPRESENTATION"
     status: normative
   - id: ACT-23
@@ -2520,6 +2887,7 @@ items:
     source_section: Sec-10
     source_file: IMPLEMENTATION_SPEC.md
     source_line: 572
+    source_anchor: "REQUEST_ADDITIONAL_SECTOR"
     description: "Action vocabulary entry: REQUEST_ADDITIONAL_SECTOR"
     status: normative
   - id: ACT-24
@@ -2527,6 +2895,7 @@ items:
     source_section: Sec-10
     source_file: IMPLEMENTATION_SPEC.md
     source_line: 573
+    source_anchor: "ESCALATE_HUMAN"
     description: "Action vocabulary entry: ESCALATE_HUMAN"
     status: normative
   - id: ACT-25
@@ -2534,6 +2903,7 @@ items:
     source_section: Sec-10
     source_file: IMPLEMENTATION_SPEC.md
     source_line: 574
+    source_anchor: "STOP_UNRESOLVED"
     description: "Action vocabulary entry: STOP_UNRESOLVED"
     status: normative
   - id: LORD-01
@@ -2541,6 +2911,7 @@ items:
     source_section: Sec-12
     source_file: IMPLEMENTATION_SPEC.md
     source_line: 627
+    source_anchor: "`MorphologyLord`"
     description: "Initial roster lord: MorphologyLord"
     status: normative
   - id: LORD-02
@@ -2548,6 +2919,7 @@ items:
     source_section: Sec-12
     source_file: IMPLEMENTATION_SPEC.md
     source_line: 628
+    source_anchor: "`PeriodicityLord`"
     description: "Initial roster lord: PeriodicityLord"
     status: normative
   - id: LORD-03
@@ -2555,6 +2927,7 @@ items:
     source_section: Sec-12
     source_file: IMPLEMENTATION_SPEC.md
     source_line: 629
+    source_anchor: "`FalsePositiveLord`"
     description: "Initial roster lord: FalsePositiveLord"
     status: normative
   - id: LORD-04
@@ -2562,6 +2935,7 @@ items:
     source_section: Sec-12
     source_file: IMPLEMENTATION_SPEC.md
     source_line: 630
+    source_anchor: "`StellarPlausibilityLord`"
     description: "Initial roster lord: StellarPlausibilityLord"
     status: normative
   - id: LORD-05
@@ -2569,6 +2943,7 @@ items:
     source_section: Sec-12
     source_file: IMPLEMENTATION_SPEC.md
     source_line: 631
+    source_anchor: "`InstrumentLord`"
     description: "Initial roster lord: InstrumentLord"
     status: normative
   - id: LORD-06
@@ -2576,454 +2951,519 @@ items:
     source_section: Sec-12
     source_file: IMPLEMENTATION_SPEC.md
     source_line: 632
+    source_anchor: "`GeneralVetter`"
     description: "Initial roster lord: GeneralVetter"
     status: normative
   - id: CLI-01
     category: cli_command
     source_section: Sec-55
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2422
+    source_line: 2541
+    source_anchor: "col data ingest"
     description: "CLI command: col data ingest"
     status: normative
   - id: CLI-02
     category: cli_command
     source_section: Sec-55
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2423
+    source_line: 2542
+    source_anchor: "col data build"
     description: "CLI command: col data build"
     status: normative
   - id: CLI-03
     category: cli_command
     source_section: Sec-55
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2424
+    source_line: 2543
+    source_anchor: "col data audit"
     description: "CLI command: col data audit"
     status: normative
   - id: CLI-04
     category: cli_command
     source_section: Sec-55
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2425
+    source_line: 2544
+    source_anchor: "col task validate"
     description: "CLI command: col task validate"
     status: normative
   - id: CLI-05
     category: cli_command
     source_section: Sec-55
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2426
+    source_line: 2545
+    source_anchor: "col train run"
     description: "CLI command: col train run"
     status: normative
   - id: CLI-06
     category: cli_command
     source_section: Sec-55
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2427
+    source_line: 2546
+    source_anchor: "col train search"
     description: "CLI command: col train search"
     status: normative
   - id: CLI-07
     category: cli_command
     source_section: Sec-55
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2428
+    source_line: 2547
+    source_anchor: "col calibrate"
     description: "CLI command: col calibrate"
     status: normative
   - id: CLI-08
     category: cli_command
     source_section: Sec-55
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2429
+    source_line: 2548
+    source_anchor: "col qualify"
     description: "CLI command: col qualify"
     status: normative
   - id: CLI-09
     category: cli_command
     source_section: Sec-55
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2430
+    source_line: 2549
+    source_anchor: "col registry verify"
     description: "CLI command: col registry verify"
     status: normative
   - id: CLI-10
     category: cli_command
     source_section: Sec-55
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2431
+    source_line: 2550
+    source_anchor: "col registry list"
     description: "CLI command: col registry list"
     status: normative
   - id: CLI-11
     category: cli_command
     source_section: Sec-55
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2432
+    source_line: 2551
+    source_anchor: "col teacher generate"
     description: "CLI command: col teacher generate"
     status: normative
   - id: CLI-12
     category: cli_command
     source_section: Sec-55
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2433
+    source_line: 2552
+    source_anchor: "col teacher audit"
     description: "CLI command: col teacher audit"
     status: normative
   - id: CLI-13
     category: cli_command
     source_section: Sec-55
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2434
+    source_line: 2553
+    source_anchor: "col council analyze"
     description: "CLI command: col council analyze"
     status: normative
   - id: CLI-14
     category: cli_command
     source_section: Sec-55
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2435
+    source_line: 2554
+    source_anchor: "col council replay"
     description: "CLI command: col council replay"
     status: normative
   - id: CLI-15
     category: cli_command
     source_section: Sec-55
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2436
+    source_line: 2555
+    source_anchor: "col pc touch"
     description: "CLI command: col pc touch"
     status: normative
   - id: CLI-16
     category: cli_command
     source_section: Sec-55
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2437
+    source_line: 2556
+    source_anchor: "col pc close"
     description: "CLI command: col pc close"
     status: normative
   - id: CLI-17
     category: cli_command
     source_section: Sec-55
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2438
+    source_line: 2557
+    source_anchor: "col pc freeze"
     description: "CLI command: col pc freeze"
     status: normative
   - id: CLI-18
     category: cli_command
     source_section: Sec-55
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2439
+    source_line: 2558
+    source_anchor: "col audit full"
     description: "CLI command: col audit full"
     status: normative
   - id: AUDQ-01
     category: audit_question
     source_section: Sec-67
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 0
-    description: "Final audit question: trace qualified model to data+code"
+    source_line: 2913
+    source_anchor: "Can every qualified model be traced to exact training data and code?"
+    description: "Final audit question: Can every qualified model be traced to exact training data and code?"
     status: normative
   - id: AUDQ-02
     category: audit_question
     source_section: Sec-67
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 0
-    description: "Final audit question: trace dataset row to source+identity"
+    source_line: 2914
+    source_anchor: "Can every dataset row be traced to a source class and protected identity?"
+    description: "Final audit question: Can every dataset row be traced to a source class and protected identity?"
     status: normative
   - id: AUDQ-03
     category: audit_question
     source_section: Sec-67
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 0
-    description: "Final audit question: trace runtime feature to admitted evidence"
+    source_line: 2915
+    source_anchor: "Can every runtime feature be traced to admitted evidence?"
+    description: "Final audit question: Can every runtime feature be traced to admitted evidence?"
     status: normative
   - id: AUDQ-04
     category: audit_question
     source_section: Sec-67
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 0
-    description: "Final audit question: prove specialist input authorized by view"
+    source_line: 2916
+    source_anchor: "Can every specialist input be proven authorized by its view?"
+    description: "Final audit question: Can every specialist input be proven authorized by its view?"
     status: normative
   - id: AUDQ-05
     category: audit_question
     source_section: Sec-67
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 0
-    description: "Final audit question: recompute every E/R/A touch"
+    source_line: 2917
+    source_anchor: "Can every E/R/A touch be independently recomputed?"
+    description: "Final audit question: Can every E/R/A touch be independently recomputed?"
     status: normative
   - id: AUDQ-06
     category: audit_question
     source_section: Sec-67
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 0
-    description: "Final audit question: trace representation refinement to diagnostic/action"
+    source_line: 2918
+    source_anchor: "Can every representation refinement be traced to a declared diagnostic/action?"
+    description: "Final audit question: Can every representation refinement be traced to a declared diagnostic/action?"
     status: normative
   - id: AUDQ-07
     category: audit_question
     source_section: Sec-67
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 0
-    description: "Final audit question: trace authority change to Lambda"
+    source_line: 2919
+    source_anchor: "Can every authority change be traced to Lambda?"
+    description: "Final audit question: Can every authority change be traced to Lambda?"
     status: normative
   - id: AUDQ-08
     category: audit_question
     source_section: Sec-67
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 0
-    description: "Final audit question: recompute closed verdict from target+worlds"
+    source_line: 2920
+    source_anchor: "Can every closed verdict be recomputed from the frozen target and represented compatible worlds?"
+    description: "Final audit question: Can every closed verdict be recomputed from the frozen target and represented compatible worlds?"
     status: normative
   - id: AUDQ-09
     category: audit_question
     source_section: Sec-67
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 0
-    description: "Final audit question: show open state does not bypass closure"
+    source_line: 2921
+    source_anchor: "Can every open state be shown not to bypass closure?"
+    description: "Final audit question: Can every open state be shown not to bypass closure?"
     status: normative
   - id: AUDQ-10
     category: audit_question
     source_section: Sec-67
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 0
-    description: "Final audit question: distinguish teacher artifact from ground truth"
+    source_line: 2922
+    source_anchor: "Can every teacher-derived artifact be distinguished from ground truth?"
+    description: "Final audit question: Can every teacher-derived artifact be distinguished from ground truth?"
     status: normative
   - id: AUDQ-11
     category: audit_question
     source_section: Sec-67
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 0
-    description: "Final audit question: show holdout uncontaminated"
+    source_line: 2923
+    source_anchor: "Can every holdout claim be shown uncontaminated?"
+    description: "Final audit question: Can every holdout claim be shown uncontaminated?"
     status: normative
   - id: AUDQ-12
     category: audit_question
     source_section: Sec-67
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 0
-    description: "Final audit question: byte-verify registry artifact"
+    source_line: 2924
+    source_anchor: "Can every registry artifact be byte-verified?"
+    description: "Final audit question: Can every registry artifact be byte-verified?"
     status: normative
   - id: AUDQ-13
     category: audit_question
     source_section: Sec-67
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 0
-    description: "Final audit question: run without frontend"
+    source_line: 2925
+    source_anchor: "Can the system run without the frontend?"
+    description: "Final audit question: Can the system run without the frontend?"
     status: normative
   - id: AUDQ-14
     category: audit_question
     source_section: Sec-67
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 0
-    description: "Final audit question: run core without LLM at inference"
+    source_line: 2926
+    source_anchor: "Can the scientific core run without an LLM at inference time?"
+    description: "Final audit question: Can the scientific core run without an LLM at inference time?"
     status: normative
   - id: AUDQ-15
     category: audit_question
     source_section: Sec-67
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 0
-    description: "Final audit question: replay release from manifests"
+    source_line: 2927
+    source_anchor: "Can the final release be replayed from its manifests?"
+    description: "Final audit question: Can the final release be replayed from its manifests?"
     status: normative
   - id: LPC-01
     category: promotion_criterion
     source_section: Sec-61
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 0
-    description: "Lord promotion criterion: TaskSpec frozen"
+    source_line: 2691
+    source_anchor: "TaskSpec is frozen;"
+    description: "Lord promotion criterion: TaskSpec is frozen;"
     status: normative
   - id: LPC-02
     category: promotion_criterion
     source_section: Sec-61
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 0
-    description: "Lord promotion criterion: input schema frozen"
+    source_line: 2692
+    source_anchor: "input schema is frozen;"
+    description: "Lord promotion criterion: input schema is frozen;"
     status: normative
   - id: LPC-03
     category: promotion_criterion
     source_section: Sec-61
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2574
-    description: "Lord promotion criterion: allowed/forbidden evidence frozen"
+    source_line: 2693
+    source_anchor: "allowed/forbidden evidence is frozen;"
+    description: "Lord promotion criterion: allowed/forbidden evidence is frozen;"
     status: normative
   - id: LPC-04
     category: promotion_criterion
     source_section: Sec-61
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 0
-    description: "Lord promotion criterion: dataset+split manifests frozen"
+    source_line: 2694
+    source_anchor: "dataset and split manifests are frozen;"
+    description: "Lord promotion criterion: dataset and split manifests are frozen;"
     status: normative
   - id: LPC-05
     category: promotion_criterion
     source_section: Sec-61
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1122
-    description: "Lord promotion criterion: protected-identity leakage zero"
+    source_line: 2695
+    source_anchor: "protected-identity leakage is zero;"
+    description: "Lord promotion criterion: protected-identity leakage is zero;"
     status: normative
   - id: LPC-06
     category: promotion_criterion
     source_section: Sec-61
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 0
-    description: "Lord promotion criterion: training reproducible"
+    source_line: 2696
+    source_anchor: "training is reproducible;"
+    description: "Lord promotion criterion: training is reproducible;"
     status: normative
   - id: LPC-07
     category: promotion_criterion
     source_section: Sec-61
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 0
-    description: "Lord promotion criterion: calibration passes"
+    source_line: 2697
+    source_anchor: "calibration requirement passes;"
+    description: "Lord promotion criterion: calibration requirement passes;"
     status: normative
   - id: LPC-08
     category: promotion_criterion
     source_section: Sec-61
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 0
-    description: "Lord promotion criterion: abstention passes"
+    source_line: 2698
+    source_anchor: "abstention requirement passes;"
+    description: "Lord promotion criterion: abstention requirement passes;"
     status: normative
   - id: LPC-09
     category: promotion_criterion
     source_section: Sec-61
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 0
-    description: "Lord promotion criterion: OOD passes"
+    source_line: 2699
+    source_anchor: "OOD/applicability requirement passes;"
+    description: "Lord promotion criterion: OOD/applicability requirement passes;"
     status: normative
   - id: LPC-10
     category: promotion_criterion
     source_section: Sec-61
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 0
-    description: "Lord promotion criterion: stress passes"
+    source_line: 2700
+    source_anchor: "role-specific stress suite passes;"
+    description: "Lord promotion criterion: role-specific stress suite passes;"
     status: normative
   - id: LPC-11
     category: promotion_criterion
     source_section: Sec-61
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 0
-    description: "Lord promotion criterion: fresh holdout passes"
+    source_line: 2701
+    source_anchor: "fresh qualification holdout requirement passes;"
+    description: "Lord promotion criterion: fresh qualification holdout requirement passes;"
     status: normative
   - id: LPC-12
     category: promotion_criterion
     source_section: Sec-61
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 0
-    description: "Lord promotion criterion: capability map generated"
+    source_line: 2702
+    source_anchor: "capability map is generated;"
+    description: "Lord promotion criterion: capability map is generated;"
     status: normative
   - id: LPC-13
     category: promotion_criterion
     source_section: Sec-61
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 0
-    description: "Lord promotion criterion: failure regions disclosed"
+    source_line: 2703
+    source_anchor: "known failure regions are disclosed;"
+    description: "Lord promotion criterion: known failure regions are disclosed;"
     status: normative
   - id: LPC-14
     category: promotion_criterion
     source_section: Sec-61
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 0
-    description: "Lord promotion criterion: artifact bytes hashed"
+    source_line: 2704
+    source_anchor: "artifact bytes are hashed;"
+    description: "Lord promotion criterion: artifact bytes are hashed;"
     status: normative
   - id: LPC-15
     category: promotion_criterion
     source_section: Sec-61
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2586
-    description: "Lord promotion criterion: registry package verifies"
+    source_line: 2705
+    source_anchor: "registry package verifies cleanly;"
+    description: "Lord promotion criterion: registry package verifies cleanly;"
     status: normative
   - id: LPC-16
     category: promotion_criterion
     source_section: Sec-61
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2587
-    description: "Lord promotion criterion: no hidden teacher dependency unless declared"
+    source_line: 2706
+    source_anchor: "no hidden teacher dependency exists at runtime unless explicitly declared."
+    description: "Lord promotion criterion: no hidden teacher dependency exists at runtime unless explicitly declared."
     status: normative
   - id: CPC-01
     category: promotion_criterion
     source_section: Sec-62
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 0
-    description: "Council promotion criterion: all Lords registry-qualified"
+    source_line: 2718
+    source_anchor: "all loaded Lords are registry-qualified;"
+    description: "Council promotion criterion: all loaded Lords are registry-qualified;"
     status: normative
   - id: CPC-02
     category: promotion_criterion
     source_section: Sec-62
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 0
-    description: "Council promotion criterion: PC target frozen"
+    source_line: 2719
+    source_anchor: "PC target is frozen;"
+    description: "Council promotion criterion: PC target is frozen;"
     status: normative
   - id: CPC-03
     category: promotion_criterion
     source_section: Sec-62
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 0
-    description: "Council promotion criterion: H/P_R/Lambda frozen"
+    source_line: 2720
+    source_anchor: "H/P_R/Lambda semantics are frozen;"
+    description: "Council promotion criterion: H/P_R/Lambda semantics are frozen;"
     status: normative
   - id: CPC-04
     category: promotion_criterion
     source_section: Sec-62
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 0
-    description: "Council promotion criterion: action/atomicity frozen"
+    source_line: 2721
+    source_anchor: "action/atomicity boundary is frozen;"
+    description: "Council promotion criterion: action/atomicity boundary is frozen;"
     status: normative
   - id: CPC-05
     category: promotion_criterion
     source_section: Sec-62
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 0
-    description: "Council promotion criterion: independent touch agrees"
+    source_line: 2722
+    source_anchor: "independent touch derivation agrees;"
+    description: "Council promotion criterion: independent touch derivation agrees;"
     status: normative
   - id: CPC-06
     category: promotion_criterion
     source_section: Sec-62
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 0
-    description: "Council promotion criterion: controller deterministic/seed-bound"
+    source_line: 2723
+    source_anchor: "controller is deterministic or fully seed-bound;"
+    description: "Council promotion criterion: controller is deterministic or fully seed-bound;"
     status: normative
   - id: CPC-07
     category: promotion_criterion
     source_section: Sec-62
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2605
-    description: "Council promotion criterion: resource views enforce allowed evidence"
+    source_line: 2724
+    source_anchor: "all resource views enforce allowed evidence;"
+    description: "Council promotion criterion: all resource views enforce allowed evidence;"
     status: normative
   - id: CPC-08
     category: promotion_criterion
     source_section: Sec-62
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 0
-    description: "Council promotion criterion: open cannot emit closed"
+    source_line: 2725
+    source_anchor: "open states cannot emit authoritative closed verdicts;"
+    description: "Council promotion criterion: open states cannot emit authoritative closed verdicts;"
     status: normative
   - id: CPC-09
     category: promotion_criterion
     source_section: Sec-62
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2607
-    description: "Council promotion criterion: mutation controls pass"
+    source_line: 2726
+    source_anchor: "mutation controls pass;"
+    description: "Council promotion criterion: mutation controls pass;"
     status: normative
   - id: CPC-10
     category: promotion_criterion
     source_section: Sec-62
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 0
-    description: "Council promotion criterion: replay deterministic"
+    source_line: 2727
+    source_anchor: "replay is deterministic under declared conditions."
+    description: "Council promotion criterion: replay is deterministic under declared conditions."
     status: normative
   - id: PC-H
     category: pc_obligation
     source_section: Sec-6
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 273
+    source_line: 427
+    source_anchor: "Only an explicit source-atomic evidence-admission action may add or change the admitted history."
     description: "Admitted evidence history H with admission-only mutation"
     status: normative
   - id: PC-PR
     category: pc_obligation
     source_section: Sec-7
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 183
+    source_line: 475
+    source_anchor: "P_R\rightarrow P_R'"
     description: "Certificate/representation relation P_R refinement"
     status: normative
   - id: PC-LAMBDA
     category: pc_obligation
     source_section: Sec-8
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 184
+    source_line: 506
+    source_anchor: "Authority is extensional."
     description: "Epistemic authority Lambda extensional licensing"
     status: normative
   - id: PC-OMEGA
     category: pc_obligation
     source_section: Sec-4
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 185
+    source_line: 282
+    source_anchor: "omega_t   controller-visible observation;"
     description: "Controller observation omega without hidden leakage"
     status: normative
   - id: PC-TARGET
     category: pc_obligation
     source_section: Sec-4
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 181
+    source_line: 254
+    source_anchor: "A_\Pi:X\rightarrow D."
     description: "Sealed vetting target A_Pi over D"
     status: normative
   - id: PC-COMPAT
@@ -3031,27 +3471,31 @@ items:
     source_section: Sec-5
     source_file: IMPLEMENTATION_SPEC.md
     source_line: 296
+    source_anchor: "C_R(s)=\{x:"
     description: "Represented compatible-world set C_R"
     status: normative
   - id: PC-CLOSURE
     category: pc_obligation
     source_section: Sec-5
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 27
+    source_line: 303
+    source_anchor: "|\{A_\Pi(x):x\in C_R(s)\}|=1."
     description: "Target-relative closure |{A(x)}|=1, no vote bypass"
     status: normative
   - id: PC-ADMIT
     category: pc_obligation
     source_section: Sec-6
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 325
+    source_line: 412
+    source_anchor: "Raw availability is not admission."
     description: "Source-atomic admission rule; raw availability != admission"
     status: normative
   - id: PC-NOFALLBACK
     category: pc_obligation
     source_section: Sec-6
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 429
+    source_line: 440
+    source_anchor: "source=DECLARED_DEFAULT"
     description: "No silent solar-default fallback; DECLARED_DEFAULT with uncertainty"
     status: normative
   - id: PC-TOUCH
@@ -3059,454 +3503,535 @@ items:
     source_section: Sec-9
     source_file: IMPLEMENTATION_SPEC.md
     source_line: 519
+    source_anchor: "T_s(q)="
     description: "Extensional touch derivation T_s(q), no manual E/R/A"
     status: normative
   - id: PC-ATOM
     category: pc_obligation
     source_section: Sec-9
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 188
+    source_line: 539
+    source_anchor: "A freeze never invents a partial action"
     description: "Source atomicity Atom; freezes never split mixed actions"
     status: normative
   - id: PC-SUCC
     category: pc_obligation
     source_section: Sec-9
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 187
+    source_line: 516
+    source_anchor: "positive-support successor"
     description: "Positive-support successors Succ+ semantics"
     status: normative
   - id: PC-COST
     category: pc_obligation
     source_section: Sec-34
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1551
+    source_line: 1669
+    source_anchor: "c(q)\ge 0."
     description: "Nonnegative action cost c(q) with unit-cost convention declared"
     status: normative
   - id: PC-KAPPA
     category: pc_obligation
     source_section: Sec-35
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 192
+    source_line: 1692
+    source_anchor: "\kappa_\Pi(s)"
     description: "Closure cost kappa and freeze signature K over 8 freezes"
     status: normative
   - id: PC-IDENT
     category: pc_obligation
     source_section: Sec-37
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1655
+    source_line: 1773
+    source_anchor: "BOUNDARY_UNDERIDENTIFIED"
     description: "Identification gate; BOUNDARY_UNDERIDENTIFIED if touch underidentified"
     status: normative
   - id: PC-INDTOUCH
     category: pc_obligation
     source_section: Sec-38
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 533
+    source_line: 1782
+    source_anchor: "two differently structured touch derivations"
     description: "Independent touch reconstruction agreement gate"
     status: normative
   - id: PC-VIEWS
     category: pc_obligation
     source_section: Sec-28
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1266
+    source_line: 1384
+    source_anchor: "x_i^{(v)}=View_v(H,P_R,\Lambda)."
     description: "Authorized PC resource views View_v(H,P_R,Lambda)"
     status: normative
   - id: PC-RELIAB
     category: pc_obligation
     source_section: Sec-25
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 496
+    source_line: 1286
+    source_anchor: "r_i(s)=f_i("
     description: "State-dependent reliability r_i(s), no fixed 1.4x weights"
     status: normative
   - id: PC-REPORT
     category: pc_obligation
     source_section: Sec-56
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 229
+    source_line: 2572
+    source_anchor: "EvidenceState hash chain;"
     description: "Runtime report with hash chain, touch, authority, cost, replay"
     status: normative
   - id: PC-CONTROLLER
     category: pc_obligation
     source_section: Sec-33
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 185
+    source_line: 1632
+    source_anchor: "The controller chooses among legal source-atomic actions."
     description: "Controller legality: no holdout peek, no forbidden evidence, no closure override"
     status: normative
   - id: WIT-01
     category: pc_witness
     source_section: Sec-46
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1993
-    description: "PC finite sanity witness: pure E action"
+    source_line: 2111
+    source_anchor: "pure E action;"
+    description: "PC finite sanity witness: pure E action;"
     status: normative
   - id: WIT-02
     category: pc_witness
     source_section: Sec-46
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1993
-    description: "PC finite sanity witness: pure R action"
+    source_line: 2112
+    source_anchor: "pure R action;"
+    description: "PC finite sanity witness: pure R action;"
     status: normative
   - id: WIT-03
     category: pc_witness
     source_section: Sec-46
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1993
-    description: "PC finite sanity witness: pure A action"
+    source_line: 2113
+    source_anchor: "pure A action;"
+    description: "PC finite sanity witness: pure A action;"
     status: normative
   - id: WIT-04
     category: pc_witness
     source_section: Sec-46
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 161
-    description: "PC finite sanity witness: mixed ER action"
+    source_line: 2114
+    source_anchor: "mixed ER action;"
+    description: "PC finite sanity witness: mixed ER action;"
     status: normative
   - id: WIT-05
     category: pc_witness
     source_section: Sec-46
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 161
-    description: "PC finite sanity witness: mixed EA action"
+    source_line: 2115
+    source_anchor: "mixed EA action;"
+    description: "PC finite sanity witness: mixed EA action;"
     status: normative
   - id: WIT-06
     category: pc_witness
     source_section: Sec-46
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 161
-    description: "PC finite sanity witness: mixed RA action"
+    source_line: 2116
+    source_anchor: "mixed RA action;"
+    description: "PC finite sanity witness: mixed RA action;"
     status: normative
   - id: WIT-07
     category: pc_witness
     source_section: Sec-46
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 161
-    description: "PC finite sanity witness: mixed ERA action"
+    source_line: 2117
+    source_anchor: "mixed ERA action;"
+    description: "PC finite sanity witness: mixed ERA action;"
     status: normative
   - id: WIT-08
     category: pc_witness
     source_section: Sec-46
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 309
-    description: "PC finite sanity witness: open state"
+    source_line: 2118
+    source_anchor: "open state;"
+    description: "PC finite sanity witness: open state;"
     status: normative
   - id: WIT-09
     category: pc_witness
     source_section: Sec-46
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 27
-    description: "PC finite sanity witness: closed state"
+    source_line: 2119
+    source_anchor: "closed state;"
+    description: "PC finite sanity witness: closed state;"
     status: normative
   - id: WIT-10
     category: pc_witness
     source_section: Sec-46
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2002
-    description: "PC finite sanity witness: R-freeze finite fallback"
+    source_line: 2120
+    source_anchor: "R-freeze finite fallback;"
+    description: "PC finite sanity witness: R-freeze finite fallback;"
     status: normative
   - id: WIT-11
     category: pc_witness
     source_section: Sec-46
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2002
-    description: "PC finite sanity witness: R-freeze structural failure"
+    source_line: 2121
+    source_anchor: "R-freeze structural failure;"
+    description: "PC finite sanity witness: R-freeze structural failure;"
     status: normative
   - id: WIT-12
     category: pc_witness
     source_section: Sec-46
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2004
-    description: "PC finite sanity witness: boundary-underidentified fixture"
+    source_line: 2122
+    source_anchor: "boundary-underidentified fixture."
+    description: "PC finite sanity witness: boundary-underidentified fixture."
     status: normative
   - id: Q-01
     category: qualification_gate
     source_section: Sec-23
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 0
-    description: "Qualification component: Q_general"
+    source_line: 1187
+    source_anchor: "Q_{general}"
+    description: "Qualification component: Q_{general}"
     status: normative
   - id: Q-02
     category: qualification_gate
     source_section: Sec-23
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 0
-    description: "Qualification component: Q_calibration"
+    source_line: 1188
+    source_anchor: "Q_{calibration}"
+    description: "Qualification component: Q_{calibration}"
     status: normative
   - id: Q-03
     category: qualification_gate
     source_section: Sec-23
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 0
-    description: "Qualification component: Q_stress"
+    source_line: 1189
+    source_anchor: "Q_{stress}"
+    description: "Qualification component: Q_{stress}"
     status: normative
   - id: Q-04
     category: qualification_gate
     source_section: Sec-23
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 0
-    description: "Qualification component: Q_OOD"
+    source_line: 1190
+    source_anchor: "Q_{OOD}"
+    description: "Qualification component: Q_{OOD}"
     status: normative
   - id: Q-05
     category: qualification_gate
     source_section: Sec-23
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 0
-    description: "Qualification component: Q_leakage"
+    source_line: 1191
+    source_anchor: "Q_{leakage}"
+    description: "Qualification component: Q_{leakage}"
     status: normative
   - id: Q-06
     category: qualification_gate
     source_section: Sec-23
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 0
-    description: "Qualification component: Q_reproducibility"
+    source_line: 1192
+    source_anchor: "Q_{reproducibility}"
+    description: "Qualification component: Q_{reproducibility}"
     status: normative
   - id: Q-07
     category: qualification_gate
     source_section: Sec-23
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 0
-    description: "Qualification component: Q_semantic"
+    source_line: 1193
+    source_anchor: "Q_{semantic}"
+    description: "Qualification component: Q_{semantic}"
     status: normative
   - id: HOLD-01
     category: holdout_rule
     source_section: Sec-41
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 0
-    description: "freeze hidden holdout before final promotion; inaccessible to fitting/search/thresholds/teacher/repair"
+    source_line: 1875
+    source_anchor: "freeze a new qualification holdout"
+    description: "Freeze hidden holdout before final promotion; inaccessible to fitting/search/thresholds/teacher/repair"
     status: normative
   - id: HOLD-02
     category: holdout_rule
     source_section: Sec-41
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 0
-    description: "one reveal per qualification campaign; after reveal bank becomes historical"
+    source_line: 1889
+    source_anchor: "One reveal per qualification campaign"
+    description: "One reveal per qualification campaign; after reveal bank becomes historical"
     status: normative
   - id: HOLD-03
     category: holdout_rule
     source_section: Sec-41
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 0
-    description: "new major campaign requires new hidden bank"
+    source_line: 1893
+    source_anchor: "requires a new hidden bank"
+    description: "New major campaign requires new hidden bank"
     status: normative
   - id: HOLD-04
     category: holdout_rule
     source_section: Sec-41
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 0
-    description: "no holdout row in training identity group (object-level split)"
+    source_line: 1880
+    source_anchor: "model fitting;"
+    description: "No holdout row in training identity group (object-level split; holdout barred from model fitting)"
     status: normative
   - id: HOLD-05
     category: holdout_rule
     source_section: Sec-41
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 0
-    description: "no post-hoc threshold tuning on holdout"
+    source_line: 1882
+    source_anchor: "threshold search;"
+    description: "No post-hoc threshold tuning on holdout"
     status: normative
   - id: HOLD-06
     category: holdout_rule
     source_section: Sec-41
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 0
-    description: "no post-hoc representation tuning on holdout"
+    source_line: 1886
+    source_anchor: "representation-rule tuning based on holdout residual"
+    description: "No post-hoc representation tuning on holdout"
     status: normative
   - id: HOLD-07
     category: holdout_rule
-    source_section: Sec-41
+    source_section: Sec-42
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 0
-    description: "no historical result relabeled fresh"
+    source_line: 1913
+    source_anchor: "No historical result may be relabeled fresh."
+    description: "No historical result relabeled fresh"
     status: normative
   - id: HOLD-08
     category: holdout_rule
-    source_section: Sec-41
+    source_section: Sec-40
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 0
-    description: "legacy fixtures only LEGACY_HISTORICAL, never fresh holdout"
+    source_line: 1869
+    source_anchor: "and cannot serve as fresh holdout evidence."
+    description: "Legacy fixtures only LEGACY_HISTORICAL, never fresh holdout"
     status: normative
   - id: TEACH-01
     category: teacher_rule
     source_section: Sec-29
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 0
+    source_line: 1420
+    source_anchor: "is the default external teacher for v1.0 development"
     description: "Muse Spark via OpenCode; schema-bound, provenance-recorded, budget-capped, no ground-truth authority"
     status: normative
   - id: TEACH-02
     category: teacher_rule
     source_section: Sec-29
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 0
-    description: "structured output only for machine ingestion (versioned JSON schema)"
+    source_line: 1458
+    source_anchor: "must pass a versioned JSON schema"
+    description: "Structured output only for machine ingestion (versioned JSON schema)"
     status: normative
   - id: TEACH-03
     category: teacher_rule
     source_section: Sec-29
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 0
-    description: "every transaction records model/provider/route/prompt_hash/input_hash/schema/params/response_hash/validation/cost"
+    source_line: 1464
+    source_anchor: "Every teacher transaction records:"
+    description: "Every transaction records model/provider/route/prompt_hash/input_hash/schema/params/response_hash/validation/cost"
     status: normative
   - id: TEACH-04
     category: teacher_rule
     source_section: Sec-29
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 0
-    description: "budget USD 25 default ceiling; fail closed before exceeding"
+    source_line: 1488
+    source_anchor: "USD 25.00"
+    description: "Budget USD 25 default ceiling; fail closed before exceeding"
     status: normative
   - id: TEACH-05
     category: teacher_rule
     source_section: Sec-29
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 0
-    description: "scenario-constraints pattern: proposal->schema->materializer->synthetic provenance, never observational"
+    source_line: 1444
+    source_anchor: "adversarial scenario generation;"
+    description: "Scenario-constraints pattern: proposal->schema->materializer->synthetic provenance, never observational"
     status: normative
   - id: TEACH-06
     category: teacher_rule
     source_section: Sec-29
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 0
-    description: "failure discovery requires deterministic criterion/statistical separation/new test family/physical check/human rationale"
+    source_line: 1446
+    source_anchor: "failure-cluster interpretation;"
+    description: "Failure discovery requires deterministic criterion/statistical separation/new test family/physical check/human rationale"
     status: normative
   - id: TEACH-07
     category: teacher_rule
     source_section: Sec-29
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 0
-    description: "no teacher-derived artifact as runtime ground truth unless declared"
+    source_line: 1460
+    source_anchor: "but may not be machine-ingested as a label without conversion and validation"
+    description: "No teacher-derived artifact as runtime ground truth unless declared"
     status: normative
   - id: TEACH-08
     category: teacher_rule
-    source_section: Sec-29
+    source_section: Sec-52
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 0
-    description: "secrets: .env ignored, no keys in logs/traces, scrubbed provider responses"
+    source_line: 2457
+    source_anchor: "must never be committed"
+    description: "Secrets: .env ignored, no keys in logs/traces, scrubbed provider responses"
     status: normative
   - id: CLAIM-01
     category: claim_policy
     source_section: Sec-2
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 0
-    description: "five specialists optimal (not claimed)"
+    source_line: 147
+    source_anchor: "five specialists are optimal;"
+    description: "Non-goal / forbidden claim: five specialists are optimal;"
     status: normative
   - id: CLAIM-02
     category: claim_policy
     source_section: Sec-2
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 0
-    description: "more specialists always better (not claimed)"
+    source_line: 148
+    source_anchor: "more specialists are always better;"
+    description: "Non-goal / forbidden claim: more specialists are always better;"
     status: normative
   - id: CLAIM-03
     category: claim_policy
     source_section: Sec-2
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 0
-    description: "neural/large models required (not claimed)"
+    source_line: 149
+    source_anchor: "neural networks are required;"
+    description: "Non-goal / forbidden claim: neural networks are required;"
     status: normative
   - id: CLAIM-04
     category: claim_policy
     source_section: Sec-2
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 0
-    description: "LLM runtime classification (not claimed; teacher dev-only)"
+    source_line: 150
+    source_anchor: "large models are required;"
+    description: "Non-goal / forbidden claim: large models are required;"
     status: normative
   - id: CLAIM-05
     category: claim_policy
     source_section: Sec-2
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 0
-    description: "Muse output is ground truth (forbidden)"
+    source_line: 151
+    source_anchor: "LLMs should participate in runtime classification;"
+    description: "Non-goal / forbidden claim: LLMs should participate in runtime classification;"
     status: normative
   - id: CLAIM-06
     category: claim_policy
     source_section: Sec-2
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 0
-    description: "weighted voting is closure (forbidden; closure is PC-defined)"
+    source_line: 152
+    source_anchor: "Muse Spark output is ground truth;"
+    description: "Non-goal / forbidden claim: Muse Spark output is ground truth;"
     status: normative
   - id: CLAIM-07
     category: claim_policy
     source_section: Sec-2
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 154
-    description: "confidence is authorization/calibrated probability (forbidden without calibration)"
+    source_line: 153
+    source_anchor: "weighted voting is an acceptable closure rule;"
+    description: "Non-goal / forbidden claim: weighted voting is an acceptable closure rule;"
     status: normative
   - id: CLAIM-08
     category: claim_policy
     source_section: Sec-2
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 0
-    description: "red flag subtracts fixed scalar (forbidden)"
+    source_line: 154
+    source_anchor: "classifier confidence is authorization;"
+    description: "Non-goal / forbidden claim: classifier confidence is authorization;"
     status: normative
   - id: CLAIM-09
     category: claim_policy
     source_section: Sec-2
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 162
-    description: "finite benchmark success = universal guarantee / exoplanet confirmation (forbidden)"
+    source_line: 155
+    source_anchor: "classifier confidence is calibrated probability;"
+    description: "Non-goal / forbidden claim: classifier confidence is calibrated probability;"
     status: normative
   - id: CLAIM-10
     category: claim_policy
     source_section: Sec-2
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 0
-    description: "PC E/R/A universal astronomy ontology (not claimed)"
+    source_line: 156
+    source_anchor: "a red flag should subtract a fixed scalar penalty;"
+    description: "Non-goal / forbidden claim: a red flag should subtract a fixed scalar penalty;"
     status: normative
   - id: CLAIM-11
     category: claim_policy
     source_section: Sec-2
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 0
-    description: "UNRESOLVED must not conceal failure to compute closure"
+    source_line: 162
+    source_anchor: "finite benchmark success identifies a universal scientific guarantee;"
+    description: "Non-goal / forbidden claim: finite benchmark success identifies a universal scientific guarantee;"
     status: normative
   - id: CLAIM-12
     category: claim_policy
     source_section: Sec-2
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 0
-    description: "closed verdict must not be presented as confirmed exoplanet"
+    source_line: 163
+    source_anchor: "PC E/R/A is a universal ontology for astronomy;"
+    description: "Non-goal / forbidden claim: PC E/R/A is a universal ontology for astronomy;"
+    status: normative
+  - id: CLAIM-13
+    category: claim_policy
+    source_section: Sec-4
+    source_file: IMPLEMENTATION_SPEC.md
+    source_line: 268
+    source_anchor: "It must not be used to conceal failure to compute closure."
+    description: "UNRESOLVED must not conceal failure to compute closure"
+    status: normative
+  - id: CLAIM-14
+    category: claim_policy
+    source_section: Sec-56
+    source_file: IMPLEMENTATION_SPEC.md
+    source_line: 2589
+    source_anchor: "It must not present a closed target class"
+    description: "Closed verdict must not be presented as confirmed exoplanet"
     status: normative
   - id: HYG-01
     category: hygiene
     source_section: Sec-49
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2239
+    source_line: 2356
+    source_anchor: "The old repository is mined, not ported wholesale."
     description: "Legacy mined not ported wholesale; preserve list per Sec-49.1"
     status: normative
   - id: HYG-02
     category: hygiene
     source_section: Sec-49
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2253
-    description: "Do-not-preserve list per Sec-49.2 (node_modules, checkpoints as qualified, weights, theatrical losses, monolith, defaults, dumps)"
+    source_line: 2372
+    source_anchor: "## 49.2 Do not preserve as normative implementation"
+    description: "Do-not-preserve list per Sec-49.2"
     status: normative
   - id: HYG-03
     category: hygiene
     source_section: Sec-49
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2275
+    source_line: 2394
+    source_anchor: "LEGACY_UNQUALIFIED"
     description: "Historical models wrapped LEGACY_UNQUALIFIED for regression only"
     status: normative
   - id: HYG-04
     category: hygiene
     source_section: Sec-65
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1198
+    source_line: 2876
+    source_anchor: "Use manifests and an external artifact strategy where appropriate."
     description: "Clean-room repository layout per Sec-65; large artifacts via manifests not casual git"
     status: normative
   - id: HYG-05
     category: hygiene
     source_section: Sec-65
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2755
+    source_line: 2874
+    source_anchor: "should not be committed casually to ordinary Git history."
     description: "Large raw/run/model binaries not committed casually"
     status: normative
   - id: REPRO-01
     category: reproducibility
     source_section: Sec-51
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2304
+    source_line: 2423
+    source_anchor: "Every release-level artifact must be hash-addressable."
     description: "Every release artifact hash-addressable"
     status: normative
   - id: REPRO-02
     category: reproducibility
     source_section: Sec-51
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2330
+    source_line: 2449
+    source_anchor: "Failed qualification attempts and negative results are preserved."
     description: "Failed/negative results preserved, no rewritten success narrative"
     status: normative
   - id: REPRO-03
@@ -3514,104 +4039,431 @@ items:
     source_section: Sec-13
     source_file: IMPLEMENTATION_SPEC.md
     source_line: 680
+    source_anchor: "requires more than 4 GB VRAM under its frozen training configuration"
     description: "Default roster trains within 4GB VRAM; exception needs versioned justification"
     status: normative
   - id: SECRET-01
     category: secret
     source_section: Sec-52
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2345
+    source_line: 2464
+    source_anchor: ".env ignored;"
     description: "Secrets via env/manager; .env ignored; .env.example names only"
     status: normative
   - id: SECRET-02
     category: secret
     source_section: Sec-52
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2347
+    source_line: 2466
+    source_anchor: "no API keys in logs;"
     description: "No keys/headers in logs/traces; scrubbed storage; hashes separate from credentials"
     status: normative
   - id: SUCC-01
     category: successor_rule
     source_section: Sec-64
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2649
+    source_line: 2768
+    source_anchor: "1. preserve the failed architecture;"
     description: "Successor rule: preserve architecture+witness, diagnose, seal, version, add only justified change"
     status: normative
   - id: SUCC-02
     category: successor_rule
     source_section: Sec-64
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2658
+    source_line: 2777
+    source_anchor: "No new coordinate is silently inserted into the existing release."
     description: "No new coordinate silently inserted into existing release"
     status: normative
   - id: COMMIT-01
     category: commit_rule
     source_section: process
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 0
+    source_line: 1
+    source_anchor: ""
     description: "Every completed WP: VERIFY->UPDATE Path.md->COMPLIANCE AUDIT->COMMIT->PUSH->VERIFY REMOTE HEAD"
     status: normative
   - id: AUDIT-LEGACY-01
     category: parent_import
     source_section: Sec-46
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 1908
+    source_line: 2029
+    source_anchor: "legacy repository commit;"
     description: "WP-0 pins legacy commit/README/scripts/ensemble/converter/fixtures + PC paper + spec + threats + ontology + env"
     status: normative
   - id: ANTI-01
     category: anti_pattern
     source_section: Sec-50
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2289
+    source_line: 2408
+    source_anchor: "are largely parallel neural classifiers over the same eight catalogue-style features."
     description: "Anti-pattern ledger entry: parallel classifiers over same 8 features"
     status: normative
   - id: ANTI-02
     category: anti_pattern
     source_section: Sec-50
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2290
+    source_line: 2409
+    source_anchor: "are often encoded through altered losses, layer widths, thresholds, or class weights"
     description: "Anti-pattern: specialties via losses/widths/thresholds not views"
     status: normative
   - id: ANTI-03
     category: anti_pattern
     source_section: Sec-50
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2291
+    source_line: 2410
+    source_anchor: "The ensemble applies hard-coded specialist weights"
     description: "Anti-pattern: hard-coded weights and boosts/penalties"
     status: normative
   - id: ANTI-04
     category: anti_pattern
     source_section: Sec-50
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2292
+    source_line: 2411
+    source_anchor: "The converter bundles catalog lookup,"
     description: "Anti-pattern: monolithic converter bundling"
     status: normative
   - id: ANTI-05
     category: anti_pattern
     source_section: Sec-50
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2293
+    source_line: 2412
+    source_anchor: "but are still synthetic draws."
     description: "Anti-pattern: synthetic draws presented via NASA ranges"
     status: normative
   - id: ANTI-06
     category: anti_pattern
     source_section: Sec-50
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2103
+    source_line: 2413
+    source_anchor: "are valuable as historical adversarial ideas."
     description: "Valuable historical adversarial ideas preserved as LEGACY_HISTORICAL"
     status: normative
   - id: ANTI-07
     category: anti_pattern
     source_section: Sec-50
     source_file: IMPLEMENTATION_SPEC.md
-    source_line: 2295
+    source_line: 2414
+    source_anchor: "The repository tracks generated caches,"
     description: "Anti-pattern: caches/checkpoints/deps/datasets tracked together"
+    status: normative
+  - id: COL-SRC-DOCTRINE
+    category: source_doctrine
+    source_section: Sec-15
+    source_file: IMPLEMENTATION_SPEC.md
+    source_line: 806
+    source_anchor: "Acquire broadly, provenance everything, train selectively, test brutally."
+    description: "Exhaustive-by-default acquisition doctrine: acquire broadly, provenance everything, train selectively, test brutally"
+    status: normative
+  - id: COL-SRC-ATTEMPT
+    category: source_attempt_list
+    source_section: Sec-15
+    source_file: IMPLEMENTATION_SPEC.md
+    source_line: 865
+    source_anchor: "These are source families to attempt, not assertions"
+    description: "Public source families to attempt without asserting availability; record actual status at execution"
+    status: normative
+  - id: COL-SRC-FAM-01
+    category: source_family
+    source_section: Sec-15
+    source_file: IMPLEMENTATION_SPEC.md
+    source_line: 821
+    source_anchor: "OBSERVATIONAL_LIGHTCURVE"
+    description: "Required frozen-registry source family: OBSERVATIONAL_LIGHTCURVE"
+    status: normative
+  - id: COL-SRC-FAM-02
+    category: source_family
+    source_section: Sec-15
+    source_file: IMPLEMENTATION_SPEC.md
+    source_line: 822
+    source_anchor: "PLANET_CANDIDATE_CATALOG"
+    description: "Required frozen-registry source family: PLANET_CANDIDATE_CATALOG"
+    status: normative
+  - id: COL-SRC-FAM-03
+    category: source_family
+    source_section: Sec-15
+    source_file: IMPLEMENTATION_SPEC.md
+    source_line: 823
+    source_anchor: "CONFIRMED_PLANET_CATALOG"
+    description: "Required frozen-registry source family: CONFIRMED_PLANET_CATALOG"
+    status: normative
+  - id: COL-SRC-FAM-04
+    category: source_family
+    source_section: Sec-15
+    source_file: IMPLEMENTATION_SPEC.md
+    source_line: 824
+    source_anchor: "CERTIFIED_FALSE_POSITIVE"
+    description: "Required frozen-registry source family: CERTIFIED_FALSE_POSITIVE"
+    status: normative
+  - id: COL-SRC-FAM-05
+    category: source_family
+    source_section: Sec-15
+    source_file: IMPLEMENTATION_SPEC.md
+    source_line: 825
+    source_anchor: "ECLIPSING_BINARY_CATALOG"
+    description: "Required frozen-registry source family: ECLIPSING_BINARY_CATALOG"
+    status: normative
+  - id: COL-SRC-FAM-06
+    category: source_family
+    source_section: Sec-15
+    source_file: IMPLEMENTATION_SPEC.md
+    source_line: 826
+    source_anchor: "TCE_CATALOG"
+    description: "Required frozen-registry source family: TCE_CATALOG"
+    status: normative
+  - id: COL-SRC-FAM-07
+    category: source_family
+    source_section: Sec-15
+    source_file: IMPLEMENTATION_SPEC.md
+    source_line: 827
+    source_anchor: "ROBOVETTER_METRICS"
+    description: "Required frozen-registry source family: ROBOVETTER_METRICS"
+    status: normative
+  - id: COL-SRC-FAM-08
+    category: source_family
+    source_section: Sec-15
+    source_file: IMPLEMENTATION_SPEC.md
+    source_line: 828
+    source_anchor: "CENTROID_DIAGNOSTICS"
+    description: "Required frozen-registry source family: CENTROID_DIAGNOSTICS"
+    status: normative
+  - id: COL-SRC-FAM-09
+    category: source_family
+    source_section: Sec-15
+    source_file: IMPLEMENTATION_SPEC.md
+    source_line: 829
+    source_anchor: "STELLAR_CATALOG"
+    description: "Required frozen-registry source family: STELLAR_CATALOG"
+    status: normative
+  - id: COL-SRC-FAM-10
+    category: source_family
+    source_section: Sec-15
+    source_file: IMPLEMENTATION_SPEC.md
+    source_line: 830
+    source_anchor: "NEIGHBOR_CONTAMINATION_CATALOG"
+    description: "Required frozen-registry source family: NEIGHBOR_CONTAMINATION_CATALOG"
+    status: normative
+  - id: COL-SRC-FAM-11
+    category: source_family
+    source_section: Sec-15
+    source_file: IMPLEMENTATION_SPEC.md
+    source_line: 831
+    source_anchor: "INJECTION_RECOVERY"
+    description: "Required frozen-registry source family: INJECTION_RECOVERY"
+    status: normative
+  - id: COL-SRC-FAM-12
+    category: source_family
+    source_section: Sec-15
+    source_file: IMPLEMENTATION_SPEC.md
+    source_line: 832
+    source_anchor: "SCRAMBLED_FALSE_ALARM"
+    description: "Required frozen-registry source family: SCRAMBLED_FALSE_ALARM"
+    status: normative
+  - id: COL-SRC-FAM-13
+    category: source_family
+    source_section: Sec-15
+    source_file: IMPLEMENTATION_SPEC.md
+    source_line: 833
+    source_anchor: "INVERTED_FALSE_ALARM"
+    description: "Required frozen-registry source family: INVERTED_FALSE_ALARM"
+    status: normative
+  - id: COL-SRC-FAM-14
+    category: source_family
+    source_section: Sec-15
+    source_file: IMPLEMENTATION_SPEC.md
+    source_line: 834
+    source_anchor: "PIPELINE_SYSTEMATIC"
+    description: "Required frozen-registry source family: PIPELINE_SYSTEMATIC"
+    status: normative
+  - id: COL-SRC-FAM-15
+    category: source_family
+    source_section: Sec-15
+    source_file: IMPLEMENTATION_SPEC.md
+    source_line: 741
+    source_anchor: "SIMULATED_PHYSICS"
+    description: "Required frozen-registry source family: SIMULATED_PHYSICS"
+    status: normative
+  - id: COL-SRC-FAM-16
+    category: source_family
+    source_section: Sec-15
+    source_file: IMPLEMENTATION_SPEC.md
+    source_line: 836
+    source_anchor: "TEACHER_PROPOSED_ADVERSARIAL"
+    description: "Required frozen-registry source family: TEACHER_PROPOSED_ADVERSARIAL"
+    status: normative
+  - id: COL-SRC-FAM-17
+    category: source_family
+    source_section: Sec-15
+    source_file: IMPLEMENTATION_SPEC.md
+    source_line: 744
+    source_anchor: "LEGACY_HISTORICAL"
+    description: "Required frozen-registry source family: LEGACY_HISTORICAL"
+    status: normative
+  - id: COL-SRC-FIELD-01
+    category: source_registry_field
+    source_section: Sec-15
+    source_file: IMPLEMENTATION_SPEC.md
+    source_line: 873
+    source_anchor: "source_id"
+    description: "Frozen source-registry entry field: source_id"
+    status: normative
+  - id: COL-SRC-FIELD-02
+    category: source_registry_field
+    source_section: Sec-15
+    source_file: IMPLEMENTATION_SPEC.md
+    source_line: 874
+    source_anchor: "source_family"
+    description: "Frozen source-registry entry field: source_family"
+    status: normative
+  - id: COL-SRC-FIELD-03
+    category: source_registry_field
+    source_section: Sec-15
+    source_file: IMPLEMENTATION_SPEC.md
+    source_line: 875
+    source_anchor: "source_version_or_release"
+    description: "Frozen source-registry entry field: source_version_or_release"
+    status: normative
+  - id: COL-SRC-FIELD-04
+    category: source_registry_field
+    source_section: Sec-15
+    source_file: IMPLEMENTATION_SPEC.md
+    source_line: 876
+    source_anchor: "retrieval_date"
+    description: "Frozen source-registry entry field: retrieval_date"
+    status: normative
+  - id: COL-SRC-FIELD-05
+    category: source_registry_field
+    source_section: Sec-15
+    source_file: IMPLEMENTATION_SPEC.md
+    source_line: 877
+    source_anchor: "retrieval_method"
+    description: "Frozen source-registry entry field: retrieval_method"
+    status: normative
+  - id: COL-SRC-FIELD-06
+    category: source_registry_field
+    source_section: Sec-15
+    source_file: IMPLEMENTATION_SPEC.md
+    source_line: 878
+    source_anchor: "license_or_usage_status"
+    description: "Frozen source-registry entry field: license_or_usage_status"
+    status: normative
+  - id: COL-SRC-FIELD-07
+    category: source_registry_field
+    source_section: Sec-15
+    source_file: IMPLEMENTATION_SPEC.md
+    source_line: 879
+    source_anchor: "raw_hashes"
+    description: "Frozen source-registry entry field: raw_hashes"
+    status: normative
+  - id: COL-SRC-FIELD-08
+    category: source_registry_field
+    source_section: Sec-15
+    source_file: IMPLEMENTATION_SPEC.md
+    source_line: 880
+    source_anchor: "object_identity_mapping"
+    description: "Frozen source-registry entry field: object_identity_mapping"
+    status: normative
+  - id: COL-SRC-FIELD-09
+    category: source_registry_field
+    source_section: Sec-15
+    source_file: IMPLEMENTATION_SPEC.md
+    source_line: 881
+    source_anchor: "label_semantics"
+    description: "Frozen source-registry entry field: label_semantics"
+    status: normative
+  - id: COL-SRC-FIELD-10
+    category: source_registry_field
+    source_section: Sec-15
+    source_file: IMPLEMENTATION_SPEC.md
+    source_line: 882
+    source_anchor: "known_biases"
+    description: "Frozen source-registry entry field: known_biases"
+    status: normative
+  - id: COL-SRC-FIELD-11
+    category: source_registry_field
+    source_section: Sec-15
+    source_file: IMPLEMENTATION_SPEC.md
+    source_line: 883
+    source_anchor: "allowed_tasks"
+    description: "Frozen source-registry entry field: allowed_tasks"
+    status: normative
+  - id: COL-SRC-FIELD-12
+    category: source_registry_field
+    source_section: Sec-15
+    source_file: IMPLEMENTATION_SPEC.md
+    source_line: 884
+    source_anchor: "split_restrictions"
+    description: "Frozen source-registry entry field: split_restrictions"
+    status: normative
+  - id: COL-SRC-FIELD-13
+    category: source_registry_field
+    source_section: Sec-15
+    source_file: IMPLEMENTATION_SPEC.md
+    source_line: 885
+    source_anchor: "acquisition_status"
+    description: "Frozen source-registry entry field: acquisition_status"
+    status: normative
+  - id: COL-SRC-FIELD-14
+    category: source_registry_field
+    source_section: Sec-15
+    source_file: IMPLEMENTATION_SPEC.md
+    source_line: 886
+    source_anchor: "acquisition_failure_reason"
+    description: "Frozen source-registry entry field: acquisition_failure_reason"
+    status: normative
+  - id: COL-SRC-STATUS-01
+    category: source_status
+    source_section: Sec-15
+    source_file: IMPLEMENTATION_SPEC.md
+    source_line: 892
+    source_anchor: "INGESTED"
+    description: "Terminal acquisition state: INGESTED; no silent omission"
+    status: normative
+  - id: COL-SRC-STATUS-02
+    category: source_status
+    source_section: Sec-15
+    source_file: IMPLEMENTATION_SPEC.md
+    source_line: 893
+    source_anchor: "INCOMPATIBLE_WITH_DOCUMENTED_REASON"
+    description: "Terminal acquisition state: INCOMPATIBLE_WITH_DOCUMENTED_REASON; no silent omission"
+    status: normative
+  - id: COL-SRC-STATUS-03
+    category: source_status
+    source_section: Sec-15
+    source_file: IMPLEMENTATION_SPEC.md
+    source_line: 894
+    source_anchor: "UNAVAILABLE_WITH_ARCHIVED_FAILURE"
+    description: "Terminal acquisition state: UNAVAILABLE_WITH_ARCHIVED_FAILURE; no silent omission"
+    status: normative
+  - id: COL-SRC-STATUS-04
+    category: source_status
+    source_section: Sec-15
+    source_file: IMPLEMENTATION_SPEC.md
+    source_line: 895
+    source_anchor: "EXCLUDED_BY_FROZEN_POLICY"
+    description: "Terminal acquisition state: EXCLUDED_BY_FROZEN_POLICY; no silent omission"
+    status: normative
+  - id: COL-SRC-REGISTRY
+    category: source_registry
+    source_section: Sec-15
+    source_file: IMPLEMENTATION_SPEC.md
+    source_line: 817
+    source_anchor: "frozen source registry"
+    description: "Frozen public-source registry + status ledger + identity reconciliation + acquisition closure audit, hash-bound"
+    status: normative
+  - id: COL-SRC-NOSILENT
+    category: source_doctrine
+    source_section: Sec-15
+    source_file: IMPLEMENTATION_SPEC.md
+    source_line: 898
+    source_anchor: "No silent omission is allowed."
+    description: "No silent omission: unattempted/unentered/non-terminal source is a coverage failure"
     status: normative
   - id: MST-LIQ0-NA
     category: liquidity_obligation
     source_section: SPEC_CONFLICT-01
     source_file: audits/SPLAY-AM-MST-LIQ-v0.4_SPEC.txt
     source_line: 1
+    source_anchor: ""
     description: "SPLAY template LIQ0-* has no Council counterpart; Council tracks activation via PC views/diagnostics, not rho"
     status: not_applicable
   - id: MST-MST0-NA
@@ -3619,6 +4471,7 @@ items:
     source_section: SPEC_CONFLICT-01
     source_file: audits/SPLAY-AM-MST-LIQ-v0.4_SPEC.txt
     source_line: 1
+    source_anchor: ""
     description: "SPLAY MST0-* transfer theorems have no Council counterpart; Council theorems are PC closure/freeze/diagnostic obligations"
     status: not_applicable
   - id: MST-CAND-NA
@@ -3626,6 +4479,7 @@ items:
     source_section: SPEC_CONFLICT-01
     source_file: audits/SPLAY-AM-MST-LIQ-v0.4_SPEC.txt
     source_line: 1
+    source_anchor: ""
     description: "SPLAY MSTC-0002=(P,k,C,rho) identity has no Council counterpart; Council candidates are SpecialistSpec versions"
     status: not_applicable
   - id: MST-FRESHBANK-NA
@@ -3633,6 +4487,7 @@ items:
     source_section: SPEC_CONFLICT-01
     source_file: audits/SPLAY-AM-MST-LIQ-v0.4_SPEC.txt
     source_line: 1
+    source_anchor: ""
     description: "SPLAY fresh-bank H4L/n=28 witness rules map to Council HOLD-*; no separate MST bank applies"
     status: not_applicable
   - id: MST-AXIS-NA
@@ -3640,6 +4495,7 @@ items:
     source_section: SPEC_CONFLICT-01
     source_file: audits/SPLAY-AM-MST-LIQ-v0.4_SPEC.txt
     source_line: 1
+    source_anchor: ""
     description: "SPLAY rho-axis surgical allowance does not apply; Council successor rule is Sec-64"
     status: not_applicable
   - id: SPEC-CONFLICT-01
@@ -3647,5 +4503,6 @@ items:
     source_section: process-Rule-14
     source_file: IMPLEMENTATION_SPEC.md
     source_line: 1
-    description: "Process header names SPLAY-AM-MST-LIQ-v0.4/MST-LIQ but operative repo+spec are COUNCIL-PC-v1.0; MST rho/LIQ0/MST0 semantics are NOT_APPLICABLE; Council Sec-0..68 governs"
+    source_anchor: ""
+    description: "Process header names SPLAY-AM-MST-LIQ-v0.4/MST-LIQ but operative repo+spec are COUNCIL-PC-v1.0; MST rho/LIQ0/MST0 semantics are NOT_APPLICABLE; Council sections govern"
     status: normative

@@ -198,7 +198,7 @@ mappings:
     status: normative
     work_package: WP-1
     spec_phase: PHASE-02
-    impl_files: src/council/data/lightcurve.py;forge/datasets/factory.py;configs/schemas/LightCurveSchema_v1.json
+    impl_files: src/council/data/lightcurve.py;forge/datasets/factory.py;configs/schemas/LightCurveSchema_v1.json;forge/datasets/source_registry.py;data/manifests/SOURCE_REGISTRY_v1.json;audits/WP1_SOURCE_CLOSURE.json
     tests: tests/unit/test_lightcurve.py;tests/forge/test_object_grouping.py
     gate: COL-GATE-02
     inputs: PHASE-02+COL-GATE-02-prereqs
@@ -858,7 +858,7 @@ mappings:
     status: normative
     work_package: WP-1
     spec_phase: PHASE-02
-    impl_files: src/council/data/lightcurve.py;forge/datasets/factory.py;configs/schemas/LightCurveSchema_v1.json
+    impl_files: src/council/data/lightcurve.py;forge/datasets/factory.py;configs/schemas/LightCurveSchema_v1.json;forge/datasets/source_registry.py;data/manifests/SOURCE_REGISTRY_v1.json;audits/WP1_SOURCE_CLOSURE.json
     tests: tests/unit/test_lightcurve.py;tests/forge/test_object_grouping.py
     gate: COL-GATE-02
     inputs: PHASE-02+COL-GATE-02-prereqs
@@ -870,7 +870,7 @@ mappings:
     status: normative
     work_package: WP-1
     spec_phase: PHASE-03
-    impl_files: src/council/data/lightcurve.py;forge/datasets/factory.py;configs/schemas/LightCurveSchema_v1.json
+    impl_files: src/council/data/lightcurve.py;forge/datasets/factory.py;configs/schemas/LightCurveSchema_v1.json;forge/datasets/source_registry.py;data/manifests/SOURCE_REGISTRY_v1.json;audits/WP1_SOURCE_CLOSURE.json
     tests: tests/unit/test_lightcurve.py;tests/forge/test_object_grouping.py
     gate: COL-GATE-02
     inputs: PHASE-03+COL-GATE-02-prereqs
@@ -882,7 +882,7 @@ mappings:
     status: normative
     work_package: WP-1
     spec_phase: PHASE-04
-    impl_files: src/council/data/lightcurve.py;forge/datasets/factory.py;configs/schemas/LightCurveSchema_v1.json
+    impl_files: src/council/data/lightcurve.py;forge/datasets/factory.py;configs/schemas/LightCurveSchema_v1.json;forge/datasets/source_registry.py;data/manifests/SOURCE_REGISTRY_v1.json;audits/WP1_SOURCE_CLOSURE.json
     tests: tests/unit/test_lightcurve.py;tests/forge/test_object_grouping.py
     gate: COL-GATE-02
     inputs: PHASE-04+COL-GATE-02-prereqs
@@ -1338,7 +1338,7 @@ mappings:
     status: normative
     work_package: WP-1
     spec_phase: PHASE-02
-    impl_files: src/council/data/lightcurve.py;forge/datasets/factory.py;configs/schemas/LightCurveSchema_v1.json
+    impl_files: src/council/data/lightcurve.py;forge/datasets/factory.py;configs/schemas/LightCurveSchema_v1.json;forge/datasets/source_registry.py;data/manifests/SOURCE_REGISTRY_v1.json;audits/WP1_SOURCE_CLOSURE.json
     tests: tests/unit/test_lightcurve.py;tests/forge/test_object_grouping.py
     gate: COL-GATE-02
     inputs: PHASE-02+COL-GATE-02-prereqs
@@ -1573,12 +1573,24 @@ mappings:
     outputs: COL-GATE-21-closed
     failure: BLOCKED-until-new-version
     first_consumer: NONE
+  - item: COL-GATE-22
+    category: gate
+    status: normative
+    work_package: WP-1
+    spec_phase: PHASE-04
+    impl_files: src/council/data/lightcurve.py;forge/datasets/factory.py;configs/schemas/LightCurveSchema_v1.json;forge/datasets/source_registry.py;data/manifests/SOURCE_REGISTRY_v1.json;audits/WP1_SOURCE_CLOSURE.json
+    tests: tests/unit/test_lightcurve.py;tests/forge/test_object_grouping.py
+    gate: COL-GATE-22
+    inputs: PHASE-04+COL-GATE-22-prereqs
+    outputs: COL-GATE-22-closed
+    failure: BLOCKED-until-new-version
+    first_consumer: WP-4/WP-6:consume-INGESTED-only+WP-8:release-verifies-closure
   - item: COL-T01
     category: threat
     status: normative
     work_package: WP-1
     spec_phase: PHASE-02
-    impl_files: src/council/data/lightcurve.py;forge/datasets/factory.py;configs/schemas/LightCurveSchema_v1.json
+    impl_files: src/council/data/lightcurve.py;forge/datasets/factory.py;configs/schemas/LightCurveSchema_v1.json;forge/datasets/source_registry.py;data/manifests/SOURCE_REGISTRY_v1.json;audits/WP1_SOURCE_CLOSURE.json
     tests: tests/unit/test_lightcurve.py;tests/forge/test_object_grouping.py
     gate: COL-GATE-02
     inputs: PHASE-02+COL-GATE-02-prereqs
@@ -1590,7 +1602,7 @@ mappings:
     status: normative
     work_package: WP-1
     spec_phase: PHASE-02
-    impl_files: src/council/data/lightcurve.py;forge/datasets/factory.py;configs/schemas/LightCurveSchema_v1.json
+    impl_files: src/council/data/lightcurve.py;forge/datasets/factory.py;configs/schemas/LightCurveSchema_v1.json;forge/datasets/source_registry.py;data/manifests/SOURCE_REGISTRY_v1.json;audits/WP1_SOURCE_CLOSURE.json
     tests: tests/unit/test_lightcurve.py;tests/forge/test_object_grouping.py
     gate: COL-GATE-02
     inputs: PHASE-02+COL-GATE-02-prereqs
@@ -1602,7 +1614,7 @@ mappings:
     status: normative
     work_package: WP-1
     spec_phase: PHASE-02
-    impl_files: src/council/data/lightcurve.py;forge/datasets/factory.py;configs/schemas/LightCurveSchema_v1.json
+    impl_files: src/council/data/lightcurve.py;forge/datasets/factory.py;configs/schemas/LightCurveSchema_v1.json;forge/datasets/source_registry.py;data/manifests/SOURCE_REGISTRY_v1.json;audits/WP1_SOURCE_CLOSURE.json
     tests: tests/unit/test_lightcurve.py;tests/forge/test_object_grouping.py
     gate: COL-GATE-02
     inputs: PHASE-02+COL-GATE-02-prereqs
@@ -2238,7 +2250,7 @@ mappings:
     status: normative
     work_package: WP-1
     spec_phase: PHASE-02
-    impl_files: src/council/data/lightcurve.py;forge/datasets/factory.py;configs/schemas/LightCurveSchema_v1.json
+    impl_files: src/council/data/lightcurve.py;forge/datasets/factory.py;configs/schemas/LightCurveSchema_v1.json;forge/datasets/source_registry.py;data/manifests/SOURCE_REGISTRY_v1.json;audits/WP1_SOURCE_CLOSURE.json
     tests: tests/unit/test_lightcurve.py;tests/forge/test_object_grouping.py
     gate: COL-GATE-02
     inputs: PHASE-02+COL-GATE-02-prereqs
@@ -2250,7 +2262,7 @@ mappings:
     status: normative
     work_package: WP-1
     spec_phase: PHASE-02
-    impl_files: src/council/data/lightcurve.py;forge/datasets/factory.py;configs/schemas/LightCurveSchema_v1.json
+    impl_files: src/council/data/lightcurve.py;forge/datasets/factory.py;configs/schemas/LightCurveSchema_v1.json;forge/datasets/source_registry.py;data/manifests/SOURCE_REGISTRY_v1.json;audits/WP1_SOURCE_CLOSURE.json
     tests: tests/unit/test_lightcurve.py;tests/forge/test_object_grouping.py
     gate: COL-GATE-02
     inputs: PHASE-02+COL-GATE-02-prereqs
@@ -2274,7 +2286,7 @@ mappings:
     status: normative
     work_package: WP-1
     spec_phase: PHASE-02
-    impl_files: src/council/data/lightcurve.py;forge/datasets/factory.py;configs/schemas/LightCurveSchema_v1.json
+    impl_files: src/council/data/lightcurve.py;forge/datasets/factory.py;configs/schemas/LightCurveSchema_v1.json;forge/datasets/source_registry.py;data/manifests/SOURCE_REGISTRY_v1.json;audits/WP1_SOURCE_CLOSURE.json
     tests: tests/unit/test_lightcurve.py;tests/forge/test_object_grouping.py
     gate: COL-GATE-02
     inputs: PHASE-02+COL-GATE-02-prereqs
@@ -2406,7 +2418,7 @@ mappings:
     status: normative
     work_package: WP-1
     spec_phase: PHASE-02
-    impl_files: src/council/data/lightcurve.py;forge/datasets/factory.py;configs/schemas/LightCurveSchema_v1.json
+    impl_files: src/council/data/lightcurve.py;forge/datasets/factory.py;configs/schemas/LightCurveSchema_v1.json;forge/datasets/source_registry.py;data/manifests/SOURCE_REGISTRY_v1.json;audits/WP1_SOURCE_CLOSURE.json
     tests: tests/unit/test_lightcurve.py;tests/forge/test_object_grouping.py
     gate: COL-GATE-02
     inputs: PHASE-02+COL-GATE-02-prereqs
@@ -4398,7 +4410,7 @@ mappings:
     status: normative
     work_package: WP-1
     spec_phase: PHASE-02
-    impl_files: src/council/data/lightcurve.py;forge/datasets/factory.py;configs/schemas/LightCurveSchema_v1.json
+    impl_files: src/council/data/lightcurve.py;forge/datasets/factory.py;configs/schemas/LightCurveSchema_v1.json;forge/datasets/source_registry.py;data/manifests/SOURCE_REGISTRY_v1.json;audits/WP1_SOURCE_CLOSURE.json
     tests: tests/unit/test_lightcurve.py;tests/forge/test_object_grouping.py
     gate: COL-GATE-02
     inputs: PHASE-02+COL-GATE-02-prereqs
@@ -4410,7 +4422,7 @@ mappings:
     status: normative
     work_package: WP-1
     spec_phase: PHASE-02
-    impl_files: src/council/data/lightcurve.py;forge/datasets/factory.py;configs/schemas/LightCurveSchema_v1.json
+    impl_files: src/council/data/lightcurve.py;forge/datasets/factory.py;configs/schemas/LightCurveSchema_v1.json;forge/datasets/source_registry.py;data/manifests/SOURCE_REGISTRY_v1.json;audits/WP1_SOURCE_CLOSURE.json
     tests: tests/unit/test_lightcurve.py;tests/forge/test_object_grouping.py
     gate: COL-GATE-02
     inputs: PHASE-02+COL-GATE-02-prereqs
@@ -4422,7 +4434,7 @@ mappings:
     status: normative
     work_package: WP-1
     spec_phase: PHASE-02
-    impl_files: src/council/data/lightcurve.py;forge/datasets/factory.py;configs/schemas/LightCurveSchema_v1.json
+    impl_files: src/council/data/lightcurve.py;forge/datasets/factory.py;configs/schemas/LightCurveSchema_v1.json;forge/datasets/source_registry.py;data/manifests/SOURCE_REGISTRY_v1.json;audits/WP1_SOURCE_CLOSURE.json
     tests: tests/unit/test_lightcurve.py;tests/forge/test_object_grouping.py
     gate: COL-GATE-02
     inputs: PHASE-02+COL-GATE-02-prereqs
@@ -5905,6 +5917,30 @@ mappings:
     outputs: CLAIM-12-closed
     failure: BLOCKED-until-new-version
     first_consumer: NONE
+  - item: CLAIM-13
+    category: claim_policy
+    status: normative
+    work_package: WP-8
+    spec_phase: PHASE-25
+    impl_files: FREEZE_RESULTS.json;MUTATION_RESULTS.json;RELEASE_MANIFEST.json;FINAL_AUDIT.md;FINAL_RESULT.json
+    tests: tests/mutation/test_mutants.py;tests/integration/test_cleanroom.py
+    gate: COL-GATE-18
+    inputs: PHASE-25+COL-GATE-18-prereqs
+    outputs: CLAIM-13-closed
+    failure: BLOCKED-until-new-version
+    first_consumer: NONE
+  - item: CLAIM-14
+    category: claim_policy
+    status: normative
+    work_package: WP-8
+    spec_phase: PHASE-25
+    impl_files: FREEZE_RESULTS.json;MUTATION_RESULTS.json;RELEASE_MANIFEST.json;FINAL_AUDIT.md;FINAL_RESULT.json
+    tests: tests/mutation/test_mutants.py;tests/integration/test_cleanroom.py
+    gate: COL-GATE-18
+    inputs: PHASE-25+COL-GATE-18-prereqs
+    outputs: CLAIM-14-closed
+    failure: BLOCKED-until-new-version
+    first_consumer: NONE
   - item: HYG-01
     category: hygiene
     status: normative
@@ -6155,6 +6191,474 @@ mappings:
     gate: COL-GATE-00
     inputs: PHASE-00+COL-GATE-00-prereqs
     outputs: ANTI-07-closed
+    failure: BLOCKED-until-new-version
+    first_consumer: NONE
+  - item: COL-SRC-DOCTRINE
+    category: source_doctrine
+    status: normative
+    work_package: WP-1
+    spec_phase: PHASE-04
+    impl_files: src/council/data/lightcurve.py;forge/datasets/factory.py;configs/schemas/LightCurveSchema_v1.json;forge/datasets/source_registry.py;data/manifests/SOURCE_REGISTRY_v1.json;audits/WP1_SOURCE_CLOSURE.json
+    tests: tests/unit/test_lightcurve.py;tests/forge/test_object_grouping.py
+    gate: COL-GATE-02
+    inputs: PHASE-04+COL-GATE-02-prereqs
+    outputs: COL-SRC-DOCTRINE-closed
+    failure: BLOCKED-until-new-version
+    first_consumer: NONE
+  - item: COL-SRC-ATTEMPT
+    category: source_attempt_list
+    status: normative
+    work_package: WP-1
+    spec_phase: PHASE-04
+    impl_files: src/council/data/lightcurve.py;forge/datasets/factory.py;configs/schemas/LightCurveSchema_v1.json;forge/datasets/source_registry.py;data/manifests/SOURCE_REGISTRY_v1.json;audits/WP1_SOURCE_CLOSURE.json
+    tests: tests/unit/test_lightcurve.py;tests/forge/test_object_grouping.py
+    gate: COL-GATE-02
+    inputs: PHASE-04+COL-GATE-02-prereqs
+    outputs: COL-SRC-ATTEMPT-closed
+    failure: BLOCKED-until-new-version
+    first_consumer: NONE
+  - item: COL-SRC-FAM-01
+    category: source_family
+    status: normative
+    work_package: WP-1
+    spec_phase: PHASE-04
+    impl_files: src/council/data/lightcurve.py;forge/datasets/factory.py;configs/schemas/LightCurveSchema_v1.json;forge/datasets/source_registry.py;data/manifests/SOURCE_REGISTRY_v1.json;audits/WP1_SOURCE_CLOSURE.json
+    tests: tests/unit/test_lightcurve.py;tests/forge/test_object_grouping.py
+    gate: COL-GATE-02
+    inputs: PHASE-04+COL-GATE-02-prereqs
+    outputs: COL-SRC-FAM-01-closed
+    failure: BLOCKED-until-new-version
+    first_consumer: NONE
+  - item: COL-SRC-FAM-02
+    category: source_family
+    status: normative
+    work_package: WP-1
+    spec_phase: PHASE-04
+    impl_files: src/council/data/lightcurve.py;forge/datasets/factory.py;configs/schemas/LightCurveSchema_v1.json;forge/datasets/source_registry.py;data/manifests/SOURCE_REGISTRY_v1.json;audits/WP1_SOURCE_CLOSURE.json
+    tests: tests/unit/test_lightcurve.py;tests/forge/test_object_grouping.py
+    gate: COL-GATE-02
+    inputs: PHASE-04+COL-GATE-02-prereqs
+    outputs: COL-SRC-FAM-02-closed
+    failure: BLOCKED-until-new-version
+    first_consumer: NONE
+  - item: COL-SRC-FAM-03
+    category: source_family
+    status: normative
+    work_package: WP-1
+    spec_phase: PHASE-04
+    impl_files: src/council/data/lightcurve.py;forge/datasets/factory.py;configs/schemas/LightCurveSchema_v1.json;forge/datasets/source_registry.py;data/manifests/SOURCE_REGISTRY_v1.json;audits/WP1_SOURCE_CLOSURE.json
+    tests: tests/unit/test_lightcurve.py;tests/forge/test_object_grouping.py
+    gate: COL-GATE-02
+    inputs: PHASE-04+COL-GATE-02-prereqs
+    outputs: COL-SRC-FAM-03-closed
+    failure: BLOCKED-until-new-version
+    first_consumer: NONE
+  - item: COL-SRC-FAM-04
+    category: source_family
+    status: normative
+    work_package: WP-1
+    spec_phase: PHASE-04
+    impl_files: src/council/data/lightcurve.py;forge/datasets/factory.py;configs/schemas/LightCurveSchema_v1.json;forge/datasets/source_registry.py;data/manifests/SOURCE_REGISTRY_v1.json;audits/WP1_SOURCE_CLOSURE.json
+    tests: tests/unit/test_lightcurve.py;tests/forge/test_object_grouping.py
+    gate: COL-GATE-02
+    inputs: PHASE-04+COL-GATE-02-prereqs
+    outputs: COL-SRC-FAM-04-closed
+    failure: BLOCKED-until-new-version
+    first_consumer: NONE
+  - item: COL-SRC-FAM-05
+    category: source_family
+    status: normative
+    work_package: WP-1
+    spec_phase: PHASE-04
+    impl_files: src/council/data/lightcurve.py;forge/datasets/factory.py;configs/schemas/LightCurveSchema_v1.json;forge/datasets/source_registry.py;data/manifests/SOURCE_REGISTRY_v1.json;audits/WP1_SOURCE_CLOSURE.json
+    tests: tests/unit/test_lightcurve.py;tests/forge/test_object_grouping.py
+    gate: COL-GATE-02
+    inputs: PHASE-04+COL-GATE-02-prereqs
+    outputs: COL-SRC-FAM-05-closed
+    failure: BLOCKED-until-new-version
+    first_consumer: NONE
+  - item: COL-SRC-FAM-06
+    category: source_family
+    status: normative
+    work_package: WP-1
+    spec_phase: PHASE-04
+    impl_files: src/council/data/lightcurve.py;forge/datasets/factory.py;configs/schemas/LightCurveSchema_v1.json;forge/datasets/source_registry.py;data/manifests/SOURCE_REGISTRY_v1.json;audits/WP1_SOURCE_CLOSURE.json
+    tests: tests/unit/test_lightcurve.py;tests/forge/test_object_grouping.py
+    gate: COL-GATE-02
+    inputs: PHASE-04+COL-GATE-02-prereqs
+    outputs: COL-SRC-FAM-06-closed
+    failure: BLOCKED-until-new-version
+    first_consumer: NONE
+  - item: COL-SRC-FAM-07
+    category: source_family
+    status: normative
+    work_package: WP-1
+    spec_phase: PHASE-04
+    impl_files: src/council/data/lightcurve.py;forge/datasets/factory.py;configs/schemas/LightCurveSchema_v1.json;forge/datasets/source_registry.py;data/manifests/SOURCE_REGISTRY_v1.json;audits/WP1_SOURCE_CLOSURE.json
+    tests: tests/unit/test_lightcurve.py;tests/forge/test_object_grouping.py
+    gate: COL-GATE-02
+    inputs: PHASE-04+COL-GATE-02-prereqs
+    outputs: COL-SRC-FAM-07-closed
+    failure: BLOCKED-until-new-version
+    first_consumer: NONE
+  - item: COL-SRC-FAM-08
+    category: source_family
+    status: normative
+    work_package: WP-1
+    spec_phase: PHASE-04
+    impl_files: src/council/data/lightcurve.py;forge/datasets/factory.py;configs/schemas/LightCurveSchema_v1.json;forge/datasets/source_registry.py;data/manifests/SOURCE_REGISTRY_v1.json;audits/WP1_SOURCE_CLOSURE.json
+    tests: tests/unit/test_lightcurve.py;tests/forge/test_object_grouping.py
+    gate: COL-GATE-02
+    inputs: PHASE-04+COL-GATE-02-prereqs
+    outputs: COL-SRC-FAM-08-closed
+    failure: BLOCKED-until-new-version
+    first_consumer: NONE
+  - item: COL-SRC-FAM-09
+    category: source_family
+    status: normative
+    work_package: WP-1
+    spec_phase: PHASE-04
+    impl_files: src/council/data/lightcurve.py;forge/datasets/factory.py;configs/schemas/LightCurveSchema_v1.json;forge/datasets/source_registry.py;data/manifests/SOURCE_REGISTRY_v1.json;audits/WP1_SOURCE_CLOSURE.json
+    tests: tests/unit/test_lightcurve.py;tests/forge/test_object_grouping.py
+    gate: COL-GATE-02
+    inputs: PHASE-04+COL-GATE-02-prereqs
+    outputs: COL-SRC-FAM-09-closed
+    failure: BLOCKED-until-new-version
+    first_consumer: NONE
+  - item: COL-SRC-FAM-10
+    category: source_family
+    status: normative
+    work_package: WP-1
+    spec_phase: PHASE-04
+    impl_files: src/council/data/lightcurve.py;forge/datasets/factory.py;configs/schemas/LightCurveSchema_v1.json;forge/datasets/source_registry.py;data/manifests/SOURCE_REGISTRY_v1.json;audits/WP1_SOURCE_CLOSURE.json
+    tests: tests/unit/test_lightcurve.py;tests/forge/test_object_grouping.py
+    gate: COL-GATE-02
+    inputs: PHASE-04+COL-GATE-02-prereqs
+    outputs: COL-SRC-FAM-10-closed
+    failure: BLOCKED-until-new-version
+    first_consumer: NONE
+  - item: COL-SRC-FAM-11
+    category: source_family
+    status: normative
+    work_package: WP-1
+    spec_phase: PHASE-04
+    impl_files: src/council/data/lightcurve.py;forge/datasets/factory.py;configs/schemas/LightCurveSchema_v1.json;forge/datasets/source_registry.py;data/manifests/SOURCE_REGISTRY_v1.json;audits/WP1_SOURCE_CLOSURE.json
+    tests: tests/unit/test_lightcurve.py;tests/forge/test_object_grouping.py
+    gate: COL-GATE-02
+    inputs: PHASE-04+COL-GATE-02-prereqs
+    outputs: COL-SRC-FAM-11-closed
+    failure: BLOCKED-until-new-version
+    first_consumer: NONE
+  - item: COL-SRC-FAM-12
+    category: source_family
+    status: normative
+    work_package: WP-1
+    spec_phase: PHASE-04
+    impl_files: src/council/data/lightcurve.py;forge/datasets/factory.py;configs/schemas/LightCurveSchema_v1.json;forge/datasets/source_registry.py;data/manifests/SOURCE_REGISTRY_v1.json;audits/WP1_SOURCE_CLOSURE.json
+    tests: tests/unit/test_lightcurve.py;tests/forge/test_object_grouping.py
+    gate: COL-GATE-02
+    inputs: PHASE-04+COL-GATE-02-prereqs
+    outputs: COL-SRC-FAM-12-closed
+    failure: BLOCKED-until-new-version
+    first_consumer: NONE
+  - item: COL-SRC-FAM-13
+    category: source_family
+    status: normative
+    work_package: WP-1
+    spec_phase: PHASE-04
+    impl_files: src/council/data/lightcurve.py;forge/datasets/factory.py;configs/schemas/LightCurveSchema_v1.json;forge/datasets/source_registry.py;data/manifests/SOURCE_REGISTRY_v1.json;audits/WP1_SOURCE_CLOSURE.json
+    tests: tests/unit/test_lightcurve.py;tests/forge/test_object_grouping.py
+    gate: COL-GATE-02
+    inputs: PHASE-04+COL-GATE-02-prereqs
+    outputs: COL-SRC-FAM-13-closed
+    failure: BLOCKED-until-new-version
+    first_consumer: NONE
+  - item: COL-SRC-FAM-14
+    category: source_family
+    status: normative
+    work_package: WP-1
+    spec_phase: PHASE-04
+    impl_files: src/council/data/lightcurve.py;forge/datasets/factory.py;configs/schemas/LightCurveSchema_v1.json;forge/datasets/source_registry.py;data/manifests/SOURCE_REGISTRY_v1.json;audits/WP1_SOURCE_CLOSURE.json
+    tests: tests/unit/test_lightcurve.py;tests/forge/test_object_grouping.py
+    gate: COL-GATE-02
+    inputs: PHASE-04+COL-GATE-02-prereqs
+    outputs: COL-SRC-FAM-14-closed
+    failure: BLOCKED-until-new-version
+    first_consumer: NONE
+  - item: COL-SRC-FAM-15
+    category: source_family
+    status: normative
+    work_package: WP-1
+    spec_phase: PHASE-04
+    impl_files: src/council/data/lightcurve.py;forge/datasets/factory.py;configs/schemas/LightCurveSchema_v1.json;forge/datasets/source_registry.py;data/manifests/SOURCE_REGISTRY_v1.json;audits/WP1_SOURCE_CLOSURE.json
+    tests: tests/unit/test_lightcurve.py;tests/forge/test_object_grouping.py
+    gate: COL-GATE-02
+    inputs: PHASE-04+COL-GATE-02-prereqs
+    outputs: COL-SRC-FAM-15-closed
+    failure: BLOCKED-until-new-version
+    first_consumer: NONE
+  - item: COL-SRC-FAM-16
+    category: source_family
+    status: normative
+    work_package: WP-1
+    spec_phase: PHASE-04
+    impl_files: src/council/data/lightcurve.py;forge/datasets/factory.py;configs/schemas/LightCurveSchema_v1.json;forge/datasets/source_registry.py;data/manifests/SOURCE_REGISTRY_v1.json;audits/WP1_SOURCE_CLOSURE.json
+    tests: tests/unit/test_lightcurve.py;tests/forge/test_object_grouping.py
+    gate: COL-GATE-02
+    inputs: PHASE-04+COL-GATE-02-prereqs
+    outputs: COL-SRC-FAM-16-closed
+    failure: BLOCKED-until-new-version
+    first_consumer: NONE
+  - item: COL-SRC-FAM-17
+    category: source_family
+    status: normative
+    work_package: WP-1
+    spec_phase: PHASE-04
+    impl_files: src/council/data/lightcurve.py;forge/datasets/factory.py;configs/schemas/LightCurveSchema_v1.json;forge/datasets/source_registry.py;data/manifests/SOURCE_REGISTRY_v1.json;audits/WP1_SOURCE_CLOSURE.json
+    tests: tests/unit/test_lightcurve.py;tests/forge/test_object_grouping.py
+    gate: COL-GATE-02
+    inputs: PHASE-04+COL-GATE-02-prereqs
+    outputs: COL-SRC-FAM-17-closed
+    failure: BLOCKED-until-new-version
+    first_consumer: NONE
+  - item: COL-SRC-FIELD-01
+    category: source_registry_field
+    status: normative
+    work_package: WP-1
+    spec_phase: PHASE-04
+    impl_files: src/council/data/lightcurve.py;forge/datasets/factory.py;configs/schemas/LightCurveSchema_v1.json;forge/datasets/source_registry.py;data/manifests/SOURCE_REGISTRY_v1.json;audits/WP1_SOURCE_CLOSURE.json
+    tests: tests/unit/test_lightcurve.py;tests/forge/test_object_grouping.py
+    gate: COL-GATE-02
+    inputs: PHASE-04+COL-GATE-02-prereqs
+    outputs: COL-SRC-FIELD-01-closed
+    failure: BLOCKED-until-new-version
+    first_consumer: NONE
+  - item: COL-SRC-FIELD-02
+    category: source_registry_field
+    status: normative
+    work_package: WP-1
+    spec_phase: PHASE-04
+    impl_files: src/council/data/lightcurve.py;forge/datasets/factory.py;configs/schemas/LightCurveSchema_v1.json;forge/datasets/source_registry.py;data/manifests/SOURCE_REGISTRY_v1.json;audits/WP1_SOURCE_CLOSURE.json
+    tests: tests/unit/test_lightcurve.py;tests/forge/test_object_grouping.py
+    gate: COL-GATE-02
+    inputs: PHASE-04+COL-GATE-02-prereqs
+    outputs: COL-SRC-FIELD-02-closed
+    failure: BLOCKED-until-new-version
+    first_consumer: NONE
+  - item: COL-SRC-FIELD-03
+    category: source_registry_field
+    status: normative
+    work_package: WP-1
+    spec_phase: PHASE-04
+    impl_files: src/council/data/lightcurve.py;forge/datasets/factory.py;configs/schemas/LightCurveSchema_v1.json;forge/datasets/source_registry.py;data/manifests/SOURCE_REGISTRY_v1.json;audits/WP1_SOURCE_CLOSURE.json
+    tests: tests/unit/test_lightcurve.py;tests/forge/test_object_grouping.py
+    gate: COL-GATE-02
+    inputs: PHASE-04+COL-GATE-02-prereqs
+    outputs: COL-SRC-FIELD-03-closed
+    failure: BLOCKED-until-new-version
+    first_consumer: NONE
+  - item: COL-SRC-FIELD-04
+    category: source_registry_field
+    status: normative
+    work_package: WP-1
+    spec_phase: PHASE-04
+    impl_files: src/council/data/lightcurve.py;forge/datasets/factory.py;configs/schemas/LightCurveSchema_v1.json;forge/datasets/source_registry.py;data/manifests/SOURCE_REGISTRY_v1.json;audits/WP1_SOURCE_CLOSURE.json
+    tests: tests/unit/test_lightcurve.py;tests/forge/test_object_grouping.py
+    gate: COL-GATE-02
+    inputs: PHASE-04+COL-GATE-02-prereqs
+    outputs: COL-SRC-FIELD-04-closed
+    failure: BLOCKED-until-new-version
+    first_consumer: NONE
+  - item: COL-SRC-FIELD-05
+    category: source_registry_field
+    status: normative
+    work_package: WP-1
+    spec_phase: PHASE-04
+    impl_files: src/council/data/lightcurve.py;forge/datasets/factory.py;configs/schemas/LightCurveSchema_v1.json;forge/datasets/source_registry.py;data/manifests/SOURCE_REGISTRY_v1.json;audits/WP1_SOURCE_CLOSURE.json
+    tests: tests/unit/test_lightcurve.py;tests/forge/test_object_grouping.py
+    gate: COL-GATE-02
+    inputs: PHASE-04+COL-GATE-02-prereqs
+    outputs: COL-SRC-FIELD-05-closed
+    failure: BLOCKED-until-new-version
+    first_consumer: NONE
+  - item: COL-SRC-FIELD-06
+    category: source_registry_field
+    status: normative
+    work_package: WP-1
+    spec_phase: PHASE-04
+    impl_files: src/council/data/lightcurve.py;forge/datasets/factory.py;configs/schemas/LightCurveSchema_v1.json;forge/datasets/source_registry.py;data/manifests/SOURCE_REGISTRY_v1.json;audits/WP1_SOURCE_CLOSURE.json
+    tests: tests/unit/test_lightcurve.py;tests/forge/test_object_grouping.py
+    gate: COL-GATE-02
+    inputs: PHASE-04+COL-GATE-02-prereqs
+    outputs: COL-SRC-FIELD-06-closed
+    failure: BLOCKED-until-new-version
+    first_consumer: NONE
+  - item: COL-SRC-FIELD-07
+    category: source_registry_field
+    status: normative
+    work_package: WP-1
+    spec_phase: PHASE-04
+    impl_files: src/council/data/lightcurve.py;forge/datasets/factory.py;configs/schemas/LightCurveSchema_v1.json;forge/datasets/source_registry.py;data/manifests/SOURCE_REGISTRY_v1.json;audits/WP1_SOURCE_CLOSURE.json
+    tests: tests/unit/test_lightcurve.py;tests/forge/test_object_grouping.py
+    gate: COL-GATE-02
+    inputs: PHASE-04+COL-GATE-02-prereqs
+    outputs: COL-SRC-FIELD-07-closed
+    failure: BLOCKED-until-new-version
+    first_consumer: NONE
+  - item: COL-SRC-FIELD-08
+    category: source_registry_field
+    status: normative
+    work_package: WP-1
+    spec_phase: PHASE-04
+    impl_files: src/council/data/lightcurve.py;forge/datasets/factory.py;configs/schemas/LightCurveSchema_v1.json;forge/datasets/source_registry.py;data/manifests/SOURCE_REGISTRY_v1.json;audits/WP1_SOURCE_CLOSURE.json
+    tests: tests/unit/test_lightcurve.py;tests/forge/test_object_grouping.py
+    gate: COL-GATE-02
+    inputs: PHASE-04+COL-GATE-02-prereqs
+    outputs: COL-SRC-FIELD-08-closed
+    failure: BLOCKED-until-new-version
+    first_consumer: NONE
+  - item: COL-SRC-FIELD-09
+    category: source_registry_field
+    status: normative
+    work_package: WP-1
+    spec_phase: PHASE-04
+    impl_files: src/council/data/lightcurve.py;forge/datasets/factory.py;configs/schemas/LightCurveSchema_v1.json;forge/datasets/source_registry.py;data/manifests/SOURCE_REGISTRY_v1.json;audits/WP1_SOURCE_CLOSURE.json
+    tests: tests/unit/test_lightcurve.py;tests/forge/test_object_grouping.py
+    gate: COL-GATE-02
+    inputs: PHASE-04+COL-GATE-02-prereqs
+    outputs: COL-SRC-FIELD-09-closed
+    failure: BLOCKED-until-new-version
+    first_consumer: NONE
+  - item: COL-SRC-FIELD-10
+    category: source_registry_field
+    status: normative
+    work_package: WP-1
+    spec_phase: PHASE-04
+    impl_files: src/council/data/lightcurve.py;forge/datasets/factory.py;configs/schemas/LightCurveSchema_v1.json;forge/datasets/source_registry.py;data/manifests/SOURCE_REGISTRY_v1.json;audits/WP1_SOURCE_CLOSURE.json
+    tests: tests/unit/test_lightcurve.py;tests/forge/test_object_grouping.py
+    gate: COL-GATE-02
+    inputs: PHASE-04+COL-GATE-02-prereqs
+    outputs: COL-SRC-FIELD-10-closed
+    failure: BLOCKED-until-new-version
+    first_consumer: NONE
+  - item: COL-SRC-FIELD-11
+    category: source_registry_field
+    status: normative
+    work_package: WP-1
+    spec_phase: PHASE-04
+    impl_files: src/council/data/lightcurve.py;forge/datasets/factory.py;configs/schemas/LightCurveSchema_v1.json;forge/datasets/source_registry.py;data/manifests/SOURCE_REGISTRY_v1.json;audits/WP1_SOURCE_CLOSURE.json
+    tests: tests/unit/test_lightcurve.py;tests/forge/test_object_grouping.py
+    gate: COL-GATE-02
+    inputs: PHASE-04+COL-GATE-02-prereqs
+    outputs: COL-SRC-FIELD-11-closed
+    failure: BLOCKED-until-new-version
+    first_consumer: NONE
+  - item: COL-SRC-FIELD-12
+    category: source_registry_field
+    status: normative
+    work_package: WP-1
+    spec_phase: PHASE-04
+    impl_files: src/council/data/lightcurve.py;forge/datasets/factory.py;configs/schemas/LightCurveSchema_v1.json;forge/datasets/source_registry.py;data/manifests/SOURCE_REGISTRY_v1.json;audits/WP1_SOURCE_CLOSURE.json
+    tests: tests/unit/test_lightcurve.py;tests/forge/test_object_grouping.py
+    gate: COL-GATE-02
+    inputs: PHASE-04+COL-GATE-02-prereqs
+    outputs: COL-SRC-FIELD-12-closed
+    failure: BLOCKED-until-new-version
+    first_consumer: NONE
+  - item: COL-SRC-FIELD-13
+    category: source_registry_field
+    status: normative
+    work_package: WP-1
+    spec_phase: PHASE-04
+    impl_files: src/council/data/lightcurve.py;forge/datasets/factory.py;configs/schemas/LightCurveSchema_v1.json;forge/datasets/source_registry.py;data/manifests/SOURCE_REGISTRY_v1.json;audits/WP1_SOURCE_CLOSURE.json
+    tests: tests/unit/test_lightcurve.py;tests/forge/test_object_grouping.py
+    gate: COL-GATE-02
+    inputs: PHASE-04+COL-GATE-02-prereqs
+    outputs: COL-SRC-FIELD-13-closed
+    failure: BLOCKED-until-new-version
+    first_consumer: NONE
+  - item: COL-SRC-FIELD-14
+    category: source_registry_field
+    status: normative
+    work_package: WP-1
+    spec_phase: PHASE-04
+    impl_files: src/council/data/lightcurve.py;forge/datasets/factory.py;configs/schemas/LightCurveSchema_v1.json;forge/datasets/source_registry.py;data/manifests/SOURCE_REGISTRY_v1.json;audits/WP1_SOURCE_CLOSURE.json
+    tests: tests/unit/test_lightcurve.py;tests/forge/test_object_grouping.py
+    gate: COL-GATE-02
+    inputs: PHASE-04+COL-GATE-02-prereqs
+    outputs: COL-SRC-FIELD-14-closed
+    failure: BLOCKED-until-new-version
+    first_consumer: NONE
+  - item: COL-SRC-STATUS-01
+    category: source_status
+    status: normative
+    work_package: WP-1
+    spec_phase: PHASE-04
+    impl_files: src/council/data/lightcurve.py;forge/datasets/factory.py;configs/schemas/LightCurveSchema_v1.json;forge/datasets/source_registry.py;data/manifests/SOURCE_REGISTRY_v1.json;audits/WP1_SOURCE_CLOSURE.json
+    tests: tests/unit/test_lightcurve.py;tests/forge/test_object_grouping.py
+    gate: COL-GATE-02
+    inputs: PHASE-04+COL-GATE-02-prereqs
+    outputs: COL-SRC-STATUS-01-closed
+    failure: BLOCKED-until-new-version
+    first_consumer: NONE
+  - item: COL-SRC-STATUS-02
+    category: source_status
+    status: normative
+    work_package: WP-1
+    spec_phase: PHASE-04
+    impl_files: src/council/data/lightcurve.py;forge/datasets/factory.py;configs/schemas/LightCurveSchema_v1.json;forge/datasets/source_registry.py;data/manifests/SOURCE_REGISTRY_v1.json;audits/WP1_SOURCE_CLOSURE.json
+    tests: tests/unit/test_lightcurve.py;tests/forge/test_object_grouping.py
+    gate: COL-GATE-02
+    inputs: PHASE-04+COL-GATE-02-prereqs
+    outputs: COL-SRC-STATUS-02-closed
+    failure: BLOCKED-until-new-version
+    first_consumer: NONE
+  - item: COL-SRC-STATUS-03
+    category: source_status
+    status: normative
+    work_package: WP-1
+    spec_phase: PHASE-04
+    impl_files: src/council/data/lightcurve.py;forge/datasets/factory.py;configs/schemas/LightCurveSchema_v1.json;forge/datasets/source_registry.py;data/manifests/SOURCE_REGISTRY_v1.json;audits/WP1_SOURCE_CLOSURE.json
+    tests: tests/unit/test_lightcurve.py;tests/forge/test_object_grouping.py
+    gate: COL-GATE-02
+    inputs: PHASE-04+COL-GATE-02-prereqs
+    outputs: COL-SRC-STATUS-03-closed
+    failure: BLOCKED-until-new-version
+    first_consumer: NONE
+  - item: COL-SRC-STATUS-04
+    category: source_status
+    status: normative
+    work_package: WP-1
+    spec_phase: PHASE-04
+    impl_files: src/council/data/lightcurve.py;forge/datasets/factory.py;configs/schemas/LightCurveSchema_v1.json;forge/datasets/source_registry.py;data/manifests/SOURCE_REGISTRY_v1.json;audits/WP1_SOURCE_CLOSURE.json
+    tests: tests/unit/test_lightcurve.py;tests/forge/test_object_grouping.py
+    gate: COL-GATE-02
+    inputs: PHASE-04+COL-GATE-02-prereqs
+    outputs: COL-SRC-STATUS-04-closed
+    failure: BLOCKED-until-new-version
+    first_consumer: NONE
+  - item: COL-SRC-REGISTRY
+    category: source_registry
+    status: normative
+    work_package: WP-1
+    spec_phase: PHASE-04
+    impl_files: src/council/data/lightcurve.py;forge/datasets/factory.py;configs/schemas/LightCurveSchema_v1.json;forge/datasets/source_registry.py;data/manifests/SOURCE_REGISTRY_v1.json;audits/WP1_SOURCE_CLOSURE.json
+    tests: tests/unit/test_lightcurve.py;tests/forge/test_object_grouping.py
+    gate: COL-GATE-02
+    inputs: PHASE-04+COL-GATE-02-prereqs
+    outputs: COL-SRC-REGISTRY-closed
+    failure: BLOCKED-until-new-version
+    first_consumer: WP-4/WP-6:consume-registry+WP-8:release-verifies-closure
+  - item: COL-SRC-NOSILENT
+    category: source_doctrine
+    status: normative
+    work_package: WP-1
+    spec_phase: PHASE-04
+    impl_files: src/council/data/lightcurve.py;forge/datasets/factory.py;configs/schemas/LightCurveSchema_v1.json;forge/datasets/source_registry.py;data/manifests/SOURCE_REGISTRY_v1.json;audits/WP1_SOURCE_CLOSURE.json
+    tests: tests/unit/test_lightcurve.py;tests/forge/test_object_grouping.py
+    gate: COL-GATE-02
+    inputs: PHASE-04+COL-GATE-02-prereqs
+    outputs: COL-SRC-NOSILENT-closed
     failure: BLOCKED-until-new-version
     first_consumer: NONE
   - item: MST-LIQ0-NA

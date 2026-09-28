@@ -797,6 +797,124 @@ label_policy.md
 
 A changed split, label policy, source population, or transform that can alter results requires a new dataset version.
 
+## 15.6 Exhaustive source-acquisition doctrine (brutal-data foundation)
+
+The scientific intent is:
+
+\[
+\boxed{
+\text{Acquire broadly, provenance everything, train selectively, test brutally.}
+}
+\]
+
+Phase 04 is the explicit exhaustive source-acquisition foundation before later task and training phases.
+Acquisition is exhaustive-by-default: the implementation must attempt every eligible public data source
+family relevant to Council v1.0, record actual acquisition status, and close coverage over a frozen
+source registry. Selectivity applies later at training time (TaskSpec populations, allowed evidence,
+frozen candidate sets); brutality applies at test time (adversarial suites, stress families, holdout,
+mutation controls, clean-room reproduction).
+
+The frozen source registry must contain every eligible public data source family relevant to
+Council v1.0, including at minimum the following source-family categories:
+
+```text
+OBSERVATIONAL_LIGHTCURVE
+PLANET_CANDIDATE_CATALOG
+CONFIRMED_PLANET_CATALOG
+CERTIFIED_FALSE_POSITIVE
+ECLIPSING_BINARY_CATALOG
+TCE_CATALOG
+ROBOVETTER_METRICS
+CENTROID_DIAGNOSTICS
+STELLAR_CATALOG
+NEIGHBOR_CONTAMINATION_CATALOG
+INJECTION_RECOVERY
+SCRAMBLED_FALSE_ALARM
+INVERTED_FALSE_ALARM
+PIPELINE_SYSTEMATIC
+SIMULATED_PHYSICS
+TEACHER_PROPOSED_ADVERSARIAL
+LEGACY_HISTORICAL
+```
+
+The registry must explicitly cover relevant public source families such as:
+
+```text
+Kepler DR25
+Kepler KOIs
+Kepler TCEs
+Kepler Certified False Positives
+Kepler Robovetter metrics
+Kepler injection/recovery products
+Kepler inverted/scrambled false-alarm products
+Kepler eclipsing-binary catalogs
+Kepler light curves
+K2 candidate/false-positive populations
+TESS TOIs
+TESS TCE/DV products where eligible/available
+TESS light curves
+TESS eclipsing-binary sources
+MAST mission products
+NASA Exoplanet Archive products
+Gaia stellar/neighbour/context products
+mission-quality/systematics metadata
+physically generated adversarial cases
+Muse-proposed scenario specifications materialized deterministically
+```
+
+These are source families to attempt, not assertions that every named product is guaranteed
+available in every environment. No URLs, counts, versions, or availability are asserted here.
+The implementation must record actual acquisition status later during execution.
+
+Every frozen source-registry entry must conform to the following entry schema, frozen as version 1
+before acquisition begins:
+
+```text
+source_id
+source_family
+source_version_or_release
+retrieval_date
+retrieval_method
+license_or_usage_status
+raw_hashes
+object_identity_mapping
+label_semantics
+known_biases
+allowed_tasks
+split_restrictions
+acquisition_status
+acquisition_failure_reason
+```
+
+Every frozen source entry must terminate in exactly one explicit acquisition state:
+
+```text
+INGESTED
+INCOMPATIBLE_WITH_DOCUMENTED_REASON
+UNAVAILABLE_WITH_ARCHIVED_FAILURE
+EXCLUDED_BY_FROZEN_POLICY
+```
+
+No silent omission is allowed. A source family that is not attempted, not entered in the registry,
+or left in a non-terminal state is a coverage failure, not a scope decision.
+
+This doctrine defines the normative closure gate:
+
+```text
+DATASET_SOURCE_COVERAGE_CLOSED
+```
+
+The gate requires that every source in the frozen source registry has exactly one of the
+terminal acquisition states above, with its status ledger entry, identity reconciliation record,
+and acquisition closure audit all frozen and hash-bound. This is coverage closure of the frozen
+source registry. It must not be redefined as "all data downloaded."
+
+If full physical acquisition would exceed routine execution resources, the implementation must
+distinguish the acquisition framework plus source registry plus status-closure mechanism
+(WP-1 foundation) from later actual large data materialization, while still making exhaustive
+source coverage explicit and auditable. Large raw products follow the repository hygiene rule:
+manifests and hashes are committed; bulky bytes live outside ordinary Git history.
+
 ---
 
 # 16. Raw light-curve preservation
@@ -2168,7 +2286,7 @@ PHASE 00  pin legacy repository + PC parent + implementation spec
 PHASE 01  legacy archaeology and anti-pattern ledger
 PHASE 02  raw light-curve type + provenance core
 PHASE 03  preprocessing primitives
-PHASE 04  Dataset Factory foundation
+PHASE 04  Dataset Factory foundation + frozen public-source registry + exhaustive source acquisition + source-status ledger + identity reconciliation + acquisition closure audit
 PHASE 05  PC state types H/P_R/Lambda/omega/A_Pi
 PHASE 06  action/atomicity/touch/closure engine
 PHASE 07  exact freeze planner + finite sanity fixtures
@@ -2226,6 +2344,7 @@ COL-GATE-18  PC_FREEZE_GEOMETRY_RECOMPUTED
 COL-GATE-19  MUTATION_SUITE_PASSED
 COL-GATE-20  CLEANROOM_REPRODUCTION_PASSED
 COL-GATE-21  PC_NATIVE_COUNCIL_QUALIFIED
+COL-GATE-22  DATASET_SOURCE_COVERAGE_CLOSED
 ```
 
 First exact gate failure blocks downstream consumption until fixed in a new artifact version.
@@ -2849,7 +2968,7 @@ The project doctrine is:
 
 \[
 \boxed{
-\text{Training optimizes specialists; qualification earns epistemic authority.}
+\text{Training optimizes specialists; qualification earns registry eligibility; authority licenses their use.}
 }
 \]
 

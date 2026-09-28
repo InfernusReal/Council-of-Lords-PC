@@ -2,15 +2,18 @@
 
 **Experiment:** `COUNCIL-PC-v1.0` / `COL-PC-v1.0`
 **Implementation repo:** `InfernusReal/Council-of-Lords-PC`
-**Operative spec:** `IMPLEMENTATION_SPEC.md` (revised, OpenCode provider), SHA256 `766ecfaac5540be2f932bedc08a99981949aede7e32649ab33f7fa5a98908da6`, 2864 lines, Sec-0..68 (69 numbered sections)
+**Operative spec:** `IMPLEMENTATION_SPEC.md` (revised, OpenCode provider + Sec-15.6 exhaustive source-acquisition doctrine), SHA256 `9d4761e3cb656b0b4295a5ae4efcf08bc13058f00082577d5b92d406de1482e6`, 2983 lines, Sec-0..68 (69 numbered sections)
 **Original spec SHA256:** `a9453d20079ace95d8227d0fed095398b4aa6de1d1265f61ba6fe1b4c5dbf0fb` (preserved at `audits/COUNCIL-PC-v1.0_IMPLEMENTATION_SPEC_ORIGINAL.md`)
 **Provider migration audit:** `audits/PROVIDER_MIGRATION_AUDIT.md` — PASS, 3 literal lines OpenRouter->OpenCode
 **Conceptual parent (read-only):** `PERCEPTIVE CLOSURE: IDENTIFYING AUTHORIZATION-RESOURCE COUNTERFACTUALS` (local `Perception Closure` folder + Downloads drafts; exact paper version pinned in WP-0)
 **Legacy parent (archaeological reference only):** `InfernusReal/Council-Of-Lords` + `Downloads/Council-Of-Lords-main.zip` (5771 entries) — NOT a benchmark authority, NOT a qualification source
 **Teacher:** Muse Spark 1.3 Contributor through OpenCode, USD 25 default ceiling, schema-bound, provenance-recorded, never ground truth
-**Normative inventory:** `planning/NORMATIVE_INVENTORY.yaml` — 519 items (see counts below)
+**Normative inventory:** `planning/NORMATIVE_INVENTORY.yaml` — 561 items canonical (see counts below)
 **Coverage map:** `planning/WORKPLAN_COVERAGE.yaml` + `scripts/check_workplan_coverage.py` must print `RESULT = WORKPLAN_COVERAGE_PASS`
 **Terminal goal:** `PC_NATIVE_COUNCIL_QUALIFIED` (satisfies own frozen contract; NOT exoplanet confirmation)
+**Doctrine (corrected):** Training optimizes specialists; qualification earns registry eligibility; authority licenses their use.
+Qualification (WP-6) establishes registry eligibility only. Runtime Lambda (WP-7) controls whether a qualified
+specialist may be used. No WorkPlan text treats qualification as runtime authorization.
 
 ## SPEC_CONFLICT-01 (process header vs operative spec)
 
@@ -33,13 +36,16 @@ Per Rule 14 the conflict is preserved, not guessed away:
 ## Normative counts (derived from IMPLEMENTATION_SPEC.md, not memory)
 
 ```text
-SEC 69 | PHASE 31 (00-30) | WP 9 (WP-0..WP-8) | GATE 22 (COL-GATE-00..21)
+SEC 69 | PHASE 31 (00-30) | WP 9 (WP-0..WP-8) | GATE 23 (COL-GATE-00..22)
 THREAT 30 (COL-T01..30) | STOP 25 (COL-STOP-01..25) | TEST 14 | SCHEMA 17
 TERM 10 | ART 19 | LABEL 9 | DCLASS 9 | LCONF 7 | MUT 21 | ADV 20 | PCQ 8
 DIAG 15 | ACT 25 | LORD 6 | CLI 18 | AUDQ 15 | LPC 16 | CPC 10
-PC_OBLIG 20 | WIT 12 | Q 7 | HOLD 8 | TEACH 8 | CLAIM 12 | HYG 5 | REPRO 3
-SECRET 2 | SUCC 2 | ANTI 7 | MST_NA 5 + SPEC_CONFLICT 1
-NORMATIVE_ITEMS_TOTAL = 519
+PC_OBLIG 20 | WIT 12 | Q 7 | HOLD 8 | TEACH 8 | CLAIM 14 | HYG 5 | REPRO 3
+SECRET 2 | SUCC 2 | ANTI 7 | SRC_DOCTRINE 2 | SRC_FAM 17 | SRC_FIELD 14
+SRC_STATUS 4 | SRC_REGISTRY 1 | SRC_ATTEMPT 1 | MST_NA 5 + SPEC_CONFLICT 1
+INVENTORY_ITEMS_TOTAL = 561
+NORMATIVE_ITEMS_TOTAL = 556
+NOT_APPLICABLE_ITEMS_TOTAL = 5
 ```
 
 ## WP structure
@@ -96,7 +102,7 @@ Record full SHA + push result in `Path.md`. Do not ask the user. Commit messages
 - No statistical model trained (state explicitly: NO MODEL TRAINED in WP-0). Legacy fixtures labeled LEGACY_HISTORICAL/CONTAMINATED_DEVELOPMENT from birth. No holdout exists yet. Leakage control: legacy data never enters `data/` as observational.
 
 ### H. Verification
-- `python scripts/gen_normative_inventory.py` reproduces inventory (519 items).
+- `python scripts/gen_normative_inventory.py` reproduces inventory (561 items, 556 normative + 5 not_applicable).
 - `python scripts/check_workplan_coverage.py` prints PASS (run after all planning files exist).
 - `python scripts/pin_foundation.py --check` re-hashes manifests.
 - `git status --short` shows only intended files; no `.env`, no binaries, no `__pycache__`.
@@ -117,13 +123,15 @@ Record full SHA + push result in `Path.md`. Do not ask the user. Commit messages
 ## WP-1 — Trusted data core (Sec-46 WP-1)
 
 ### A. Normative coverage
-- Sec: SEC-06 (partial: quality/preprocessing provenance), SEC-15 (Dataset Factory classes/splits/mission/labels/identity), SEC-16 (raw preservation/transform ledger), SEC-53 (deps), SEC-65 (data layout).
-- PHASEs owned: PHASE-02 (LightCurve type + provenance core), PHASE-03 (preprocessing primitives), PHASE-04 (Dataset Factory foundation). Exactly one owner each.
-- Gates owned: COL-GATE-02 DATA_CORE_CERTIFIED (producer). GATE-03 produced by WP-4 (full factory cert); WP-1 is prerequisite skeleton.
-- Threats controlled: COL-T01 (identity leakage — control: object-level grouping test), COL-T02 (sector/window leakage — control: group-constrained split), COL-T03 (catalog target leakage — control: source-manifest + forbidden-evidence declaration), COL-T10 (scratch vs H — control: admission-only API), COL-T19 (fallback as observation — control: DECLARED_DEFAULT schema), COL-T20 (artifact not bound to manifest — control: hash-bound manifests).
+- Sec: SEC-06 (partial: quality/preprocessing provenance), SEC-15 incl. Sec-15.6 exhaustive source-acquisition doctrine (Dataset Factory classes/splits/mission/labels/identity + frozen source registry + acquisition closure), SEC-16 (raw preservation/transform ledger), SEC-53 (deps), SEC-65 (data layout).
+- PHASEs owned: PHASE-02 (LightCurve type + provenance core), PHASE-03 (preprocessing primitives), PHASE-04 (Dataset Factory foundation + frozen public-source registry + exhaustive source acquisition + source-status ledger + identity reconciliation + acquisition closure audit). Exactly one owner each; PHASE-04 stays with WP-1 (no dependency contradiction: later phases consume the registry, they do not produce it).
+- Gates owned: COL-GATE-02 DATA_CORE_CERTIFIED (producer) + COL-GATE-22 DATASET_SOURCE_COVERAGE_CLOSED (producer of the closure artifact; WP-8 re-verifies it at release). GATE-03 produced by WP-4 (full factory cert); WP-1 is prerequisite skeleton.
+- Source IDs owned: COL-SRC-DOCTRINE, COL-SRC-ATTEMPT, COL-SRC-FAM-01..17, COL-SRC-FIELD-01..14, COL-SRC-STATUS-01..04, COL-SRC-REGISTRY, COL-SRC-NOSILENT (all producer WP-1).
+- Doctrine intent: `Acquire broadly, provenance everything, train selectively, test brutally.` WP-1 builds the acquisition framework + source registry + status-closure mechanism; later actual large data materialization may proceed under the frozen registry without re-scoping (bulky bytes outside ordinary git; manifests + hashes committed).
+- Threats controlled: COL-T01 (identity leakage — control: object-level grouping test), COL-T02 (sector/window leakage — control: group-constrained split), COL-T03 (catalog target leakage — control: source-manifest + forbidden-evidence declaration), COL-T10 (scratch vs H — control: admission-only API), COL-T17 (synthetic/observational merge — control: registry source_family + entry schema tags), COL-T19 (fallback as observation — control: DECLARED_DEFAULT schema), COL-T20 (artifact not bound to manifest — control: hash-bound manifests + registry raw_hashes).
 - Stops: COL-STOP-04 (H change after freeze -> blocked via schema versioning; this WP freezes H-adjacent data types, H itself frozen in WP-2).
-- Tests: unit, property, schema, provenance, leakage (skeleton suites).
-- Schemas produced: LightCurveSchema v1 (producer), DatasetManifestSchema/Split/Transform/Checksum/Leakage drafts (finalized WP-4).
+- Tests: unit, property, schema, provenance, leakage (skeleton suites) + source-registry schema tests + acquisition-closure audit test (every registry entry terminal, none silent).
+- Schemas produced: LightCurveSchema v1 (producer), DatasetManifestSchema/Split/Transform/Checksum/Leakage drafts (finalized WP-4), SourceRegistryEntrySchema v1 (producer: 14 fields per Sec-15.6).
 
 ### B. Entry conditions
 - COL-GATE-00 + COL-GATE-01 PASSED with manifest hashes in Path.md. `FOUNDATION_MANIFEST.json` hash matches. No teacher holdout yet. Branch `main` clean.
@@ -133,9 +141,10 @@ Record full SHA + push result in `Path.md`. Do not ask the user. Commit messages
 - MUST NOT claim: catalogue semantics (WP-3), PC closure (WP-2), model qualification (WP-6).
 
 ### D. Exact files
-- New source: `src/council/data/lightcurve.py`, `src/council/data/provenance.py`, `src/council/data/quality.py`, `src/council/data/catalogs.py` (stubs with provenance only, no target-leaking joins), `src/council/preprocessing/normalization.py`, `src/council/preprocessing/detrending.py`, `src/council/preprocessing/windows.py`, `forge/datasets/factory.py`, `forge/datasets/splits.py`, `forge/datasets/manifests.py`, `src/council/cli/` verbs `col data ingest/build/audit` (skeleton).
-- Schemas: `configs/schemas/LightCurveSchema_v1.json`, `configs/schemas/DatasetManifestSchema_v1.json` (draft).
-- Tests: `tests/unit/test_lightcurve.py`, `tests/property/test_transform_determinism.py`, `tests/forge/test_object_grouping.py`, `tests/unit/test_no_silent_defaults.py`.
+- New source: `src/council/data/lightcurve.py`, `src/council/data/provenance.py`, `src/council/data/quality.py`, `src/council/data/catalogs.py` (stubs with provenance only, no target-leaking joins), `src/council/preprocessing/normalization.py`, `src/council/preprocessing/detrending.py`, `src/council/preprocessing/windows.py`, `forge/datasets/factory.py`, `forge/datasets/splits.py`, `forge/datasets/manifests.py`, `forge/datasets/source_registry.py` (frozen registry builder + status ledger + identity reconciliation + closure audit), `src/council/cli/` verbs `col data ingest/build/audit` (skeleton).
+- Schemas: `configs/schemas/LightCurveSchema_v1.json`, `configs/schemas/DatasetManifestSchema_v1.json` (draft), `configs/schemas/SourceRegistryEntrySchema_v1.json` (14 fields).
+- Registry + closure artifacts: `data/manifests/SOURCE_REGISTRY_v1.json` (frozen; 17 families minimum attempted), `data/manifests/SOURCE_STATUS_LEDGER.json` (exactly one terminal state per entry: INGESTED / INCOMPATIBLE_WITH_DOCUMENTED_REASON / UNAVAILABLE_WITH_ARCHIVED_FAILURE / EXCLUDED_BY_FROZEN_POLICY), `audits/WP1_SOURCE_CLOSURE.json` (COL-GATE-22 evidence).
+- Tests: `tests/unit/test_lightcurve.py`, `tests/property/test_transform_determinism.py`, `tests/forge/test_object_grouping.py`, `tests/unit/test_no_silent_defaults.py`, `tests/forge/test_source_registry.py` (schema + terminal-state + no-silent-omission).
 - Reports: `audits/leakage/WP1_LEAKAGE_REPORT.md` (empty-population template + grouping proof on fixtures).
 - Inherited read-only: legacy raw samples index only.
 
@@ -144,6 +153,7 @@ Record full SHA + push result in `Path.md`. Do not ask the user. Commit messages
 - `quality.py`: finite_mask/outlier_mask/gap_summary/contamination_flags as pure functions with seeded RNG only where declared; masks versioned.
 - `normalization.py`/`detrending.py`: variants as named pure ops (`MEDIAN_DIVIDE`, `SPLINE_v1` with explicit knots/penalty) recording producer/version/params/input_hash/output_hash/seed/mask/units. No fitting to hidden labels.
 - `splits.py`: GroupBy protected identity (target_id / TIC/KIC) — all windows/sectors/augmentations of one group in same split; mission strata recorded; `leakage_report.json` asserts zero cross-split identity overlap (independent recheck in WP-4/WP-6).
+- `source_registry.py`: builds the frozen registry from the 17 required families + eligible public sources attempted (Kepler DR25/KOIs/TCEs/Certified FPs/Robovetter/injection-recovery/inverted/scrambled/EB catalogs/light curves; K2 populations; TESS TOIs/TCE-DV/light curves/EB sources; MAST; NASA Exoplanet Archive; Gaia; quality/systematics metadata; physical adversarial; Muse-proposed deterministic materializations) with NO fabricated URLs/counts/versions/availability; each entry carries the 14-field schema; identity reconciliation maps raw object identities to protected split identities; closure audit asserts every entry terminal exactly once; any non-terminal entry fails the gate. Framework + registry + closure mechanism ship in WP-1; bulky materialization may follow under the frozen registry.
 - CLI `col data ingest/build/audit`: deterministic, JSON to stdout + manifest to `data/manifests/`.
 
 ### F. Mathematical obligations
@@ -155,15 +165,16 @@ Record full SHA + push result in `Path.md`. Do not ask the user. Commit messages
 ### H. Verification
 - `pytest tests/unit tests/forge -q`, `python -m council.cli data audit --manifest data/manifests/<id>.json`, `python scripts/check_workplan_coverage.py`, hash check `sha256sum data/manifests/*`.
 - Mutation spot-check: scratch-field-admission mutant must fail (admission API rejects non-admitted fields).
+- Source-closure check: every `SOURCE_REGISTRY_v1.json` entry has exactly one terminal state; `audits/WP1_SOURCE_CLOSURE.json` verifies; non-terminal or missing entry fails COL-GATE-22.
 
 ### I. Exit gate
-- Success: COL-GATE-02 `DATA_CORE_CERTIFIED` (raw preserved, units preserved, no silent defaults, grouping exact, deterministic transforms, hashed).
+- Success: COL-GATE-02 `DATA_CORE_CERTIFIED` (raw preserved, units preserved, no silent defaults, grouping exact, deterministic transforms, hashed) + COL-GATE-22 `DATASET_SOURCE_COVERAGE_CLOSED` (frozen registry attempted exhaustively; every entry terminal with ledger + reconciliation + audit frozen and hash-bound; coverage closure, not "all downloaded").
 - Failure: GATE FAIL -> WP-2..WP-8 BLOCKED for data-dependent paths; WP-0 stands.
 
 ### J. Failure behavior
 - Leakage detected -> COL-STOP-10 handler: freeze splits, quarantine dataset version, mark downstream NOT_REACHED until new dataset major version.
 
-### K. Commit/push rule — as global; message `COL-PC-v1.0 WP-1 data-core (PHASE-02/03/04, GATE-02)`.
+### K. Commit/push rule — as global; message `COL-PC-v1.0 WP-1 data-core (PHASE-02/03/04, GATE-02/22)`.
 
 ---
 
@@ -385,7 +396,7 @@ Record full SHA + push result in `Path.md`. Do not ask the user. Commit messages
 - GATE-08 + GATE-09 + GATE-10 + GATE-11 PASSED. TaskSpecs + training/validation populations + thresholds + hidden holdout bank + candidate set + calibration protocol + stress suites all FROZEN with hashes recorded BEFORE any training in this WP (preregistration commit). Holdout bank generated+committed (hashes) BEFORE target-guided synthesis, revealed only AFTER GATE-12. No fresh-bank read before candidate freeze (checker assertion 17). Controller/runtime (WP-7) must not consume candidates yet.
 
 ### C. Scientific scope
-- Resolves: which dev candidates, if any, earn the title Lord under the frozen qualification contract and sealed holdout?
+- Resolves: which dev candidates, if any, earn registry eligibility (the title Lord) under the frozen qualification contract and sealed holdout? Qualification earns registry eligibility only; it does not authorize runtime use — authority (Lambda, WP-7) licenses use.
 - MUST NOT claim: closure, optimality, exoplanet confirmation, or that failed candidates prove impossibility.
 
 ### D. Exact files
@@ -435,7 +446,7 @@ Record full SHA + push result in `Path.md`. Do not ask the user. Commit messages
 
 ### C. Scientific scope
 - Resolves: can registry Lords be integrated as recommend-only advisors inside a PC-native sequential engine where only the controller executes source-atomic actions and closure is PC-defined?
-- MUST NOT claim: freeze geometry, clean-room reproduction, terminal qualification (WP-8).
+- Authority doctrine: a qualified Lord is only eligible; Lambda licenses actual use. The controller loads a qualified version AND checks current Lambda + authorized views before any call. MUST NOT claim: freeze geometry, clean-room reproduction, terminal qualification (WP-8).
 
 ### D. Exact files
 - New: `src/council/lords/{base,loader,morphology,periodicity,false_positive,stellar,instrument,general}.py`, `src/council/controller/{policy,planner,action_ranker,budget}.py`, `src/council/registry/{reader,verifier,schemas}.py`, `src/council/reporting/{trace,candidate_report,audit_report}.py`, `src/council/cli/` verbs `col council analyze/replay`, configs `configs/controller/policy_v1.yaml` (deterministic heuristic; learned controller out of scope), `audits/pc/WP7_VIEW_AUDIT.json`.
@@ -450,7 +461,7 @@ Record full SHA + push result in `Path.md`. Do not ask the user. Commit messages
 - Trace: every transition logs pre/post IDs, derived touch (primary+independent), cost; replay re-executes ledger to identical terminal checkpoint under declared conditions.
 
 ### F. Mathematical obligations
-- Closure consumed from WP-2: closed states emit only common target class; open states never emit closed verdicts (type + test). r_i(s) is reliability metadata, never a hidden vote weight (historical 1.4x pattern forbidden by test asserting no such constant). Finite runtime demos are not closure proofs.
+- Closure consumed from WP-2: closed states emit only common target class; open states never emit closed verdicts (type + test). r_i(s) is reliability metadata, never a hidden vote weight (historical 1.4x pattern forbidden by test asserting no such constant). Qualification bytes prove eligibility, never authorization — every runtime call site re-checks Lambda (test: qualified lord under revoked Lambda abstains with AUTHORITY_BLOCKED). Finite runtime demos are not closure proofs.
 
 ### G. Benchmarks/anti-overfitting
 - No new ML trained (state explicitly; learned controller is later extension, out of scope). Candidate discovery already frozen; runtime consumes only registry versions. Views enforce train/runtime evidence match (mismatch disqualifies that view). Diagnostics/benchmarks: DEVELOPMENT + ADV families + FORMAL_PC_CONSTRUCTED; holdout not re-accessed; clean-room pending WP-8.
@@ -481,7 +492,7 @@ Record full SHA + push result in `Path.md`. Do not ask the user. Commit messages
 - Terminal: selects exactly one of TERM-01..10 honestly (weaker terminal if any AUDQ is NO).
 
 ### B. Entry conditions
-- GATE-16 + GATE-17 PASSED. Registry sealed (GATE-15 hash). Holdout ledger legal (GATE-13 once). PC contract + schemas + target + atomicity hashes all pinned and unchanged since WP-2/WP-3 (any change -> successor version, not in-place edit). No uncommitted science files.
+- GATE-16 + GATE-17 PASSED. Registry sealed (GATE-15 hash). Holdout ledger legal (GATE-13 once). Source closure artifact (GATE-22) re-verified: registry STATUS ledger still all-terminal. PC contract + schemas + target + atomicity hashes all pinned and unchanged since WP-2/WP-3 (any change -> successor version, not in-place edit). No uncommitted science files.
 
 ### C. Scientific scope
 - Resolves: under the frozen contract, what is the resource dependence (freeze signature), does the system survive mutation/falsification, reproduce from clean checkout, and close the terminal claim honestly?
@@ -505,7 +516,7 @@ Record full SHA + push result in `Path.md`. Do not ask the user. Commit messages
 - Final evaluation uses: dev (tuning history disclosed), INTERNAL_VALIDATION, CONTAMINATED_CANARY (regression), FRESH holdout (already revealed once in WP-6, now historical for future versions — never re-revealed), CLEANROOM_POST_FREEZE (new clean-room runs), FORMAL_PC_CONSTRUCTED (finite PC instances), OBSERVATIONAL_EXTERNAL_TEST where available. No new holdout access in WP-8. Post-freeze large-n/adversarial testing allowed only without changing frozen candidates. Formal proof remains as in WP-2 (deterministic checkers; no Lean claim).
 
 ### H. Verification
-- `col pc freeze --manifest ...`, `col audit full --release ...`, `pytest tests/mutation tests/pc -q`, `python scripts/final_audit.py --release RELEASE_MANIFEST.json`, fresh-checkout reproduction (`git clone <remote> <tmp> && <repro steps>`), `col registry verify`, secret scan, VRAM re-attestation, `python scripts/check_workplan_coverage.py` (still PASS), lifecycle + firewall re-checks.
+- `col pc freeze --manifest ...`, `col audit full --release ...`, `pytest tests/mutation tests/pc -q`, `python scripts/final_audit.py --release RELEASE_MANIFEST.json`, fresh-checkout reproduction (`git clone <remote> <tmp> && <repro steps>`), `col registry verify`, source-closure re-verification (`audits/WP1_SOURCE_CLOSURE.json` still all-terminal), secret scan, VRAM re-attestation, `python scripts/check_workplan_coverage.py` (still PASS), lifecycle + firewall re-checks.
 
 ### I. Exit gate
 - Success: GATE-18 (K recomputed + PCQs answered) + GATE-19 (all assigned mutants killed) + GATE-20 (clean-room replay matches) -> GATE-21 `PC_NATIVE_COUNCIL_QUALIFIED` (or weaker TERM honestly selected, e.g., QUALIFIED_WITH_DECLARED_LIMITATIONS if an AUDQ is NO with disclosed limitation).
@@ -520,6 +531,6 @@ Record full SHA + push result in `Path.md`. Do not ask the user. Commit messages
 
 ## Appendix — Cross-WP traceability (summary; authoritative map is WORKPLAN_COVERAGE.yaml)
 
-- PHASE ownership: WP-0:00,01 | WP-1:02,03,04 | WP-2:05,06,07 | WP-3:08,09,10 | WP-4:11,12,13,14,15 | WP-5:16,17 | WP-6:18,19,20,21 | WP-7:22,23,24 | WP-8:25,26,27,28,29,30. Exactly one owner per phase.
-- GATE producers: WP-0:00,01 | WP-1:02 | WP-4:03,08,09,10 | WP-2:04,05 | WP-3:06,07 | WP-5:11 | WP-6:12,13,14,15 | WP-7:16,17 | WP-8:18,19,20,21.
-- Every THREAT/STOP/TEST/ARTIFACT/SCHEMA/HOLDOUT/MUTANT/DIAG/ADV/CLI/AUDQ/LPC/CPC/PC-obligation maps to ≥1 WP in coverage; every HOLD freeze transition has permitted owner/order; every candidate-freeze rule represented; lifecycle (candidate→qualified→registry→runtime) enforced; no fresh read before freeze; no legacy-as-fresh; no surgical-boundary breach.
+- PHASE ownership: WP-0:00,01 | WP-1:02,03,04 (04 incl. frozen source registry + acquisition + closure audit) | WP-2:05,06,07 | WP-3:08,09,10 | WP-4:11,12,13,14,15 | WP-5:16,17 | WP-6:18,19,20,21 | WP-7:22,23,24 | WP-8:25,26,27,28,29,30. Exactly one owner per phase.
+- GATE producers: WP-0:00,01 | WP-1:02,22 | WP-4:03,08,09,10 | WP-2:04,05 | WP-3:06,07 | WP-5:11 | WP-6:12,13,14,15 | WP-7:16,17 | WP-8:18,19,20,21. (GATE-22 produced WP-1, re-verified WP-8; numbering append-only, GATE-21 remains terminal.)
+- Every THREAT/STOP/TEST/ARTIFACT/SCHEMA/HOLDOUT/MUTANT/DIAG/ADV/CLI/AUDQ/LPC/CPC/PC-obligation/SRC-family/SRC-field/SRC-status maps to ≥1 WP in coverage; every HOLD freeze transition has permitted owner/order; every candidate-freeze rule represented; lifecycle (candidate→eligible→registry→Lambda-licensed-runtime) enforced; no fresh read before freeze; no legacy-as-fresh; no silent source omission; no surgical-boundary breach.

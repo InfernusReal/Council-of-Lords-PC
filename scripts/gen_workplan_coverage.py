@@ -18,7 +18,7 @@ gate_wp = {f"COL-GATE-{n:02d}": wp for n, wp in [
  (0,"WP-0"),(1,"WP-0"),(2,"WP-1"),(3,"WP-4"),(4,"WP-2"),(5,"WP-2"),
  (6,"WP-3"),(7,"WP-3"),(8,"WP-4"),(9,"WP-4"),(10,"WP-4"),(11,"WP-5"),
  (12,"WP-6"),(13,"WP-6"),(14,"WP-6"),(15,"WP-6"),(16,"WP-7"),(17,"WP-7"),
- (18,"WP-8"),(19,"WP-8"),(20,"WP-8"),(21,"WP-8")]}
+ (18,"WP-8"),(19,"WP-8"),(20,"WP-8"),(21,"WP-8"),(22,"WP-1")]}
 # section primary owners (at least one; appendix-compatible)
 sec_wp = {
  "SEC-00":"WP-0","SEC-01":"WP-0","SEC-02":"WP-0","SEC-03":"WP-0","SEC-04":"WP-2",
@@ -65,8 +65,10 @@ cat_default = {
  "audit_question":"WP-8","promotion_criterion":"WP-6","pc_obligation":"WP-2","pc_witness":"WP-2",
  "qualification_gate":"WP-4","holdout_rule":"WP-6","teacher_rule":"WP-5","claim_policy":"WP-8",
  "hygiene":"WP-0","reproducibility":"WP-8","secret":"WP-5","successor_rule":"WP-8",
- "commit_rule":"WP-0","parent_import":"WP-0","anti_pattern":"WP-0","work_package":"WP-0",
- "spec_conflict":"WP-0"}
+  "commit_rule":"WP-0","parent_import":"WP-0","anti_pattern":"WP-0","work_package":"WP-0",
+  "spec_conflict":"WP-0","source_doctrine":"WP-1","source_family":"WP-1",
+  "source_registry_field":"WP-1","source_status":"WP-1","source_registry":"WP-1",
+  "source_attempt_list":"WP-1"}
 # overrides where holdout/label need distinct owners
 overrides = {"HOLD-07":"WP-4","HOLD-08":"WP-0","LABEL-01":"WP-0",
  "MUT-08":"WP-6","MUT-09":"WP-4","MUT-13":"WP-6","MUT-14":"WP-5","MUT-18":"WP-0",
@@ -84,7 +86,7 @@ overrides = {"HOLD-07":"WP-4","HOLD-08":"WP-0","LABEL-01":"WP-0",
  "LPC-11":"WP-6","LPC-12":"WP-6","LPC-13":"WP-6","LPC-14":"WP-6","LPC-15":"WP-6","LPC-16":"WP-6"}
 wp_files = {
  "WP-0":["FOUNDATION_MANIFEST.json","audits/legacy/LEGACY_ARCHAEOLOGY.md","PC_PARENT_MANIFEST.json","pyproject.toml"],
- "WP-1":["src/council/data/lightcurve.py","forge/datasets/factory.py","configs/schemas/LightCurveSchema_v1.json"],
+ "WP-1":["src/council/data/lightcurve.py","forge/datasets/factory.py","configs/schemas/LightCurveSchema_v1.json","forge/datasets/source_registry.py","data/manifests/SOURCE_REGISTRY_v1.json","audits/WP1_SOURCE_CLOSURE.json"],
  "WP-2":["src/council/pc/contract.py","src/council/pc/touch.py","src/council/pc/freeze.py","PC_CONTRACT.json"],
  "WP-3":["src/council/evidence/state_builder.py","src/council/detection/period_search.py","src/council/pc/representation.py"],
  "WP-4":["forge/training/trainers/torch.py","forge/tasks/factory.py","forge/calibration/calibrate.py"],
@@ -144,8 +146,14 @@ with OUT.open("w", encoding="utf-8") as f:
             f.write(f"    reason: MST-template item has no Council counterpart; Council HOLD/Q/PC/Sec-64 governs\n")
             continue
         wp=owner(it)
-        # spec_phase: for phase items use self; else WP anchor phase
-        sp = i if c=="phase" else wp_phase[wp]
+        # spec_phase: phase items use self; dataset-source items + GATE-22 anchor
+        # to PHASE-04 (acquisition foundation); else WP anchor phase
+        if c == "phase":
+            sp = i
+        elif i == "COL-GATE-22" or i.startswith("COL-SRC-"):
+            sp = "PHASE-04"
+        else:
+            sp = wp_phase[wp]
         gate = i if c=="gate" else wp_gate[wp]
         files = ";".join(wp_files[wp])
         tests = ";".join(wp_tests[wp])
@@ -153,6 +161,8 @@ with OUT.open("w", encoding="utf-8") as f:
         fc="NONE"
         if i=="COL-GATE-13": fc="WP-6:qualification-consumes-reveal-once"
         elif i=="COL-GATE-15": fc="WP-7:runtime-consumes-sealed-registry"
+        elif i=="COL-GATE-22": fc="WP-4/WP-6:consume-INGESTED-only+WP-8:release-verifies-closure"
+        elif i=="COL-SRC-REGISTRY": fc="WP-4/WP-6:consume-registry+WP-8:release-verifies-closure"
         elif i=="HOLD-01": fc="WP-6:reveal-after-GATE-12"
         elif i=="COL-GATE-12": fc="WP-6:freeze-before-reveal"
         elif c=="pc_obligation" and wp=="WP-2": fc="WP-3/WP-7/WP-8"
