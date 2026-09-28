@@ -222,7 +222,11 @@ Exit: GATE-00 FOUNDATION_FROZEN + GATE-01 LEGACY_ARCHAEOLOGY_COMPLETE.
 - Deviations: none.
 - Final verdict: WP-0 = COMPLETE.
 - Claim-evidence pointers: "15/15 green" → `pytest tests/legacy_regression -q` exit 0 | "all artifacts present" → file list + auditor STEP 22b PASS | "mutations caught" → 8/8 damage cases nonzero/FAIL | "independent agreement" → INDEPENDENT_AUDIT = PASS + regen identical | "compliance_gaps = 0" → reconstruction audit + red-team above.
-- Commit/push/HEAD: recorded below after verification.
+- Commit/push/HEAD: commit `0cb872a6509cb7394c741c89154173e526f5fa0e`
+  (`COL-PC-v1.0 WP-0 foundation+archaeology (GATE-00/01)`, 15 files, +27652);
+  push `1b20bb0..0cb872a main -> main` PUSH OK;
+  `git ls-remote origin main` = `0cb872a…` == local HEAD; working tree clean.
+  (Recorded post-push; scripts untouched so log inventory above still matches committed bytes.)
 
 ## WP-1 — Trusted data core — NOT_REACHED
 
