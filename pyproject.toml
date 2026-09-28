@@ -1,0 +1,25 @@
+[project]
+name = "council-pc"
+version = "1.0.0-planning"
+description = "PC-Native Council of Lords Reconstruction (COUNCIL-PC-v1.0)"
+requires-python = ">=3.10"
+
+dependencies = [
+  "numpy",
+  "pandas",
+  "scipy",
+  "scikit-learn",
+  "astropy",
+  "xgboost",
+  "lightgbm",
+  "catboost",
+  "torch",
+  "pydantic",
+  "pyyaml",
+  "orjson",
+  "joblib",
+  "pytest",
+  "hypothesis",
+  "ruff",
+  "mypy",
+]
