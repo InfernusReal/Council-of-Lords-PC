@@ -111,6 +111,43 @@ RESULT = WORKPLAN_COVERAGE_PASS
 
 ## WP-0 — Foundation freeze and archaeology — PLANNED (not yet executed)
 
+## WP-0 CONTRACT (locked before implementation; N=0, PREVIOUS_PHASE=NOT_APPLICABLE)
+
+Phase binding: CURRENT_PHASE=WP-0. Previous-phase gate N/A (first phase); pre-foundation audit performed instead:
+operative spec present (SHA `9d4761e3…406de1`, 2983 lines), audits/ complete (original/migration/SPLAY),
+origin/main reachable and == local HEAD, no holdout/firewall/model artifacts on tree, no `tests/` dir yet.
+
+| REQ-ID | Requirement (WorkPlan WP-0 A–K + spec) | Artifact / location |
+|---|---|---|
+| WP-0-REQ-001 | Operative spec bytes present, SHA `9d4761e3…406de1`, 2983 lines | `IMPLEMENTATION_SPEC.md` |
+| WP-0-REQ-002 | Original spec + migration audit + SPLAY template in `audits/` | `audits/` (3 files) |
+| WP-0-REQ-003 | `origin/main` reachable | `git ls-remote` == HEAD |
+| WP-0-REQ-004 | No holdout/firewall/model artifacts; no training | tree scan |
+| WP-0-REQ-005 | `FOUNDATION_MANIFEST.json` schema-valid, hashes match recomputation | `FOUNDATION_MANIFEST.json` |
+| WP-0-REQ-006 | PC parent pinned (Desktop Counterfactuals.pdf `494334e5…12ff112d58`) + alternates listed | `PC_PARENT_MANIFEST.json` |
+| WP-0-REQ-007 | Archaeology: remote HEAD `72222ad2…`, zip SHA, ensemble/converter/scripts, LEGACY_UNQUALIFIED policy | `audits/legacy/LEGACY_ARCHAEOLOGY.md` |
+| WP-0-REQ-008 | 5771 zip entries, sorted, CRCs, zip SHA | `audits/legacy/LEGACY_FILE_MANIFEST.json` |
+| WP-0-REQ-009 | 7 Sec-50 anti-pattern findings | `audits/legacy/ANTI_PATTERN_LEDGER.md` |
+| WP-0-REQ-010 | Target ontology D (4 classes) + UNRESOLVED policy | `configs/pc/target_ontology_v1.json` |
+| WP-0-REQ-011 | Environment baseline | `ENVIRONMENT_BASELINE.json` |
+| WP-0-REQ-012 | Atomicity-freeze commitment (T30 control; normative schema stays WP-2) | `configs/pc/atomicity_freeze_commitment_v1.json` |
+| WP-0-REQ-013 | `pin_foundation.py`: hash/list/emit, step logs, `--check`, fail-closed nonzero | `scripts/pin_foundation.py` |
+| WP-0-REQ-014 | `migrate_legacy_fixtures.py` skeleton: list, label LEGACY_HISTORICAL, binary-size gate | `scripts/migrate_legacy_fixtures.py` |
+| WP-0-REQ-015 | Legacy regression scaffolding WP0-T01..T05 | `tests/legacy_regression/` |
+| WP-0-REQ-016 | Fixture sample index hash-bound, hashes only, no binaries | `audits/legacy/FIXTURE_SAMPLE_INDEX.json` |
+| WP-0-REQ-017 | Manifest schema validation green (keys, 64-hex hashes) | `scripts/audit_foundation.py` |
+| WP-0-REQ-018 | T18 control enforced (unlabeled/promoted legacy rejected) | policy + WP0-T01/T03 |
+| WP-0-REQ-019 | T30 control (commitment record + test) | REQ-012 + WP0-T02 |
+| WP-0-REQ-020 | STOP-01/02 evaluated PASS (both pinnable) with evidence | this entry + manifests |
+| WP-0-REQ-021 | NO MODEL TRAINED; no teacher calls | tree scan + this statement |
+| WP-0-REQ-022 | H reruns: inventory 561/556/5 + coverage PASS on final tree | commands below |
+| WP-0-REQ-023 | Git hygiene: no .env/binaries/secrets; only intended files | `git status` |
+| WP-0-REQ-024 | Path WP-0 record + log inventory + closeout; history preserved append-only | `Path.md` |
+| WP-0-REQ-025 | Commit msg `COL-PC-v1.0 WP-0 foundation+archaeology (GATE-00/01)`; push; ls-remote == HEAD; clean tree | git |
+
+Named-test semantic lock: WP0-T01 fixture-label policy (every indexed fixture LEGACY_HISTORICAL/CONTAMINATED_DEVELOPMENT, none fresh) | WP0-T02 manifest integrity (recomputed == recorded; counts match) | WP0-T03 pin check (`--check` exit 0; missing source → nonzero) | WP0-T04 hygiene (no binaries/secrets/.env) | WP0-T05 determinism (two regens byte-identical).
+Exit: GATE-00 FOUNDATION_FROZEN + GATE-01 LEGACY_ARCHAEOLOGY_COMPLETE.
+
 - WorkPlan prescription: WorkPlan.md §WP-0 (PHASE-00/01; GATE-00/01; manifests + archaeology + layout + env + plan files).
 - Entry-gate status: PLANNING-COMPLETE (this commit). Foundation pin execution pending next commit.
 - Actual implementation inventory: (pending — `FOUNDATION_MANIFEST.json`, `PC_PARENT_MANIFEST.json`, `audits/legacy/*`, `configs/pc/target_ontology_v1.json`, `ENVIRONMENT_BASELINE.json`, `.gitignore`, `.env.example`, `pyproject.toml` skeleton).
@@ -129,6 +166,63 @@ RESULT = WORKPLAN_COVERAGE_PASS
 - Push result: PUSH OK (`3880b80..1a08a03 main -> main`).
 - Remote-head verification: VERIFIED (`git ls-remote origin main` == local HEAD).
 - WorkPlan-adherence verdict: FOLLOWS WorkPlan.md (planning files only; WP-0 execution pending next).
+- NOTE: planning-era placeholders above are SUPERSEDED by the WP-0 execution record below. Preserved as history.
+
+## WP-0 EXECUTION RECORD (CURRENT_PHASE=WP-0)
+
+- Phase/scope: WP-0 foundation freeze + archaeology (PHASE-00/01). Previous-phase: NOT_APPLICABLE (first phase; pre-foundation audit in contract above).
+- Entry-gate verification: REQ-001 spec SHA `9d4761e3…406de1` confirmed; REQ-002 audits/ complete; REQ-003 `git ls-remote origin main` == HEAD at start; REQ-004 tree scan: no holdout/model/teacher artifacts. Entry predicate true. `WP-0 ENTRY AUDIT: previous_phase_verified=NOT_APPLICABLE(first phase); required_upstream_statuses=none; required_frozen_artifacts=spec+audits+legacy-zip+PC-paper(all present); required_hashes=all match; required_source_state=clean planning tree; required_kernel_state=n/a; required_schema_state=draft manifest schemas; required_external_evidence=legacy HEAD via ls-remote OK; entry_gate_result=PASS`.
+- WorkPlan section followed: WorkPlan.md §WP-0 A–K literally; contract above (locked before implementation).
+- Normative sources: IMPLEMENTATION_SPEC.md Sec-00/01/02/03/46/49/50/53/65 + PC-TARGET (Sec-4) + central law (Sec-0).
+- Files created: `FOUNDATION_MANIFEST.json` (bb11c846…), `PC_PARENT_MANIFEST.json` (77391c5d…), `audits/legacy/LEGACY_FILE_MANIFEST.json` (7fe0c169…, 843033 bytes, 5771-entry listing), `audits/legacy/LEGACY_ARCHAEOLOGY.md`, `audits/legacy/ANTI_PATTERN_LEDGER.md`, `audits/legacy/FIXTURE_SAMPLE_INDEX.json` (127 entries), `configs/pc/target_ontology_v1.json`, `configs/pc/atomicity_freeze_commitment_v1.json`, `ENVIRONMENT_BASELINE.json`, `scripts/pin_foundation.py` (STEPS 01–08), `scripts/migrate_legacy_fixtures.py` (STEPS 10–13), `scripts/audit_foundation.py` (STEPS 20–26, independent), `tests/legacy_regression/test_wp0_foundation.py` (WP0-T01..T05), `tests/legacy_regression/test_wp0_stress.py` (10 stress/mutation/red-team cases).
+- Files modified: `Path.md` only (this record). No spec/WorkPlan/coverage changes in WP-0.
+- Code implemented: deterministic hashing (sorted keys, UTF-8 LF, no timestamps), zip namelist inventory with CRCs, fixture labeling + binary gate, rebuild-and-compare `--check`, schema/hash validation, stop/gate grading. Fail-closed nonzero on any missing source.
+- Algorithms/semantics: sha256 pinning; byte-identity determinism; LEGACY_HISTORICAL-from-birth labeling; LEGACY_UNQUALIFIED wrap policy; atomicity commitment (normative schema frozen WP-2).
+- Schemas: manifest JSON (keys + 64-hex), target ontology v1, atomicity commitment v1 (all draft here).
+- Artifacts: manifests + docs + index listed above; no binaries committed.
+- Tests: WP0-T01..T05 (5 passed); stress/mutation/red-team (10 passed); total `15 passed in ~4.5s`, exit 0.
+- Benchmarks: none (NO MODEL TRAINED in WP-0 — stated explicitly).
+- Stress tests: missing zip/PC (exit 2 BLOCKED), empty zip (honest count 0), corrupted/malformed manifest (`--check` nonzero), unlabeled/binary/fresh fixtures (MIGRATION_CHECK FAIL), removed archaeology doc (auditor FAIL), post-stress integrity (all PASS).
+- Anti-overfitting controls: legacy never observational/fresh/qualified; no holdout exists; no training.
+- Threats addressed: COL-T18 (wrap policy + WP0-T01 + migrate `--check`), COL-T30 (commitment record; normative schema stays WP-2).
+- Stops enforced: STOP-01 PASS (PC paper pinned `494334e5…`), STOP-02 PASS (5771-entry snapshot pinned); project proceeds (no BLOCKED terminal).
+- Invariants checked: legacy never qualified; history preserved (append-only Path; git history intact).
+- Gates opened: COL-GATE-00 FOUNDATION_FROZEN + COL-GATE-01 LEGACY_ARCHAEOLOGY_COMPLETE (auditor STEP 26, manifest hashes in this entry).
+- Statuses changed: WP-0 PLANNED → IMPLEMENTED → VERIFIED (closeout below).
+- Hashes: spec `9d4761e3…`; legacy zip `cf524060…`; PC pinned `494334e5…`; remote legacy HEAD `72222ad2…`; manifests bb11c846…/77391c5d…/7fe0c169….
+- Commands executed (exit codes): `pin_foundation.py` (0), `migrate_legacy_fixtures.py` (0), `audit_foundation.py` → INDEPENDENT_AUDIT = PASS (0), `pin_foundation.py --check` → FOUNDATION_CHECK = PASS (0), `migrate --check` → PASS (0), `pytest tests/legacy_regression -q` → 15 passed (0), `gen_normative_inventory.py` → 561/556/5 (0), `gen_workplan_coverage.py` (0), `check_workplan_coverage.py` → PASS (0).
+- Failures encountered + repairs: (1) auditor hardcoded 5771 vs file-only listing → repaired to manifest-comparison, re-audited PASS; (2) test REPO path off by one level → fixed, 5/5 pass; (3) auditor hex-set logic flaw (`>=` superset bug) → fixed; (4) stress test overwrote committed manifests → backup/restore added. All preserved here with provenance.
+- Counterexamples: none (no theorems in WP-0).
+- Deviations: none from WorkPlan (atomicity commitment file is the T30 control as specified; normative schema remains WP-2 per coverage).
+- External blockers: none.
+- Log inventory (final, matches committed bytes; STEP-09 unused gap documented):
+  - pin_foundation.py: STEP-01 comment 17/log 18; STEP-02 comment 73/log 74; STEP-03 comment 86/log 87; STEP-04 comment 96/log 97; STEP-05 comment 108/log 109; STEP-06 comment 121/log 122 (+per-file log 157); STEP-07 comment 164/log 165 (+match log 180); STEP-08 comment 181/log 182.
+  - migrate_legacy_fixtures.py: STEP-10 comment 17/log 18; STEP-11 comment 34/log 35; STEP-12 comment 49/log 50 (+result log 74); STEP-13 comment 81/log 82.
+  - audit_foundation.py: STEP-20 comment 17/log 18; STEP-21 comment 38/log 39; STEP-22 comment 53/log 54 (+files log 58/59); STEP-23 comment 77/log 78; STEP-24 comment 94/log 95; STEP-25 comment 112/log 113; STEP-26 comment 125/log 126 (+result logs 129/132).
+- Commit: (below). Push: (below). Final compliance verdict: (closeout below).
+
+## WP-0 FINAL CLOSEOUT
+
+- Previous-phase revalidation: NOT_APPLICABLE (N=0, first phase; pre-foundation audit PASS).
+- Entry gate: PASS (predicate above).
+- Scope completed: REQ-001..025 all implemented.
+- Files created/modified: listed above; `git status` shows only intended WP-0 files.
+- Core implementation: pin + migrate + independent audit + 15 tests, all green.
+- Console/log inventory: above (final line numbers verified against committed bytes).
+- Tests: 15/15 pass (WP0-T01..T05 + 10 stress/mutation/red-team).
+- Stress tests: pass (fail-closed demonstrated on 8 damage cases).
+- Mutation tests: pass (corrupted/malformed/unlabeled/binary/fresh/removed all rejected).
+- Independent checks: `audit_foundation.py` (separate code path) PASS; regen byte-identical; second grep audit (69 sec / 31 phases / 23 gates / 30 threats / 25 stops; INV==COV 561; bounds 554/554 clean).
+- Threats: T18/T30 controlled. Stops: STOP-01/02 PASS. Invariants: hold.
+- Statuses: GATE-00/01 OPEN (emit FOUNDATION_FROZEN, LEGACY_ARCHAEOLOGY_COMPLETE).
+- Artifacts + hashes: listed above.
+- Exit-criteria matrix: EXIT-01 manifests exist+valid PASS | EXIT-02 hashes match recomputation PASS | EXIT-03 archaeology complete (HEAD+zip+scripts+ensemble+converter+fixtures+policy) PASS | EXIT-04 anti-patterns recorded (7/7) PASS | EXIT-05 ontology+env+commitment frozen PASS | EXIT-06 scripts run green incl. step logs PASS | EXIT-07 tests 15/15 + stress/mutation PASS | EXIT-08 H reruns PASS | EXIT-09 hygiene PASS | EXIT-10 Path record complete PASS.
+- Compliance-audit result: contract reconstructed at closeout agrees with phase-start contract (CONTRACT_START_CLOSEOUT_DIFF = 0); requirement-vs-repo-vs-Path-vs-tests comparison: compliance_gaps = 0. False-closure attacks (removed doc, dropped audit, corrupted/malformed pins, bad labels): all rejected by a detector. Verifier soundness holds.
+- Remaining execution-owned items: none. Future-phase work: WP-1..WP-8 NOT_STARTED. External blockers: none. Not-applicable: HOLD/qualification/registry/runtime obligations (later phases).
+- Deviations: none.
+- Final verdict: WP-0 = COMPLETE.
+- Claim-evidence pointers: "15/15 green" → `pytest tests/legacy_regression -q` exit 0 | "all artifacts present" → file list + auditor STEP 22b PASS | "mutations caught" → 8/8 damage cases nonzero/FAIL | "independent agreement" → INDEPENDENT_AUDIT = PASS + regen identical | "compliance_gaps = 0" → reconstruction audit + red-team above.
+- Commit/push/HEAD: recorded below after verification.
 
 ## WP-1 — Trusted data core — NOT_REACHED
 

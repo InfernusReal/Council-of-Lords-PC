@@ -1,0 +1,782 @@
+{
+  "binary_gate": [
+    ".bin",
+    ".h5",
+    ".hdf5",
+    ".joblib",
+    ".onnx",
+    ".pickle",
+    ".pkl",
+    ".pt",
+    ".pth"
+  ],
+  "count": 127,
+  "entries": [
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/COUNCIL_OF_LORDS_NASA_NATIVE/__pycache__/nasa_catalog_data_generator.cpython-313.pyc",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 12771
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/COUNCIL_OF_LORDS_NASA_NATIVE/__pycache__/supreme_telescope_converter.cpython-313.pyc",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 39610
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/COUNCIL_OF_LORDS_NASA_NATIVE/atmospheric_warrior_nasa_train.py",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 10341
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/COUNCIL_OF_LORDS_NASA_NATIVE/backyard_genius_nasa_train.py",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 9863
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/COUNCIL_OF_LORDS_NASA_NATIVE/brutal_reality_test/ground_hell.csv",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 76402
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/COUNCIL_OF_LORDS_NASA_NATIVE/brutal_reality_test/heartbreak_binary.csv",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 48371
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/COUNCIL_OF_LORDS_NASA_NATIVE/brutal_reality_test/instrumental_demon.csv",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 1047950
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/COUNCIL_OF_LORDS_NASA_NATIVE/brutal_reality_test/kepler_disaster.csv",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 117639
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/COUNCIL_OF_LORDS_NASA_NATIVE/brutal_reality_test/stellar_demon.csv",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 96660
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/COUNCIL_OF_LORDS_NASA_NATIVE/brutal_reality_test/tess_nightmare.csv",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 1437908
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/COUNCIL_OF_LORDS_NASA_NATIVE/brutal_reality_test/tiny_earth_analog.csv",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 1440119
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/COUNCIL_OF_LORDS_NASA_NATIVE/brutal_reality_test/ultra_contact_binary.csv",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 8014
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/COUNCIL_OF_LORDS_NASA_NATIVE/celestial_oracle_nasa_train.py",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 9274
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/COUNCIL_OF_LORDS_NASA_NATIVE/chaos_master_nasa_train.py",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 10565
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/COUNCIL_OF_LORDS_NASA_NATIVE/clean_ultimate_test/bad_false_positive.csv",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 32169
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/COUNCIL_OF_LORDS_NASA_NATIVE/clean_ultimate_test/contact_binary.csv",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 15887
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/COUNCIL_OF_LORDS_NASA_NATIVE/clean_ultimate_test/giant_fp.csv",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 24042
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/COUNCIL_OF_LORDS_NASA_NATIVE/clean_ultimate_test/good_exoplanet.csv",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 128631
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/COUNCIL_OF_LORDS_NASA_NATIVE/clean_ultimate_test/hot_jupiter.csv",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 96702
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/COUNCIL_OF_LORDS_NASA_NATIVE/cosmic_conductor_nasa_train.py",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 10571
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/COUNCIL_OF_LORDS_NASA_NATIVE/nasa_catalog_data_generator.py",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 11015
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/COUNCIL_OF_LORDS_NASA_NATIVE/supreme_ensemble_nasa_train.py",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 12026
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/COUNCIL_OF_LORDS_NASA_NATIVE/supreme_telescope_converter.py",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 44257
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 83836
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/backend/__pycache__/supreme_telescope_converter.cpython-313.pyc",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 39589
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/backend/supreme_telescope_converter.py",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 44620
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/brutal_reality_test/ground_hell.csv",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 76397
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/brutal_reality_test/heartbreak_binary.csv",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 48372
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/brutal_reality_test/instrumental_demon.csv",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 1048110
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/brutal_reality_test/kepler_disaster.csv",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 117593
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/brutal_reality_test/stellar_demon.csv",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 96621
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/brutal_reality_test/tess_nightmare.csv",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 1437908
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/brutal_reality_test/tiny_earth_analog.csv",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 1437138
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/brutal_reality_test/ultra_contact_binary.csv",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 8008
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/clean_ultimate_test/bad_false_positive.csv",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 32174
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/clean_ultimate_test/contact_binary.csv",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 15893
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/clean_ultimate_test/giant_fp.csv",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 24058
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/clean_ultimate_test/good_exoplanet.csv",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 128619
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/clean_ultimate_test/hot_jupiter.csv",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 96734
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/@babel/code-frame/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 334
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/@babel/compat-data/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 307
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/@babel/core/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 401
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/@babel/generator/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 434
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/@babel/helper-compilation-targets/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 376
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/@babel/helper-globals/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 330
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/@babel/helper-module-imports/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 355
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/@babel/helper-module-transforms/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 387
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/@babel/helper-plugin-utils/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 332
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/@babel/helper-string-parser/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 335
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/@babel/helper-validator-identifier/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 369
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/@babel/helper-validator-option/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 346
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/@babel/helpers/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 302
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/@babel/parser/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 412
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/@babel/plugin-transform-react-jsx-self/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 403
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/@babel/plugin-transform-react-jsx-source/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 415
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/@babel/template/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 444
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/@babel/traverse/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 525
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/@babel/types/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 446
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/@dimforge/rapier3d-compat/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 1200
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/@emotion/is-prop-valid/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 259
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/@jridgewell/gen-mapping/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 7506
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/@jridgewell/remapping/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 7304
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/@jridgewell/resolve-uri/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 2826
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/@jridgewell/sourcemap-codec/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 10051
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/@jridgewell/trace-mapping/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 14417
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/@remix-run/router/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 5869
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/@tweenjs/tween.js/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 13591
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/@types/babel__core/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 1030
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/@types/babel__generator/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 693
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/@types/babel__template/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 768
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/@types/babel__traverse/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 878
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/@types/estree/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 443
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/@types/prop-types/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 579
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/@types/react-dom/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 796
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/@types/react/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 1805
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/@types/stats.js/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 1461
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/@types/three/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 906
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/@types/webxr/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 578
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/@vitejs/plugin-react/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 4747
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/@webgpu/types/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 4760
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/baseline-browser-mapping/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 18545
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/browserslist/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 2761
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/caniuse-lite/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 164
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/convert-source-map/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 7421
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/csstype/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 10518
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/debug/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 22115
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/electron-to-chromium/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 6460
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/esbuild/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 175
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/esbuild/node_modules/@esbuild/win32-x64/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 143
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/escalade/readme.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 6993
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/fflate/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 27362
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/framer-motion/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 3974
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/framer-motion/dom/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 96
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/gensync/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 5350
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/js-tokens/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 7388
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/jsesc/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 14215
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/json5/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 10419
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/loose-envify/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 1071
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/lru-cache/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 5987
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/meshoptimizer/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 22495
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/ms/readme.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 1886
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/nanoid/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 1552
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/node-releases/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 505
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/picocolors/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 622
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/postcss/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 1200
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/react-dom/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 1102
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/react-icons/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 13120
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/react-refresh/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 584
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/react-router-dom/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 302
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/react-router/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 813
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/react/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 1162
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/rollup/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 10005
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/rollup/node_modules/@rollup/rollup-win32-x64-msvc/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 94
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/scheduler/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 346
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/semver/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 16974
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/source-map-js/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 26040
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/three/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 2898
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/three/examples/fonts/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 334
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/three/examples/fonts/droid/README.txt",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 692
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/three/examples/fonts/ttf/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 188
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/three/examples/jsm/libs/basis/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 1448
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/three/examples/jsm/libs/draco/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 1489
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/tslib/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 3869
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/update-browserslist-db/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 717
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/vite/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 1152
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/frontend/node_modules/yallist/README.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 4717
+    },
+    {
+      "label": "LEGACY_HISTORICAL",
+      "name": "Council-Of-Lords-main/instructions-for-use.md",
+      "note": "archaeological reference only; never observational, never fresh, never qualified",
+      "size": 3434
+    }
+  ],
+  "experiment": "COUNCIL-PC-v1.0",
+  "policy": "Every indexed fixture is LEGACY_HISTORICAL. Binaries are rejected from the index. Historical models enter only as LEGACY_UNQUALIFIED wrappers.",
+  "rejected_binaries": 0,
+  "size_gate_bytes": 5242880
+}

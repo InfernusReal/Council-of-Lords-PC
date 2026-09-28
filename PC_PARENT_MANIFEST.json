@@ -1,0 +1,42 @@
+{
+  "alternates": [
+    {
+      "bytes": 380163,
+      "filename": "Perceptive_Closure_Identifying_Authorization_Resource_Counterfactuals.pdf",
+      "role": "OBSERVED_ALTERNATE_NON_NORMATIVE",
+      "sha256": "8224cec4a2b5edb059ae4bef5d4c9c1db124126883894d5d39d6961860a0102b",
+      "source_path": "C:\\Users\\Saif malik\\Downloads\\Perceptive_Closure_Identifying_Authorization_Resource_Counterfactuals.pdf"
+    },
+    {
+      "bytes": 380109,
+      "filename": "Perceptive_Closure_Identifying_Authorization_Resource_Counterfactuals (1).pdf",
+      "role": "OBSERVED_ALTERNATE_NON_NORMATIVE",
+      "sha256": "6e9997bdd8565322634f40bf3a6fe9c1aa5dba5e47e817a54eb8be7b64c484f7",
+      "source_path": "C:\\Users\\Saif malik\\Downloads\\Perceptive_Closure_Identifying_Authorization_Resource_Counterfactuals (1).pdf"
+    },
+    {
+      "bytes": 381436,
+      "filename": "Perceptive_Closure_Identifying_Authorization_Resource_Counterfactuals (2).pdf",
+      "role": "OBSERVED_ALTERNATE_NON_NORMATIVE",
+      "sha256": "7d442a4ef5f9b93c0b43aae987cf745c1ccd2f54d1c8f4691b7fc658956255a9",
+      "source_path": "C:\\Users\\Saif malik\\Downloads\\Perceptive_Closure_Identifying_Authorization_Resource_Counterfactuals (2).pdf"
+    },
+    {
+      "bytes": 285303,
+      "filename": "Perceptive_Closure_FINAL.pdf",
+      "role": "OBSERVED_ALTERNATE_NON_NORMATIVE",
+      "sha256": "78c79db92df2574b45e0a37eaade590f5cccc84e89162db7e4ae46b803f6a00f",
+      "source_path": "C:\\Users\\Saif malik\\Downloads\\Perceptive_Closure_FINAL.pdf"
+    }
+  ],
+  "conceptual_parent": "PERCEPTIVE CLOSURE: IDENTIFYING AUTHORIZATION-RESOURCE COUNTERFACTUALS",
+  "experiment": "COUNCIL-PC-v1.0",
+  "pinned": {
+    "bytes": 374404,
+    "filename": "Perceptive Closure Identifying Authorization-Resource Counterfactuals.pdf",
+    "role": "PINNED_NORMATIVE_PARENT",
+    "sha256": "494334e55b0b90686c59a606f3867edf4c9548004e0858f0d00d9a12ff112d58",
+    "source_path": "C:\\Users\\Saif malik\\OneDrive\\Documents\\Desktop\\Perception Closure\\Perceptive Closure Identifying Authorization-Resource Counterfactuals.pdf"
+  },
+  "policy": "Pinned copy is the normative parent version. Alternates are observed evidence only, never normative."
+}

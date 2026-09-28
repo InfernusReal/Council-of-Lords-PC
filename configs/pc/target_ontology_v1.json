@@ -1,0 +1,1 @@
+{"UNRESOLVED_policy": "UNRESOLVED is an explicit target/output class only when the target definition calls for it. It must not be used to conceal failure to compute closure.", "experiment": "COUNCIL-PC-v1.0", "schema_version": "1.0.0", "source": "IMPLEMENTATION_SPEC.md Sec-4", "target_classes": ["PLANETARY_CANDIDATE", "ASTROPHYSICAL_FP", "INSTRUMENTAL_SYSTEMATIC", "UNRESOLVED"]}

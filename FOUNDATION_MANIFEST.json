@@ -1,0 +1,38 @@
+{
+  "audits": [
+    {
+      "bytes": 66865,
+      "lines": 2865,
+      "path": "audits/COUNCIL-PC-v1.0_IMPLEMENTATION_SPEC_ORIGINAL.md",
+      "sha256": "a9453d20079ace95d8227d0fed095398b4aa6de1d1265f61ba6fe1b4c5dbf0fb"
+    },
+    {
+      "bytes": 3870,
+      "lines": 65,
+      "path": "audits/PROVIDER_MIGRATION_AUDIT.md",
+      "sha256": "36a40172577dfac9314531cacf6d1a7733e254223e7cc0d3bd5de7a6b433fbb0"
+    },
+    {
+      "bytes": 53398,
+      "lines": 2454,
+      "path": "audits/SPLAY-AM-MST-LIQ-v0.4_SPEC.txt",
+      "sha256": "0e2c166e1b721dfc8a7e5327ed33af29a1b4ac539cb71849f3c7231b32a8055b"
+    }
+  ],
+  "experiment": "COUNCIL-PC-v1.0",
+  "legacy": {
+    "entries": 5171,
+    "zip_bytes": 77057860,
+    "zip_sha256": "cf524060012b72aa84a6543038372133eb00ecb3817d91c34e43601138c49695",
+    "zip_source_path": "C:\\Users\\Saif malik\\Downloads\\Council-Of-Lords-main.zip"
+  },
+  "legacy_file_manifest": "audits/legacy/LEGACY_FILE_MANIFEST.json",
+  "operative_spec": {
+    "bytes": 71027,
+    "lines": 2984,
+    "path": "IMPLEMENTATION_SPEC.md",
+    "sha256": "9d4761e3cb656b0b4295a5ae4efcf08bc13058f00082577d5b92d406de1482e6"
+  },
+  "pc_parent_manifest": "PC_PARENT_MANIFEST.json",
+  "producer": "scripts/pin_foundation.py"
+}
